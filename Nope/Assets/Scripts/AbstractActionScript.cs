@@ -1,9 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class AbstractActionScript : MonoBehaviour {
+public abstract class AbstractActionScript : MonoBehaviour 
+{
 
-	public void simulate(Vector3 origin, Vector3 destination, int duration)
+	private bool started;
+
+	public bool getStarted()
 	{
+		return started;
+	}
+
+	public void simulate(Vector3 destination, int duration)
+	{
+		started = true;
+	}
+
+	public void endSimulation()
+	{
+		started = false;
 	}
 }

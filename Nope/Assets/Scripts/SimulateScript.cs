@@ -7,7 +7,6 @@ public class SimulateScript : MonoBehaviour
 	ActionsCollectionScript script;
 	float startTime;
 
-
 	// Use this for initialization
 	void StartSimulation(ActionsCollectionScript playerActions) 
 	{
@@ -20,9 +19,9 @@ public class SimulateScript : MonoBehaviour
 	{
 		var time = Mathf.RoundToInt(startTime - Time.fixedTime);
 		var action = script.getAction(time);
-		if(action!=null)
+		if(action!=null && !action.getAction().getStarted())
 		{
-			action.getAction().simulate(action.getOrigin(), action.getDestination(), action.getDuration());
+			action.getAction().simulate(action.getDestination(), action.getDuration());
 		}
 	}
 }

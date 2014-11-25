@@ -11,16 +11,16 @@ public class ActionsCollectionScript : MonoBehaviour {
 		actions = new Dictionary<int, ActionScript>();
 	}
 
-	public void addAction(int time, Vector3 origin, Vector3 destination, AbstractActionScript action, int duration)
+	public void addAction(int time, Vector3 destination, AbstractActionScript action, int duration)
 	{
-		actions[time] = new ActionScript(time, origin, destination, action, duration);
+		actions[time] = new ActionScript(time, destination, action, duration);
 	}
 
 	public ActionScript getAction(int time)
 	{
-		if (actions.ContainsKey (time)) 
+		if (actions.ContainsKey(time)) 
 		{
-			return actions [time];
+			return actions[time];
 		} 
 		else 
 		{
