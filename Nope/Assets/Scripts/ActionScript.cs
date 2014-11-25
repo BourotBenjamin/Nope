@@ -1,25 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ActionScript : MonoBehaviour {
+// Represent an action
+public abstract class ActionScript : MonoBehaviour {
 
-	private int time;
 	private int duration;
-	private Vector3 destination;
-	private AbstractActionScript action;
-	
-	public ActionScript(int time, Vector3 destination, AbstractActionScript action, int duration)
-	{
-		this.time = time;
-		this.duration = duration;
-		this.destination = destination;
-		this.action = action;
-	}
+    private Vector3 destination;
+    private bool started;
+    private SimulateScript simulation;
 
-	public int getTime() 
-	{
-		return this.time;
-	}
+    public ActionScript(Vector3 destination, int duration = -1)
+    {
+        this.duration = duration;
+        this.destination = destination;
+    }
+
+    public ActionScript(Vector3 destination)
+    {
+        this.duration = -1;
+        this.destination = destination;
+    }
+
+    public void setSimulation(SimulateScript simulation)
+    {
+        if (this.simulation == null)
+            this.simulation = simulation;
+    }
 
 	public int getDuration() 
 	{
@@ -29,11 +35,25 @@ public class ActionScript : MonoBehaviour {
 	public Vector3 getDestination() 
 	{
 		return this.destination;
-	}
+    }
+    public bool getStarted()
+    {
+        return started;
+    }
 
-	public AbstractActionScript getAction() 
-	{
-		return this.action;
-	}
+    // Override it
+    // Starts an action
+    public void simulate(Vector3 destination, int duration)
+    {
+        started = true;
+    }
+
+    // Override it
+    // Stops an action
+    public void endSimulation()
+    {
+        started = false;
+        simulation.simulateActionAtNextIndex();
+    }
 	
 }

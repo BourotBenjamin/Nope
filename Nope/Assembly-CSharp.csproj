@@ -46,9 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AbstractActionScript.cs" />
      <Compile Include="Assets\Scripts\ActionScript.cs" />
-     <Compile Include="Assets\Scripts\ActionsCollectionScript.cs" />
      <Compile Include="Assets\Scripts\SimulateScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
