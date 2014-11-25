@@ -41,14 +41,14 @@ public abstract class ActionScript : MonoBehaviour {
         return started;
     }
 
-    // Override it
+    // Override it and call this
     // Starts an action
     public void simulate(Vector3 destination, int duration)
     {
         started = true;
     }
 
-    // Override it
+    // Override it and call this
     // Stops an action
     public void endSimulation()
     {

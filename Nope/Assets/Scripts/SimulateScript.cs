@@ -7,8 +7,9 @@ using System.Collections.Generic;
 public class SimulateScript : MonoBehaviour 
 {
 
-    int currentActionsIndex;
-    List<ActionScript> actions;
+    private int currentActionsIndex;
+    private List<ActionScript> actions;
+    private bool ended;
 
     // Initialise the script
     public void Start()
@@ -38,6 +39,7 @@ public class SimulateScript : MonoBehaviour
     // Starts simulation
     public void StartSimulation()
     {
+        ended = false;
         currentActionsIndex = -1;
         simulateActionAtNextIndex();
     }
@@ -45,17 +47,21 @@ public class SimulateScript : MonoBehaviour
     // Starts the next action
      public void simulateActionAtNextIndex()
     {
-        currentActionsIndex += 1;
-        var action = this.getAction(currentActionsIndex);
-        if (action != null && !action.getStarted())
+        if (!ended)
         {
-            action.simulate(action.getDestination(), action.getDuration());
+            currentActionsIndex += 1;
+            var action = this.getAction(currentActionsIndex);
+            if (action != null && !action.getStarted())
+            {
+                action.simulate(action.getDestination(), action.getDuration());
+            }
         }
 	}
 
     // Stops the simulation
     public void stopActions()
      {
+        ended = true;
         var action = this.getAction(currentActionsIndex);
         if (action != null && !action.getStarted())
         {
