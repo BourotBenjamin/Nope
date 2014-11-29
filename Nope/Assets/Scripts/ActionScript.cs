@@ -2,22 +2,18 @@
 using System.Collections;
 
 // Represent an action
-public abstract class ActionScript : MonoBehaviour {
+public abstract class ActionScript : MonoBehaviour
+{
 
-	private int duration;
-    private Vector3 destination;
-    private bool started;
-    private SimulateScript simulation;
+	protected int duration;
+    protected Vector3 destination;
+    protected bool started;
+    protected SimulateScript simulation;
+    protected float startTime;
 
-    public ActionScript(Vector3 destination, int duration = -1)
+    public ActionScript(Vector3 destination, int duration)
     {
         this.duration = duration;
-        this.destination = destination;
-    }
-
-    public ActionScript(Vector3 destination)
-    {
-        this.duration = -1;
         this.destination = destination;
     }
 
@@ -46,6 +42,7 @@ public abstract class ActionScript : MonoBehaviour {
     public void simulate(Vector3 destination, int duration)
     {
         started = true;
+        this.startTime = Time.time;
     }
 
     // Override it and call this
