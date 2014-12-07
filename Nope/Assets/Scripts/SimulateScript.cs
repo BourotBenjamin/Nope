@@ -18,7 +18,25 @@ public class SimulateScript : MonoBehaviour
     }
 
     // Add an action to the simulation
-    public void addAction(ActionScript action)
+    public void addActionToAll(ActionScript action)
+    {
+        this.networkView.RPC("addAction", RPCMode.Server, action);
+        addAction(action);
+    }
+
+    public void sendActionToAll()
+    {
+        this.networkView.RPC("setActions", RPCMode.All, actions);
+    }
+
+    [RPC]
+    public void setActions(List<ActionScript> actions)
+    {
+        this.actions = actions;
+    }
+
+    [RPC]
+    private void addAction(ActionScript action)
     {
         action.setSimulation(this);
         actions.Add(action);
@@ -37,7 +55,14 @@ public class SimulateScript : MonoBehaviour
     }
 
     // Starts simulation
-    public void StartSimulation()
+    public void startAllSimulations()
+    {
+        this.networkView.RPC("startSimulation", RPCMode.All);
+    }
+
+    // Starts simulation
+    [RPC]
+    public void startSimulation()
     {
         ended = false;
         currentActionsIndex = -1;

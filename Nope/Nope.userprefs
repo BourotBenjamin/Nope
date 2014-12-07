@@ -2,6 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SimulateScript.cs">
     <Files>
+      <File FileName="Assets\Scripts\Weapons\GunBulletScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Actions\StandActionScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ActionScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SimulateScript.cs" Line="28" Column="1" />

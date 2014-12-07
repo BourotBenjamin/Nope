@@ -49,7 +49,12 @@
      <Compile Include="Assets\Scripts\ActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\StandActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\WalkActionScript.cs" />
+     <Compile Include="Assets\Scripts\GUIScript.cs" />
+     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
+     <Compile Include="Assets\Scripts\NetworkScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SimulateScript.cs" />
+     <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
