@@ -38,13 +38,41 @@ public class MapGeneratorScript : MonoBehaviour {
 
     private NetworkView _nV;
 
-    private int hCode = 0;
-    private int groundWidth = 0;
-    private int groundHeight = 0;
-    private int nbRoom = 0;
-    private int sizeRoom = 0;
-    private int nbChest = 0;
-    private int nbTrap = 0;
+    static private int hCode = 0;
+    static public int HCode
+    {
+        get { return hCode; }
+    }
+    static private int groundWidth = 0;
+    static public int GroundWidth
+    {
+        get { return groundWidth; }
+    }
+    static private int groundHeight = 0;
+    static public int GroundHeight
+    {
+        get { return groundHeight; }
+    }
+    static private int nbRoom = 0;
+    static public int NBRoom
+    {
+        get { return nbRoom; }
+    }
+    static private int sizeRoom = 0;
+    static public int SizeRoom
+    {
+        get { return sizeRoom; }
+    }
+    static private int nbChest = 0;
+    static public int NBChest
+    {
+        get { return nbChest; }
+    }
+    static private int nbTrap = 0;
+    static public int NBtrap
+    {
+        get { return nbTrap; }
+    }
 
     private Vector3[] posRoom;
     private Vector3[] posChest;

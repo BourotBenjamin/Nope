@@ -92,8 +92,6 @@ public class NetworkManagerScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("P1 " + p1.owner.ToString());
-        Debug.Log("P2 " + p2.owner.ToString());
 	}
 
     void initServer()
@@ -107,18 +105,20 @@ public class NetworkManagerScript : MonoBehaviour {
     void connectToServer()
     {
         HostData[] data = MasterServer.PollHostList();
+        string tmpIp = "";
         foreach (var element in data)
         {
-            string tmpIp = "";
+            
             int i = 0;
             while (i < element.ip.Length)
             {
                 tmpIp = element.ip[i] + " ";
                 i++;
             }
-            
+           
         }
-        Network.Connect("192.168.0.43", 6600);
+        //Network.Connect("192.168.0.43", 6600);
+        Network.Connect(tmpIp, 6600);
     }
 
     

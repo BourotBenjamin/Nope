@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warriors: []
+  goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
 --- !u!4 &1084496911
 Transform:
   m_ObjectHideFlags: 0
@@ -337,6 +338,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1458715599}
+  - 114: {fileID: 1458715601}
+  - 114: {fileID: 1458715600}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -356,6 +359,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1458715600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458715598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f234f5fd500d07d4bb5ac5c85045f6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOne: {fileID: 1084496910}
+  playerTwo: {fileID: 1785479561}
+--- !u!114 &1458715601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458715598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecee9b6b36696c459b3684e956dc46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  networkScript: {fileID: 1458715600}
 --- !u!1 &1785479560
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warriors: []
+  goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
 --- !u!4 &1785479562
 Transform:
   m_ObjectHideFlags: 0

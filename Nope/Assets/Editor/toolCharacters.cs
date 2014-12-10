@@ -128,7 +128,7 @@ public class toolCharacters : EditorWindow{
             attributes = newClass.GetComponent<CharactersAttributes>();
          
             /*** assign choice script ***/
-            for (int s = 0 ; s < scriptTab.Length; s++)
+            for (int s = 0 ; s < indexScriptTab.Length; s++)
             {
                 if (indexScriptTab[s] != 0)
                 {

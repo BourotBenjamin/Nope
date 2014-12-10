@@ -22,6 +22,8 @@ public class GUIScript : MonoBehaviour {
         }
 	}
 
+
+
     void OnGUI()
     {
         if (positionSet)

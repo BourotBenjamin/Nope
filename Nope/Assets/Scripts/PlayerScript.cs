@@ -7,6 +7,9 @@ public class PlayerScript : MonoBehaviour {
     [SerializeField]
     List<GameObject> warriors;
 
+    [SerializeField]
+    GameObject goTest;
+    bool spawned;
     private NetworkPlayer _owner ;
     public  NetworkPlayer owner
     {
@@ -16,8 +19,20 @@ public class PlayerScript : MonoBehaviour {
 
     List<SimulateScript> simulateSrcipts;
 
-    void Start()
+    void OnConnectedToServer()
     {
+        if(owner.ToString().Equals("1") && !spawned)
+        {
+            warriors.Add((GameObject)Network.Instantiate(goTest,new Vector3((float)(-MapGeneratorScript.GroundWidth*5), 0.2f,(float) (-MapGeneratorScript.GroundHeight*5)), new Quaternion(),1));
+            spawned = true;
+        }
+            
+        else if (owner.ToString().Equals("2") && !spawned)
+        {
+            warriors.Add((GameObject)Network.Instantiate(goTest,new Vector3((float)(MapGeneratorScript.GroundWidth*5), 0.2f,(float) (MapGeneratorScript.GroundHeight*5)), new Quaternion(),2));
+            spawned = true;
+        }
+        
         simulateSrcipts = new List<SimulateScript>();
         foreach(GameObject warrior in warriors)
         {
