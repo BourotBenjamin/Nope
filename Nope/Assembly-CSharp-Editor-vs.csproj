@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9A687669-6E0A-3DD4-A820-49B3E752D2AA}</ProjectGuid>
+	<ProjectGuid>{B003264E-5269-EA02-6056-0CC9A49FF3EB}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,17 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ActionScript.cs" />
-     <Compile Include="Assets\Scripts\Actions\StandActionScript.cs" />
-     <Compile Include="Assets\Scripts\Actions\WalkActionScript.cs" />
-     <Compile Include="Assets\Scripts\CharactersAttributes.cs" />
-     <Compile Include="Assets\Scripts\GUIScript.cs" />
-     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
-     <Compile Include="Assets\Scripts\NetworkManagerScript.cs" />
-     <Compile Include="Assets\Scripts\NetworkScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\Scripts\SimulateScript.cs" />
-     <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
+     <Compile Include="Assets\Editor\toolCharacters.cs" />
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{9A687669-6E0A-3DD4-A820-49B3E752D2AA}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

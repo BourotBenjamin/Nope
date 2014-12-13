@@ -253,7 +253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a80c5eba924fa14aaf70c2dbfa911df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriors: []
+  warriors:
+  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
+  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
   goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
 --- !u!4 &1084496911
 Transform:
@@ -340,6 +342,7 @@ GameObject:
   - 4: {fileID: 1458715599}
   - 114: {fileID: 1458715601}
   - 114: {fileID: 1458715600}
+  - 148: {fileID: 1458715602}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -384,6 +387,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkScript: {fileID: 1458715600}
+--- !u!148 &1458715602
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458715598}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 1458715599}
+  m_ViewID:
+    m_ID: 3
+    m_Type: 1
 --- !u!1 &1785479560
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a80c5eba924fa14aaf70c2dbfa911df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriors: []
+  warriors:
+  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
+  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
   goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
 --- !u!4 &1785479562
 Transform:
