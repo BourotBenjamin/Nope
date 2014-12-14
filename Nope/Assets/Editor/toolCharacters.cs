@@ -37,7 +37,7 @@ public class toolCharacters : EditorWindow{
     GameObject newClass;
     Sprite subSprite;
     Sprite mySprite;
-
+    BoxCollider collider;
     
     [MenuItem ("Window/tool characters")]
 
@@ -62,8 +62,8 @@ public class toolCharacters : EditorWindow{
 
 
         /*** add Sprite and Sprite's images in Tab and get only Sprites names***/
-        spriteTab = Directory.GetFiles("Assets/Resources/Sprites");
-        previewSprite = Directory.GetFiles("Assets/Resources/Images");
+        spriteTab = Directory.GetFiles("Assets/Resources/Sprites", "*.png");
+        previewSprite = Directory.GetFiles("Assets/Resources/Images", "*.png");
         for (int j = 0; j < spriteTab.Length; j++)
         {
             spriteTab[j] = spriteTab[j].Split('\\')[1].Split('.')[0];
@@ -167,6 +167,11 @@ public class toolCharacters : EditorWindow{
             /*** assign specification ***/
             attributes.specifications = specifType[specifIndex];
 
+            /*** add tag to gameobject ***/
+            newClass.tag = "Player";
+
+            /*** add BoxCollider to gameobject ***/
+            collider = newClass.AddComponent("BoxCollider") as BoxCollider;
             /*** assign gameobject to prefab  ***/
             PrefabUtility.ReplacePrefab(newClass, emptyObj, ReplacePrefabOptions.ConnectToPrefab);
             DestroyImmediate(newClass);
