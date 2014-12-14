@@ -27,10 +27,7 @@ public class toolCharacters : EditorWindow{
     string [] scriptTab;
     string [] spriteTab;
     string [] previewSprite;
-    int idScript = 0;
-	int index = 0;
     int specifIndex = 0;
-    int scriptIndex = 0;
     int spriteIndex = 0;
     public CharactersAttributes attributes;
     Editor gameObjectEditor;
@@ -123,9 +120,21 @@ public class toolCharacters : EditorWindow{
             mySprite = Resources.Load<Sprite>("Sprites/" + spriteTab[spriteIndex]);
             newClass.GetComponent<SpriteRenderer>().sprite = mySprite;
 
-            /*** to assign component for newClass***/
+            /*** to assign Script CharactersAttributes to newClass***/
             newClass.AddComponent<CharactersAttributes>();
             attributes = newClass.GetComponent<CharactersAttributes>();
+
+            /*** to assign Script StandActionScript to newClass***/
+            newClass.AddComponent<StandActionScript>();
+
+            /*** to assign Script WalkActionScript to newClass***/
+            newClass.AddComponent<WalkActionScript>();
+
+            /*** to assign Script SimulateScript to newClass***/
+            newClass.AddComponent<SimulateScript>();
+
+            /*** to assign Component NetworkView to newClass***/
+            newClass.AddComponent<NetworkView>();
          
             /*** assign choice script ***/
             for (int s = 0 ; s < indexScriptTab.Length; s++)
@@ -172,6 +181,7 @@ public class toolCharacters : EditorWindow{
 
             /*** add BoxCollider to gameobject ***/
             collider = newClass.AddComponent("BoxCollider") as BoxCollider;
+
             /*** assign gameobject to prefab  ***/
             PrefabUtility.ReplacePrefab(newClass, emptyObj, ReplacePrefabOptions.ConnectToPrefab);
             DestroyImmediate(newClass);
