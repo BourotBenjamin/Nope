@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: c35fcc58903a8814a822bca884fb9b23
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite Guerrier_0
+    21300002: Sprite Guerrier_1
+    21300004: Sprite Guerrier_2
+    21300006: Sprite Guerrier_3
+    21300008: Sprite Guerrier_4
+    21300010: Sprite Guerrier_5
+    21300012: Sprite Guerrier_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite Guerrier_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 150
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 613
+        width: 145
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 616
+        width: 148
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_3
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 618
+        width: 153
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_4
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 616
+        width: 147
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_5
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 616
+        width: 156
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite Guerrier_6
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 613
+        width: 148
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
