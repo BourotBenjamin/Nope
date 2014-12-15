@@ -8,11 +8,22 @@ public class StandActionScript : ActionScript
     {
     }
 
-    void FixedUpdate()
+    public override void FixedUpdate(Transform transform)
     {
         if(this.started && Time.time - this.startTime > duration)
         {
             this.endSimulation();
         }
+    }
+
+    public override object[] getArrayOfParams()
+    {
+        object[] array = { "StandActionScript", destination, duration };
+        return array;
+    }
+
+    public override string getName()
+    {
+        return "StandActionScript";
     }
 }

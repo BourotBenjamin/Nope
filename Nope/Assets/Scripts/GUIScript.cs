@@ -14,7 +14,7 @@ public class GUIScript : MonoBehaviour {
     // Update is called once per frame setReadyToSimulate
 	void Update () 
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(2))
         {
             if (selectedPlayer!=null && !positionSet)
             { 
@@ -38,7 +38,8 @@ public class GUIScript : MonoBehaviour {
                     if(hit.collider.tag == "Player")
                     {
                         hit.collider.renderer.material.color = Color.blue;
-                        selectedPlayer.transform.renderer.material.color = Color.white;
+                        if (selectedPlayer != null)
+                            selectedPlayer.transform.renderer.material.color = Color.white;
                         selectedPlayer = hit.collider.GetComponent<SimulateScript>();
                     }
                 }
@@ -61,8 +62,9 @@ public class GUIScript : MonoBehaviour {
         }
         else
         {
-            if (GUI.Button(new Rect(positionOnScreen.x, positionOnScreen.y, 80, 20), "FIGHT !!"))
+            if (GUI.Button(new Rect(0, 0, 80, 20), "FIGHT !!"))
             {
+                Debug.LogError("I am ready");
                 networkScript.setReadyToSimulate();
             }
         }

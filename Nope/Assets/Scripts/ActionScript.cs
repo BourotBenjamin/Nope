@@ -2,7 +2,7 @@
 using System.Collections;
 
 // Represent an action
-public abstract class ActionScript : MonoBehaviour
+public abstract class ActionScript
 {
 
 	protected int duration;
@@ -41,6 +41,7 @@ public abstract class ActionScript : MonoBehaviour
     // Starts an action
     public void simulate(Vector3 destination, int duration)
     {
+        Debug.LogError("Start");
         started = true;
         this.startTime = Time.time;
     }
@@ -52,5 +53,9 @@ public abstract class ActionScript : MonoBehaviour
         started = false;
         simulation.simulateActionAtNextIndex();
     }
-	
+
+
+    public abstract object[] getArrayOfParams();
+    public abstract string getName();
+    public abstract void FixedUpdate(Transform transform);
 }

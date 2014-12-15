@@ -8,19 +8,32 @@ public class WalkActionScript : ActionScript
     {
     }
 
-    void FixedUpdate()
+    public override void FixedUpdate(Transform transform)
     {
         if (this.started)
         {
-            Vector3 direction = this.transform.position - this.destination;
+            Debug.LogError("Hello");
+            Vector3 direction = transform.position - this.destination;
             if (Time.time - this.startTime > duration || direction.magnitude < 1.0f)
             {
                 this.endSimulation();
             }
             else
             {
-                this.transform.Translate(direction.normalized);
+                transform.Translate(direction.normalized);
             }
         }
+    }
+
+
+    public override object[] getArrayOfParams()
+    {
+        object[] array = { "WalkActionScript", destination, duration };
+        return array;
+    }
+
+    public override string getName()
+    {
+        return "WalkActionScript";
     }
 }

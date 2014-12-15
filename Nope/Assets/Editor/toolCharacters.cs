@@ -125,10 +125,10 @@ public class toolCharacters : EditorWindow{
             attributes = newClass.GetComponent<CharactersAttributes>();
 
             /*** to assign Script StandActionScript to newClass***/
-            newClass.AddComponent<StandActionScript>();
+           // newClass.AddComponent<StandActionScript>();
 
             /*** to assign Script WalkActionScript to newClass***/
-            newClass.AddComponent<WalkActionScript>();
+           // newClass.AddComponent<WalkActionScript>();
 
             /*** to assign Script SimulateScript to newClass***/
             newClass.AddComponent<SimulateScript>();
