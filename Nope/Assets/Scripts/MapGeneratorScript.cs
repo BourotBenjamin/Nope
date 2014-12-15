@@ -212,9 +212,21 @@ public class MapGeneratorScript : MonoBehaviour {
         ground.transform.localScale = new Vector3(groundWidth, 1, groundHeight);
         ground.isStatic = true;
 
-        //GameObject wall1 =(GameObject) GameObject.Instantiate(prefabList[0], new Vector3(0, 0, groundHeight * 5), new Quaternion());
-        //wall1.transform.localScale = new Vector3(groundWidth, 1f, 0.2f);
-        for (int i = -groundWidth; i <= groundWidth; i++)
+        GameObject wall1 =GameObject.CreatePrimitive(PrimitiveType.Cube);
+        wall1.transform.position = new Vector3(0, 0, groundHeight * 5);
+        wall1.transform.localScale = new Vector3(groundWidth*10, 1f, 0.2f);
+        GameObject wall11 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        wall11.transform.position = new Vector3(0, 0, -groundHeight * 5);
+        wall11.transform.localScale = new Vector3(groundWidth*10, 1f, 0.2f);
+        GameObject wall2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        wall2.transform.position = new Vector3(groundWidth * 5, 0, 0);
+        wall2.transform.localScale = new Vector3(0.2f, 1f, groundHeight*10);
+        GameObject wall22 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        wall22.transform.position = new Vector3(-groundWidth * 5, 0, 0);
+        wall22.transform.localScale = new Vector3(0.2f, 1f, groundHeight*10);
+
+
+        /*for (int i = -groundWidth; i <= groundWidth; i++)
         {
             for (int j = -groundHeight; j <= groundHeight; j++)
             {
@@ -228,7 +240,7 @@ public class MapGeneratorScript : MonoBehaviour {
                 }
             }
 
-        }
+        }*/
 
         for (int i = 0; i < nbRoom; i++)
         {
@@ -268,6 +280,7 @@ public class MapGeneratorScript : MonoBehaviour {
         }
         return result;    
     }
+
 	// Update is called once per frame
 	void Update () {
 	    
