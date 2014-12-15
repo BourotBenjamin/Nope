@@ -10,7 +10,12 @@ public class SimulateScript : MonoBehaviour
     private int currentActionsIndex;
     private List<ActionScript> actions;
     private bool ended;
-
+    private int _id;
+    public int id
+    {
+        get { return _id; }
+        set { _id = value; }
+    }
     // Initialise the script
     public void Start()
     {

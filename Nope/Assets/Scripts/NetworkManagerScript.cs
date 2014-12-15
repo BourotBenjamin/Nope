@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class NetworkManagerScript : MonoBehaviour {
+
+    [SerializeField]
+    List<GameObject> characterPrefab;
+    [SerializeField]
+    List<string>     prefabByName;
+
 
     [SerializeField]
     bool isServer = true;
@@ -15,6 +22,9 @@ public class NetworkManagerScript : MonoBehaviour {
     bool p1Vacant = true;
     bool p2Vacant = true;
 
+    bool isP1Instancied = false;
+    bool isP2Instancied = false;
+
     NetworkView _nV;
 
 	// Use this for initialization
@@ -25,6 +35,28 @@ public class NetworkManagerScript : MonoBehaviour {
         if (isServer)
         {
             initServer();
+            string test ="warrior";
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            foreach (string s in p1.charactersList)
+            {
+                p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
+            }
+            foreach (string s in p2.charactersList)
+            {
+                p2.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
+            }
+
+            p1.addCharacterPos(1);
+            p2.addCharacterPos(2);
+            p1.InstantiateChar();
+            p2.InstantiateChar();
         }
         else
         {
@@ -36,15 +68,50 @@ public class NetworkManagerScript : MonoBehaviour {
     {
         if (p1Vacant)
         {
-            setPlayer(player, p1, p2, 1);
             p1Vacant = false;
+            setPlayer(player, p1, p2, 1);
+            for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            {
+                _nV.RPC("setCharactersList", player, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+            }
+            _nV.RPC("setPosChar", player);
+            _nV.RPC("instanciateChar", player);
         }
         else if (p2Vacant)
         {
-            setPlayer(player, p2, p1, 2);
             p2Vacant = false;
+            setPlayer(player, p2, p1, 2);
+            for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            {
+                _nV.RPC("setCharactersList", player, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+            }
+            _nV.RPC("instanciateChar", player);
         }
     }
+
+    [RPC]
+    void instanciateChar()
+    {
+        p1.InstantiateChar();
+        p2.InstantiateChar();
+    }
+    [RPC]
+    void setPosChar()
+    {  
+        p1.addCharacterPos(1);
+        p2.addCharacterPos(2);
+    }
+
+    [RPC]
+    void setCharactersList(string p1CharacterList, string p2CharacterList)
+    {
+        p1.addCharacterList( p1CharacterList);
+        p2.addCharacterList( p2CharacterList);
+        p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(p1CharacterList)]);
+        p2.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(p2CharacterList)]);
+    }
+
+
 
     void OnPlayerDisconnected(NetworkPlayer p)
     {
@@ -85,7 +152,7 @@ public class NetworkManagerScript : MonoBehaviour {
         //disable.Disable();
 
         _nV.RPC("assignPlayer", RPCMode.OthersBuffered, player, playerNum);
-        _nV.RPC("disablePScript", RPCMode.OthersBuffered, player, playerNum);
+        //_nV.RPC("disablePScript", RPCMode.OthersBuffered, player, playerNum);
 
         nbPlayer ++;
     }

@@ -253,10 +253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a80c5eba924fa14aaf70c2dbfa911df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriors:
-  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
-  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
-  goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
+  _warriors: []
+  _charactersList: []
+  _characterPos: []
 --- !u!4 &1084496911
 Transform:
   m_ObjectHideFlags: 0
@@ -426,10 +425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a80c5eba924fa14aaf70c2dbfa911df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriors:
-  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
-  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
-  goTest: {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
+  _warriors: []
+  _charactersList: []
+  _characterPos: []
 --- !u!4 &1785479562
 Transform:
   m_ObjectHideFlags: 0
@@ -470,6 +468,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f144ef976eb554141bfcd357ea76cc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterPrefab:
+  - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
+  prefabByName:
+  - warrior
   isServer: 1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
