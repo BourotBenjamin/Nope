@@ -5,6 +5,8 @@ public class GUIScript : MonoBehaviour {
 
     [SerializeField]
     private NetworkScript networkScript;
+    [SerializeField]
+    private Camera camera;
 
     private bool positionSet;
     private Vector3 positionOnGame;
@@ -21,19 +23,20 @@ public class GUIScript : MonoBehaviour {
                 if (selectedPlayer != null && !positionSet)
                 {
                     positionSet = true;
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
                     if (Physics.Raycast(ray, out hit))
                     {
                         hit.collider.renderer.material.color = Color.red;
                         positionOnGame = hit.point; // TODO get mousePositionOnGame
-                        positionOnScreen = Input.mousePosition; // TODO get mousePositionOnScreen
+                        positionOnScreen = new Vector2(0,0); // TODO get mousePositionOnScreen
+
                     }
                 }
                 else
                 {
 
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
                     if (Physics.Raycast(ray, out hit))
                     {
