@@ -38,12 +38,6 @@ public class NetworkManagerScript : MonoBehaviour {
             string test ="warrior";
             p1.addCharacterList(test);
             p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
             foreach (string s in p1.charactersList)
             {
                 p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
@@ -55,8 +49,10 @@ public class NetworkManagerScript : MonoBehaviour {
 
             p1.addCharacterPos(1);
             p2.addCharacterPos(2);
-            p1.InstantiateChar();
-            p2.InstantiateChar();
+            p1.InstantiateChar(1);
+            p2.InstantiateChar(2);
+            p1.setSimulate();
+            p2.setSimulate();
         }
         else
         {
@@ -64,51 +60,111 @@ public class NetworkManagerScript : MonoBehaviour {
         }
 	}
     
+    void Update()
+    {
+        /*if(Network.isServer)
+        {
+            foreach (var i in p1.warriors)
+            {
+                Debug.LogError("p1");
+                Debug.LogError(p1.owner);
+                Debug.LogError("simulate");
+                Debug.LogError(i.GetComponent<SimulateScript>().owner);
+            }
+        }*/
+    }
+
     void OnPlayerConnected(NetworkPlayer player)
     {
         if (p1Vacant)
         {
+            Debug.LogError("p1co");
             p1Vacant = false;
             setPlayer(player, p1, p2, 1);
-            for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            p1.owner = player;
+            foreach (var i in p1.simulateSrcipts)
             {
-                _nV.RPC("setCharactersList", player, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+                i.setOwnerInSimulateScript(player);
+                //_nV.RPC("setPosChar", player, player, 1, p1.warriors.ToArray()[i], p2.warriors.ToArray()[i]);
             }
-            _nV.RPC("setPosChar", player);
-            _nV.RPC("instanciateChar", player);
+            /*for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            {
+                _nV.RPC("setCharactersList", player,player,1, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+            }*/
+            /*_nV.RPC("setPosChar", player);
+            _nV.RPC("instanciateChar", player);*/
         }
         else if (p2Vacant)
         {
+            Debug.LogError("p2co");
             p2Vacant = false;
             setPlayer(player, p2, p1, 2);
-            for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            p2.owner = player;
+            foreach (var i in p2.simulateSrcipts)
             {
-                _nV.RPC("setCharactersList", player, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+                i.setOwnerInSimulateScript(player);
+                //_nV.RPC("setPosChar", player, player, 1, p1.warriors.ToArray()[i], p2.warriors.ToArray()[i]);
             }
-            _nV.RPC("instanciateChar", player);
+            /*for (int i = 0; i < p1.charactersList.ToArray().Length; i++)
+            {
+                _nV.RPC("setCharactersList", player,player,2, p1.charactersList.ToArray()[i], p2.charactersList.ToArray()[i]);
+            }*/
+            /*_nV.RPC("setPosChar", player);
+            _nV.RPC("instanciateChar", player);*/
         }
     }
 
     [RPC]
     void instanciateChar()
     {
-        p1.InstantiateChar();
-        p2.InstantiateChar();
+        p1.InstantiateChar(1);
+        p2.InstantiateChar(2);
+        Debug.LogError("instantiatechar");
     }
     [RPC]
     void setPosChar()
     {  
         p1.addCharacterPos(1);
         p2.addCharacterPos(2);
+        Debug.LogError("setPos");
     }
 
     [RPC]
-    void setCharactersList(string p1CharacterList, string p2CharacterList)
+    void setgo(NetworkPlayer p, int numJoueur, GameObject p1CharacterList, GameObject p2CharacterList)
+    {
+        if (numJoueur == 1)
+        {
+            p1.addCharacter(p1CharacterList);
+            p1.setSimulate();
+            p1.setCharOwner(p);
+        }
+        else if (numJoueur == 2)
+        {
+            p2.addCharacter(p2CharacterList);
+            p2.setSimulate();
+            p2.setCharOwner(p);
+        }
+        Debug.LogError("setCharactersList");
+    }
+
+    [RPC]
+    void setCharactersList(NetworkPlayer p, int numJoueur, string p1CharacterList, string p2CharacterList)
     {
         p1.addCharacterList( p1CharacterList);
         p2.addCharacterList( p2CharacterList);
         p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(p1CharacterList)]);
         p2.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(p2CharacterList)]);
+        p1.setSimulate();
+        p2.setSimulate();
+        if(numJoueur==1)
+        {
+            p1.setCharOwner(p);
+        }
+        else if (numJoueur == 2 )
+        {
+            p2.setCharOwner(p);
+        }
+        Debug.LogError("setCharactersList");
     }
 
 
@@ -119,11 +175,13 @@ public class NetworkManagerScript : MonoBehaviour {
         {
             p1.owner = new NetworkPlayer();
             p1Vacant = true;
+            _nV.RPC("removeOwner", RPCMode.All, 1);
         }
         else if (p2.owner == p)
         {
             p2.owner = new NetworkPlayer();
             p2Vacant = true;
+            _nV.RPC("removeOwner", RPCMode.All, 2);
         }
         nbPlayer--;
     }
@@ -145,21 +203,30 @@ public class NetworkManagerScript : MonoBehaviour {
             p1.Disable(player);
     }
 
+    [RPC]
+    void removeOwner(int numPlayer)
+    {
+        if (numPlayer == 1)
+        {
+            p1.owner = new NetworkPlayer();
+        }
+        else if (numPlayer == 2)
+        {
+            p2.owner = new NetworkPlayer();
+        }
+    }
+
     public void setPlayer(NetworkPlayer player, PlayerScript assign ,PlayerScript disable , int playerNum)
     {
         assign.setOwner(player);
         //assign.Disable();
         //disable.Disable();
-
+        
         _nV.RPC("assignPlayer", RPCMode.OthersBuffered, player, playerNum);
         //_nV.RPC("disablePScript", RPCMode.OthersBuffered, player, playerNum);
 
         nbPlayer ++;
     }
-
-	// Update is called once per frame
-	void Update () {
-	}
 
     void initServer()
     {
@@ -186,6 +253,7 @@ public class NetworkManagerScript : MonoBehaviour {
         }
         //Network.Connect("192.168.0.43", 6600);
         Network.Connect(tmpIp, 6600);
+        Debug.LogError("connected");
     }
 
     

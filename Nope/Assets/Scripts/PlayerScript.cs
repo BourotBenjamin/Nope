@@ -29,6 +29,8 @@ public class PlayerScript : MonoBehaviour {
     }
 
     bool spawned;
+
+    [SerializeField]
     private NetworkPlayer _owner ;
     public  NetworkPlayer owner
     {
@@ -36,25 +38,24 @@ public class PlayerScript : MonoBehaviour {
         set { _owner = value; }
     }
 
-    List<SimulateScript> simulateSrcipts;
+    private List<SimulateScript> _simulateSrcipts;
+    public List<SimulateScript> simulateSrcipts
+    {
+        get { return _simulateSrcipts; }
+        set { _simulateSrcipts = value; }
+    }
 
     NetworkView _nV;
 
     void Start()
     {
-
         _nV = GetComponent<NetworkView>();
         simulateSrcipts = new List<SimulateScript>();
-        characterPos = new List<Vector3>();
-        //warriors.Add(goTest);
-        //goTest.GetComponent<SimulateScript>().id = 0;
-        //charactersList.Add(goTest.name);
-        
+        characterPos = new List<Vector3>();        
     }
 
     public void addCharacterList(string character)
     {
-        
         charactersList.Add(character);
     }
 
@@ -71,14 +72,33 @@ public class PlayerScript : MonoBehaviour {
         warriors.Add(character);
     }
 
-    public void InstantiateChar()
+    public void setCharOwner(NetworkPlayer p)
+    {
+        foreach (var i in simulateSrcipts)
+        {
+            i.setOwnerInSimulateScript(p);
+            Debug.LogError(i.owner);
+        }
+    }
+
+    public void setSimulate()
+    {
+        for (int i = 0; i < warriors.ToArray().Length; i++)
+        {
+            simulateSrcipts.Add(warriors.ToArray()[i].GetComponent<SimulateScript>());
+        }
+    }
+
+    public void InstantiateChar(int group)
     {
         int j = 0;
         for (int i = 0; i < warriors.ToArray().Length; i++ )
         {
             warriors.ToArray()[i].GetComponent<SimulateScript>().id = j++;
-            Instantiate((GameObject)warriors.ToArray()[i], characterPos.ToArray()[i], Quaternion.identity);
-            simulateSrcipts.Add(warriors.ToArray()[i].GetComponent<SimulateScript>());
+            warriors.Add((GameObject)Network.Instantiate((GameObject)warriors.ToArray()[i], characterPos.ToArray()[i], Quaternion.identity,group));
+            warriors.Remove(warriors.ToArray()[i]);
+            //warriors.ToArray()[i].networkView.owner = owner;
+            //simulateSrcipts.Add(warriors.ToArray()[i].GetComponent<SimulateScript>());
         }
     }
 
@@ -87,6 +107,11 @@ public class PlayerScript : MonoBehaviour {
 
     }
 
+
+    void Update()
+    {
+        //Debug.LogError(owner);
+    }
 
     public void setOwner(NetworkPlayer p)
     {
@@ -113,7 +138,10 @@ public class PlayerScript : MonoBehaviour {
             //TODO Died
         }
 	}
-
+    void OnNetworkInstantiate(NetworkMessageInfo info)
+    {
+        Debug.Log("New object instantiated by " + info.sender);
+    }
     public void Simulate()
     {
         foreach (SimulateScript simulation in simulateSrcipts)

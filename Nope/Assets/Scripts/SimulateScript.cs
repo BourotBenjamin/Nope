@@ -13,6 +13,16 @@ public class SimulateScript : MonoBehaviour
     private int _id;
     private ActionScript currentAction = null;
 
+    NetworkView _nV;
+
+    [SerializeField]
+    private NetworkPlayer _owner;
+    public NetworkPlayer owner
+    {
+        get { return _owner; }
+        set { _owner = value; }
+    }
+
     public int id
     {
         get { return _id; }
@@ -21,6 +31,7 @@ public class SimulateScript : MonoBehaviour
     // Initialise the script
     public void Start()
     {
+        _nV = this.GetComponent<NetworkView>();
         actions = new List<ActionScript>();
 
     }
@@ -28,8 +39,18 @@ public class SimulateScript : MonoBehaviour
     // Add an action to the simulation
     public void addActionToAll(ActionScript action)
     {
-        this.networkView.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
+        _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
         addAction(action.getName(), action.getDestination(), action.getDuration());
+    }
+    public void setOwnerInSimulateScript(NetworkPlayer p)
+    {
+        _nV.RPC("setOwnerInClient", p, p);
+    }
+
+    [RPC]
+    void setOwnerInClient(NetworkPlayer p)
+    {
+        owner = p;
     }
 
     public void sendActionToAll()
@@ -41,7 +62,7 @@ public class SimulateScript : MonoBehaviour
             actions[i] = action.getArrayOfParams();
             i++;
         }
-        this.networkView.RPC("setActions", RPCMode.All, actions);
+       _nV.RPC("setActions", RPCMode.All, actions);
     }
 
     [RPC]

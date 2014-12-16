@@ -22,19 +22,15 @@ public class NetworkScript : MonoBehaviour
     [RPC]
     private void setPlayerReadyToSimulate(NetworkPlayer player)
     {
-        if (player.ToString().Equals("0"))
+        if (playerOne.owner == player)
         {
             playerOneIsReadyToSimulate = true;
-            Debug.LogError("0 is ready so I wait");
+            Debug.LogError("1 is ready so I wait");
         }
-        else if (player.ToString().Equals("1"))
+        else if (playerTwo.owner == player)
         {
             playerTwoIsReadyToSimulate = true;
-            Debug.LogError("0 is ready so I wait");
-        }
-        else
-        {
-            Debug.LogError(Network.player.ToString());
+            Debug.LogError("2 is ready so I wait");
         }
 
         if(playerTwoIsReadyToSimulate && playerOneIsReadyToSimulate)
