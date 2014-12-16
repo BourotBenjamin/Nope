@@ -55,25 +55,17 @@ public class SimulateScript : MonoBehaviour
 
     public void sendActionToAll()
     {
-        object[] actions = new object[this.actions.Count];
-        int i = 0;
+        _nV.RPC("clearActions", RPCMode.Others);
         foreach(ActionScript action in this.actions)
         {
-            actions[i] = action.getArrayOfParams();
-            i++;
+            _nV.RPC("addAction", RPCMode.Others, action.getArrayOfParams());
         }
-       _nV.RPC("setActions", RPCMode.All, actions);
     }
 
     [RPC]
-    public void setActions(object[] actions)
+    public void clearActions()
     {
         this.actions.Clear();
-        foreach(object[] action in actions)
-        {
-            WalkActionScript actionObject = new WalkActionScript((Vector3) action[1], (int) action[2]);
-            this.actions.Add(actionObject);
-        }
     }
 
     [RPC]

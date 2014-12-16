@@ -472,7 +472,7 @@ MonoBehaviour:
   - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
   prefabByName:
   - warrior
-  isServer: 1
+  isServer: 0
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
 --- !u!148 &1963592838

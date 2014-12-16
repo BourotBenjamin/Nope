@@ -13,14 +13,15 @@ public class WalkActionScript : ActionScript
         if (this.started)
         {
             Debug.LogError("Hello");
-            Vector3 direction = transform.position - this.destination;
-            if (Time.time - this.startTime > duration || direction.magnitude < 1.0f)
+            Vector3 direction = this.destination - transform.position;
+            Debug.LogError(direction);
+            if ((duration != -1 && Time.time - this.startTime > duration) || direction.magnitude < 1.0f)
             {
                 this.endSimulation();
             }
             else
             {
-                transform.Translate(direction.normalized);
+                transform.Translate(direction.normalized * Time.deltaTime);
             }
         }
     }

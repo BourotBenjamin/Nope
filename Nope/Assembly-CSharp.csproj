@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\NetworkScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SimulateScript.cs" />
+     <Compile Include="Assets\Scripts\UI\UIManagerScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
