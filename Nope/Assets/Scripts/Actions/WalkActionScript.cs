@@ -8,7 +8,7 @@ public class WalkActionScript : ActionScript
     {
     }
 
-    public override void FixedUpdate(Transform transform)
+    public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
     {
         if (this.started)
         {
@@ -22,7 +22,7 @@ public class WalkActionScript : ActionScript
             }
             else
             {
-                transform.Translate(direction.normalized * Time.deltaTime);
+                rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime);
             }
         }
     }

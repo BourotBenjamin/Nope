@@ -66,9 +66,15 @@ public class GUIScript : MonoBehaviour {
        {
             if (positionSet)
             {
-                if (GUI.Button(new Rect(positionOnScreen.x, positionOnScreen.y, 80, 20), "WalkAction"))
+                if (GUI.Button(new Rect(0, 0, 80, 20), "WalkAction"))
                 {
                     WalkActionScript action = new WalkActionScript(positionOnGame, -1);
+                    selectedPlayer.addActionToAll(action);
+                    positionSet = false;
+                }
+                if (GUI.Button(new Rect(0, 20, 80, 20), "WeaponAction"))
+                {
+                    WeaponActionScript action = new WeaponActionScript(positionOnGame, -1);
                     selectedPlayer.addActionToAll(action);
                     positionSet = false;
                 }

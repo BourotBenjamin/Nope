@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\ActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\StandActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\WalkActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\WeaponActionScript.cs" />
      <Compile Include="Assets\Scripts\CharactersAttributes.cs" />
      <Compile Include="Assets\Scripts\GUIScript.cs" />
      <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />

@@ -57,5 +57,5 @@ public abstract class ActionScript
 
     public abstract object[] getArrayOfParams();
     public abstract string getName();
-    public abstract void FixedUpdate(Transform transform);
+    public abstract void FixedUpdate(Transform transform, Rigidbody rigidbody);
 }

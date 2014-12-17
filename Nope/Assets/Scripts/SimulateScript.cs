@@ -71,7 +71,18 @@ public class SimulateScript : MonoBehaviour
     [RPC]
     private void addAction(string actionName, Vector3 destination, int duration)
     {
-        WalkActionScript action = new WalkActionScript(destination, duration); 
+        ActionScript action = null;
+        switch(actionName)
+        {
+            case "WalkActionScript":
+                action = new WalkActionScript(destination, duration);
+                break;
+            case "WeaponActionScript":
+                action = new WeaponActionScript(destination, duration);
+                break;
+            default:
+                return;
+        }
         action.setSimulation(this);
         actions.Add(action);
     }
@@ -134,7 +145,7 @@ public class SimulateScript : MonoBehaviour
     void FixedUpdate()
     {
         if (currentAction != null)
-            currentAction.FixedUpdate(this.transform);
+            currentAction.FixedUpdate(this.transform, this.rigidbody);
     }
 	
 }
