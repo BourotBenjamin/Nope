@@ -55,6 +55,47 @@ public class GUIScript : MonoBehaviour {
                     }
                 }
             }
+            if(Input.touchCount > 0)
+            { 
+                Touch touch = Input.GetTouch(0);
+                if (touch.phase == TouchPhase.Began)
+                {
+                    if (selectedPlayer != null && !positionSet)
+                    {
+                        positionSet = true;
+                        Ray ray = camera.ScreenPointToRay(touch.position);
+                        RaycastHit hit;
+                        if (Physics.Raycast(ray, out hit))
+                        {
+                            hit.collider.renderer.material.color = Color.red;
+                            positionOnGame = hit.point; // TODO get mousePositionOnGame
+                            positionOnScreen = new Vector2(0, 0); // TODO get mousePositionOnScreen
+
+                        }
+                    }
+                    else
+                    {
+
+                        Ray ray = camera.ScreenPointToRay(touch.position);
+                        RaycastHit hit;
+                        if (Physics.Raycast(ray, out hit))
+                        {
+                            if (hit.collider.tag == "Player")
+                            {
+                                SimulateScript ss = hit.collider.GetComponent<SimulateScript>();
+                                if (hit.collider.GetComponent<SimulateScript>().owner == Network.player)
+                                {
+                                    //Debug.LogError(playerSelected.networkView.group);
+                                    hit.collider.renderer.material.color = Color.blue;
+                                    if (selectedPlayer != null)
+                                        selectedPlayer.transform.renderer.material.color = Color.white;
+                                    selectedPlayer = ss;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 	}
 

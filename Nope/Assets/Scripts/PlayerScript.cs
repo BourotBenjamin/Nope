@@ -85,7 +85,9 @@ public class PlayerScript : MonoBehaviour {
     {
         for (int i = 0; i < warriors.ToArray().Length; i++)
         {
-            simulateSrcipts.Add(warriors.ToArray()[i].GetComponent<SimulateScript>());
+            SimulateScript sim = warriors.ToArray()[i].GetComponent<SimulateScript>();
+            simulateSrcipts.Add(sim);
+            sim.setPlayer(this);
         }
     }
 
@@ -129,13 +131,12 @@ public class PlayerScript : MonoBehaviour {
     public void EntityDied(GameObject warrior) 
     {
         warriors.Remove(warrior);
-        Object.Destroy(warrior);
         SimulateScript sw =warrior.GetComponent<SimulateScript>();
         charactersList.Remove(charactersList.ToArray()[sw.id]);
         simulateSrcipts.Remove(sw);
         if(warriors.Count == 0)
         {
-            //TODO Died
+            Debug.LogError("A player dies ! :'(");
         }
 	}
     void OnNetworkInstantiate(NetworkMessageInfo info)

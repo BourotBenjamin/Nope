@@ -12,6 +12,7 @@ public class SimulateScript : MonoBehaviour
     private bool ended;
     private int _id;
     private ActionScript currentAction = null;
+    private PlayerScript player;
 
     NetworkView _nV;
 
@@ -28,6 +29,12 @@ public class SimulateScript : MonoBehaviour
         get { return _id; }
         set { _id = value; }
     }
+
+    public void setPlayer(PlayerScript player)
+    {
+        this.player = player;
+    }
+
     // Initialise the script
     public void Start()
     {
@@ -141,6 +148,13 @@ public class SimulateScript : MonoBehaviour
             action.endSimulation();
         }
      }
+
+    [RPC]
+    public void warriorDies()
+    {
+        this.stopActions();
+        player.EntityDied(this.gameObject);
+    }
 
     void FixedUpdate()
     {
