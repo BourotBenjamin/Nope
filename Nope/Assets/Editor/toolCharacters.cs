@@ -36,6 +36,7 @@ public class toolCharacters : EditorWindow{
     Sprite mySprite;
     BoxCollider collider;
     Rigidbody rigidb;
+    Animator anim;
     
     [MenuItem ("Window/tool characters")]
 
@@ -121,18 +122,22 @@ public class toolCharacters : EditorWindow{
             mySprite = Resources.Load<Sprite>("Sprites/" + spriteTab[spriteIndex]);
             newClass.GetComponent<SpriteRenderer>().sprite = mySprite;
 
+
+            /*** to assign Script CharactersAttributes to newClass***/
+            newClass.AddComponent<Animator>();
+            anim = newClass.GetComponent<Animator>();
+            RuntimeAnimatorController mycontroller = Resources.Load<RuntimeAnimatorController>("Sprites/Animation/ControllerWar");
+            anim.runtimeAnimatorController = mycontroller;
+
             /*** to assign Script CharactersAttributes to newClass***/
             newClass.AddComponent<CharactersAttributes>();
             attributes = newClass.GetComponent<CharactersAttributes>();
 
-            /*** to assign Script StandActionScript to newClass***/
-           // newClass.AddComponent<StandActionScript>();
-
-            /*** to assign Script WalkActionScript to newClass***/
-           // newClass.AddComponent<WalkActionScript>();
-
             /*** to assign Script SimulateScript to newClass***/
             newClass.AddComponent<SimulateScript>();
+
+            /*** to assign Script SimulateScript to newClass***/
+            newClass.AddComponent<AnimationCharacters>();
 
             /*** to assign Component NetworkView to newClass***/
             newClass.AddComponent<NetworkView>();
