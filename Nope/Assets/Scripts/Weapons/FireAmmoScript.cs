@@ -35,7 +35,7 @@ public class FireAmmoScript : MonoBehaviour
         if (Network.isServer)
         { 
             GameObject collisionGameObject = collision.gameObject;
-            if (collisionGameObject.tag == "Ground")
+            if (collisionGameObject.tag != "Ground")
             {
                 Debug.Log(collisionGameObject);
                 if (collisionGameObject.tag == "Player")
