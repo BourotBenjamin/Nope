@@ -10,10 +10,12 @@ public class SimulateScript : MonoBehaviour
     private int currentActionsIndex;
     private List<ActionScript> actions;
     private bool ended;
+    private bool animating;
     private int _id;
     private ActionScript currentAction = null;
     private PlayerScript player;
     private float startTime;
+    private int nbActions;
 
     NetworkView _nV;
 
@@ -31,6 +33,11 @@ public class SimulateScript : MonoBehaviour
         set { _id = value; }
     }
 
+    public bool isInWaitingState()
+    {
+        return !ended && !animating;
+    }
+
     public void setPlayer(PlayerScript player)
     {
         this.player = player;
@@ -41,7 +48,14 @@ public class SimulateScript : MonoBehaviour
     {
         _nV = this.GetComponent<NetworkView>();
         actions = new List<ActionScript>();
+        nbActions = 0;
+        ended = false;
+        animating = false;
+    }
 
+    public int getNBActions()
+    {
+        return nbActions;
     }
 
     // Add an action to the simulation
@@ -49,6 +63,7 @@ public class SimulateScript : MonoBehaviour
     {
         _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
         addAction(action.getName(), action.getDestination(), action.getDuration());
+        nbActions++;
     }
     public void setOwnerInSimulateScript(NetworkPlayer p)
     {
@@ -63,17 +78,10 @@ public class SimulateScript : MonoBehaviour
 
     public void sendActionToAll()
     {
-        _nV.RPC("clearActions", RPCMode.Others);
         foreach(ActionScript action in this.actions)
         {
             _nV.RPC("addAction", RPCMode.Others, action.getArrayOfParams());
         }
-    }
-
-    [RPC]
-    public void clearActions()
-    {
-        this.actions.Clear();
     }
 
     [RPC]
@@ -117,10 +125,9 @@ public class SimulateScript : MonoBehaviour
     [RPC]
     public void startSimulation()
     {
-        ended = false;
+        animating = true;
         currentActionsIndex = -1;
         simulateActionAtNextIndex();
-        Debug.LogError("Start");
         startTime = Time.time;
     }
 
@@ -135,6 +142,11 @@ public class SimulateScript : MonoBehaviour
             {
                 currentAction = action;
                 action.simulate(action.getDestination(), action.getDuration());
+            }
+            else
+            {
+                animating = false;
+                actions.Clear();
             }
         }
 	}
@@ -163,10 +175,6 @@ public class SimulateScript : MonoBehaviour
         if (currentAction != null)
         {
             currentAction.FixedUpdate(this.transform, this.rigidbody);
-            if(Time.time - startTime > 30)
-            {
-                this.stopActions();
-            }
         }
     }
 	

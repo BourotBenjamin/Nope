@@ -22,7 +22,7 @@ public class WalkActionScript : ActionScript
             }
             else
             {
-                rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime);
+                rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime * 10);
             }
         }
     }

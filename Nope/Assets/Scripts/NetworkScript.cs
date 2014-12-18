@@ -27,11 +27,11 @@ public class NetworkScript : MonoBehaviour
         playerTwo.stopGame();
         if(owner == Network.player)
         {
-            gui.setWin();
+            gui.setLose();
         }
         else
         {
-            gui.setLose();
+            gui.setWin();
         }
     }
 
