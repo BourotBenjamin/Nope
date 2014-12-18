@@ -35,6 +35,7 @@ public class toolCharacters : EditorWindow{
     Sprite subSprite;
     Sprite mySprite;
     BoxCollider collider;
+    Rigidbody rigidb;
     
     [MenuItem ("Window/tool characters")]
 
@@ -181,6 +182,9 @@ public class toolCharacters : EditorWindow{
 
             /*** add BoxCollider to gameobject ***/
             collider = newClass.AddComponent("BoxCollider") as BoxCollider;
+
+            /*** add rigidbody to gameobject ***/
+            rigidb = newClass.AddComponent("Rigidbody") as Rigidbody;
 
             /*** assign gameobject to prefab  ***/
             PrefabUtility.ReplacePrefab(newClass, emptyObj, ReplacePrefabOptions.ConnectToPrefab);
