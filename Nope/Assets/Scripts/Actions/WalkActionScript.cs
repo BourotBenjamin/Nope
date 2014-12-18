@@ -12,11 +12,9 @@ public class WalkActionScript : ActionScript
     {
         if (this.started)
         {
-            Debug.LogError("Hello");
             Vector3 direction = this.destination - transform.position;
             direction.y = 0f;
 
-            Debug.LogError(direction);
             if ((duration != -1 && Time.time - this.startTime > duration) || direction.magnitude < 1.0f)
             {
                 this.endSimulation();

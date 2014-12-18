@@ -3,9 +3,6 @@ using System.Collections;
 
 public class MapGeneratorScript : MonoBehaviour {
 
-
-    
-   
     [SerializeField]
     string _seed;
     [SerializeField]

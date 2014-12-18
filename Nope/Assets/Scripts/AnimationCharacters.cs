@@ -88,6 +88,5 @@ public class AnimationCharacters : MonoBehaviour {
         {
             animator.SetInteger("Direction", 0);
         }
-        Debug.LogError(direction);
 	}
 }

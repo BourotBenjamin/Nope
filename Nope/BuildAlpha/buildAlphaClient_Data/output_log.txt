@@ -1,0 +1,5489 @@
+Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     1043 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/BaseClasses/Tags.cpp Line: 66)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.146 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     1043 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/BaseClasses/Tags.cpp Line: 66)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.077 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\System.Core.dll (this message is harmless)
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+connected
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkManagerScript:connectToServer() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkManagerScript.cs:256)
+NetworkManagerScript:Start() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkManagerScript.cs:59)
+ 
+(Filename: C Line: 0)
+
+Platform assembly: C:\Users\Grégoire Gicquel\Pictures\buildAlphaClient_Data\Managed\System.Core.dll (this message is harmless)
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+connected
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkManagerScript:connectToServer() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkManagerScript.cs:256)
+NetworkManagerScript:Start() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkManagerScript.cs:59)
+ 
+(Filename: C Line: 0)
+
+(6.2, 0.0, -6.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+AnimationCharacters:sendAnimationToAll(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:32)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:135)
+ 
+(Filename: C Line: 0)
+
+(6.2, 0.0, -6.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, 4.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+AnimationCharacters:sendAnimationToAll(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:32)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:135)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, 4.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+ 
+(Filename: C Line: 0)
+
+(-7.9, 0.0, 1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+AnimationCharacters:sendAnimationToAll(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:32)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:135)
+ 
+(Filename: C Line: 0)
+
+(-7.9, 0.0, 1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+AnimationCharacters:setAnimation(Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:91)
+AnimationCharacters:setAnimationInOtherPlayers(Int32, NetworkViewID, Vector3) (at C:\Git\Nope\Nope\Assets\Scripts\AnimationCharacters.cs:40)
+ 
+(Filename: C Line: 0)
+
+I am ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:162)
+ 
+(Filename: C Line: 0)
+
+2 ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:setReadyToSimulate() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkScript.cs:41)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:163)
+ 
+(Filename: C Line: 0)
+
+I am ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:162)
+ 
+(Filename: C Line: 0)
+
+1 ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:setReadyToSimulate() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkScript.cs:41)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:163)
+ 
+(Filename: C Line: 0)
+
+Start
+UnitSEnginetart
+UnittyrEan_Log(Int32, String, Object)
+3n2t,EnSginng, Objug:Lo
+gError(ObjecDebu
+g:LogErrorptObject)
+ActiecnScript:simulate(Vectort\,Nope\Nope\A s:ets\Scripe\Nope\Assets\Scripts\Ac
+tionlatripcr.is:t:sim
+SlateActionAtNextImulx() (at C:\tNextInit\Nope\dope\Assetts\Scripts\SimulateScript.csipt4s)
+SimulateScript.cs:145)
+SimulateScript:startSimulation() (setts\Scripts\Simulatope\Assecs:1cr0)
+ts\
+Simulaame: C Line: 0)
+
+
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(ent32
+, StrEing,nginec.De
+UnityEngine.Debug:LogE,rror(Objecbje
+ct)kA
+UnitSEcript:FixugULpgdrate(Transf)
+m, Rigidbody) ptat C:\Gipdatepe\ransform, Rigicripts\Actions\Git\Nope\nSope\Asscs:15)
+Simulactions\Wt:FixedUpdate() (at:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\N:p1\78)
+ 
+(Ficripts\SimulateScri
+p
+t.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.2, 0.0, 6.2)
+UnityEngine.De(6g:I nt0er 6.2)
+UnityEngine.Debu OIbject)
+UnityEngine.Debug:LogErrct)O
+jUnity
+Engine.DonScript:FixedUpjdate(
+Transform, Rigidbody) Uat C:\Git\Nope\Nopegissets\Scripts\Actions\WNolkActionScript.cs:19)
+SimulateScrtionS:FixedUpdate()
+Si(mu C:\eScript:e\Nope\Assets\Scripts\SimulateScript.cs:178)
+ i
+ts\Simulae: C Lipt.cs:17
+
+8)
+ 
+(Filename: C Line: 0)
+
+Start
+Unitayrntin
+enityEgnInine.DebLug(:nt32, String, Object)
+UnitgyEOnjecnt)De
+bug:LogErro.D(ebjec:LogErtor
+Actiont)
+Actioimulate(Vecmulate(Vector3, Int32) (atpe C:\Git\Nope\Nope\AssectionScript.cs:44)
+ript.lasteScr
+ipt:saiemulateActionAtNextIndex() (at C:\GitaNt C\Nope\\Nope\NScripts\Simulatepts\Simul:1t5)
+SimulateS14i5)
+SimulateScript:startSimulation()e\Nt C:\Git\Nope\Nope\Assets\Scriipts\Simulat
+eS
+cript.cs:130)
+ 
+(Filen
+a
+me: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 6.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, -8.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 6.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, -8.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\NHpe\llo
+UnityEngine.Debug:Inonrn\l_alokActt3nScript.cs:15)ect
+
+UnityEngcnipt:Fixe.Debug:LogError(Obiject)e\
+Nope\Assets\Scripts\eSimulateScansf.cs:, 78)gi
+ b
+dyFi(le CameG: \NoLin\e: e\As
+s
+ets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Si(5.9t e.0, 5.9)
+UnityEn
+gi
+ne.Debug:InC Line:L 0)I
+n
+t32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Tr.a,n0sfo r.m, 
+Rigidbody)e.Detbug:Internal_Log(Int32, Stringt, Object)
+UnityEngine.Debug:LogErr
+or(Object)
+ipt:FitionUpdaitteF) (at C:aGiet\Nope\Nompe\Assets\Script C:\Git\aope\Nopet.cs:178)
+ 
+(Fi\Acnaime: C LkActionSc
+
+ript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateHcrllo
+UnityEngi
+ne
+.Debug:meInternal_Log(
+
+Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUHello(
+TnranEsfone.D, Rug:Inteinal_Logy(I(na32 C StringNopeb\ectope\Assets\S
+ipts\Actions\WalkActionScript.cUnityE
+ngiune.Debug:LogError(Objec() (
+at CAcGit\Nope\Nopi\Assets\Scripts\SimulateScripty.csat C:\
+ it
+\Nope\Nope\Assets\S0)
+
+pts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\As(et1.1, 0.0, \Sim)
+UnitScript.cDebug:)I
+ 
+ternalna_eLog(Inte2, Str
+i
+ng, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transf(rm, R,i0gidbody) (
+anityEngtn\Noebug:Internal_Log(Int32, tiorns\WalkAction
+Script.csn:.D9)
+SimulateScript:Fixed
+Update() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScC:\Gict:\Nope
+\N
+ope\Asset: Scripts\A0)
+
+ns\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Hetlo
+Urnal_Logine.D2, String, Ob_ject)
+Unit SEtgine., ebug:Log
+Enitor(Ogine.Deb
+ug:kActionScripject)
+WalkActe(Transfo:Fixeigidbate(Trans C:\Gi \Nope\bNope\AsseC:s\SctipNs\Ae\Noons\WslsActstiorScpript.cs:1s\Wa
+lkmAlattenScript:cs:15d
+UpdatateScriptC:\ixedUpdate(o (at s:ets\Scripets\SimAssets\Scripts\Simul
+at
+eScript.cs:178)
+ 
+(0)
+
+name: C Line: 0)
+
+(5.7, 0.0,  .0.
+U0, 5.ng)
+UniteyEngineeDenug:Internal_Lo (Int3n, Stri gO bjject))
+Un
+UtyitgyEe.Denug:LogEr:or(Object)
+WalkA)ti
+onScrcipo:niSecUriate(Trxnsform, Rigidbody) (at g:\GitdyN) (\aote AC:\Git\Nope\Nope\AosetsWaSkActponScript.cs\:19)
+cimulateScript:Fix)e
+dUpdaate()r pt:t ixedUipdNate() p(aAssets\Sc\Nope\Nope\AssSerip\S.cs:178)
+imu
+latleScri: t.cs:ine:
+ 
+(
+F
+ilename: C Line: 0)
+
+Helello
+UnitlE
+UnityEngine.Debug:Innegnal_Lig(e.Debug:StrIng, Object)
+UnityEngine.Debug:Loct)
+UnityEngine.
+WDebug:LogError(Object)
+WalkActionScript:FixedUpdate(TranalkActioigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actioit\Nope\cope\Asseitt\Scripts\
+ActulateSclript:FixedUpdate() (a
+ti C:\GeScript\Nope\Aspets\Sate() s\SimulaiteScre\pt.cs:178)
+s\S
+cripts\Sim Ca Line: 0.)
+
+178)
+ 
+(Filename: C Line: 0)
+
+(-1.0, 0.0, -8.4)
+UnityEngine.Debug:Int(-1.l_Lo0(In.0, -8.tri
+ng, Object)
+UnityEngine.Debug:LogError(Object)
+ring, Object)
+UnityEnginalkActionScript:FixedUgpdatError(Object)
+RialkActio) (at nS\Git\Nope\Nope\Assets\Scripts\Actioript:FixedUpdate(Transform, Rigidbody)n(at C:\Git\Nope\NolkAAsseots\Scripts\Acti
+SonulatlSkripti:FnSedUpdt.cs() (a
+t C:\Giet\Nope\FixedUsseatseS()i (atSimulC:teScript.cs:178)
+ 
+(Filename:Git\ ope\Nope\Assets\Scripts\SimulateS 0i)t
+c
+s:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, StriHg, Obj
+ect)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transformn RtyEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEnActi.Debug:LogErr5r(O
+bject)
+WSlkActionSxript:FixedUpdate(Transform, RigidAods) (at C:\Gi\Simulatoee\Assets\Scripts
+ A
+(FinesamWalkActionSc)
+
+pt.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateS(5.6, cs:178)
+ 
+U
+nitlyEegname:ebug:Internal_Log(Int32, String, O Cecine:
+ 0)
+y
+ngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\As
+UnityEncgine.Debtions\WalnActioogc(Int32,: Str
+iing, OebjrecttFix
+edUpdate() (ae Cu\Git\Nopror(Object)
+WalkActionScriulateScript.cs:(Tran
+ 
+(Fi,lename: C Line: 0)
+
+it\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:HGillo
+UnityEpe\Aesetes\S:criprtas\Simulat3eS criipt. Object)
+ n
+itylngiame: e Linbug:)
+
+gError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\NopeHAssets
+\ScryEnpts\eAcetig:Isnternal_iLog(Int32, Strin
+g, Object)
+Uni:FingdUpdate()g: (at r:ori(ONbjeeNt)
+eWalkAct\ScnSctr\ipmt:FixedUipdate(1T8)
+nsf
+orm, Rigidbody) (a 0 C:
+\
+Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nop(\Nop1.\,A0.0, \-c8.2)
+\SityEngine.Detbug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(OeScript
+.cs:1ctio
+ 
+cript:FixedUpdate(Tr)
+
+form, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateS(r-1.0, 0.0, -8.2()
+(UnityEngtinep.\Nope\Asseernal_riots\Simulat3Script.cs:17Obj
+ 
+(Filenamct)
+Unityengin eiDne: :LogError(Object)
+Walk
+tionScript:Fi
+edUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, SHreng, Objello
+UnityEngine.Debug:LogError(Objectt
+W2, String, Obipt:Fix
+edUpdate(Transform, Rigidbody) (at
+ ClkAGcttNion\Nope\A:sixedUpdcrtipts\Action, Rigidbody)n craipt.cs:15)
+Se\NolateSsets\tc:FixedUpdate() (at C:\Git\ript.cs:15)
+Simu\Scripts\SimuxedUpdate() (at C:\
+Gi
+t\Noepe\Nope\Assets\S
+
+ipts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.5, 0.0, 5.5)
+UnityEngine.Debug:Internal_Log(I(5.5, 0.ri0,n5.5)
+Ujeit)E
+ngine.Debug:Internal_Log(Int32, Str
+inlkActbject)i
+UnityEngine.Debug:LogEr, Rigidbody)
+ (at C:i\Git\Nope\Nope\Assets\Scniptsr\Actions\WalkAcationScri\Nt.cs:19)
+AssetateScrpts\Actions\WalkA cat C:\Git\Nope\Nope
+\AssetteSScripts\SimulateScr (pat C:\Git\
+No
+(pe\Nope\Assets\Scr0p)
+\
+SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_LogHelto
+2,n tSEtgrning,b gbject)
+nal_Log(inntDebug:LogError(Oect)
+Uni
+taElkActionScript:Friox(ebjectat
+Wa(kTctionSoript Rigidbopdy) (at C:\Git\Nope\Nope\Assets\S\Gitpts\Actions\WalkActiripts\Actions1Walk
+AimuloateScript:FixedUpt.cs:15)
+Sim:\Git\Nope\NopeeAssets\Scripts\SimulateScript.css:178)
+ 
+(Filename: C Line: .0s)
+
+8)
+ 
+(Filename: C Line: 0)
+
+(-1.0, 0.0, -8.0)
+Unit(-1.ine.Debug:I0)
+UnityEnginnt32, String, Ob_Log(I
+nnityEngine.Debug:LogEr
+ror(Objgine
+Wabug:LogErcript:FixedU
+pdatecTransScrip RiixedUpdate(Transform, Rigidbody) (at C:ripts\Aptions\WalkActionScript.ccs:19)
+SalkActionSript:F.xesUpdate
+() (at C:\riit\Nope\dUpdate()ets\Scripts\Simul\atpe\Assets\SScriptscS:178)
+ mu
+lateScript.CcLi:n78)
+0)
+
+Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.3, 0.0, 5.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.0, 0.0, -7.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.3, 0.0, 5.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.0, 0.0, -7.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (atHello
+U\nityEngie\e.Debtg:Interpts\Actions\WalkActionScript.cs
+:15)
+EngulateScript:FixedUpdatect) 
+(atkAc:\Git\Nope\NopeedUpdate(TransforimulateScroipt.cat178)
+it\
+Nope\Nope\Assetne: 0i)t
+\A
+ctions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Si(u5a.2, 0.0, 5.2)
+Un
+it
+yEngine.Debug:Inete0)al
+_
+Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+Simu(ateScript:Fixed
+Update() (at C:\GiitEnNgpe\e.Dope\AIsnte\Scripts\SimulateScrniptO.ject)
+Uns:178n)in
+e.
+Deblename: C Line: 0)
+
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\ScriptsHAello
+UnityEAcine.Debuigt:Interna
+l_Log(Ient32, String, Object)
+at C:\Giit\Nope\Nope\Assets\Scect)
+WalkActteScriptt:Fixed)
+dat
+e(ilTnrme: C rm,neR i)
+
+dbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FiexedU
+pdateEngin()D bug:Internal_Lope\Nope\Assets\Scripets\S
+imulyateScript.cs:178)
+ 
+(Filbenam)
+WaC Line: Scri
+p
+t:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionS(r-1.0, 0.0, 
+-7m7ul
+ateScript:FiDxedUpdnternal_Log(Int32, Stringe\Assect)
+UnityEngimne.Debug:pt.cs:178)
+ j
+ect)
+Wame: C Line:ript
+:
+FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActio(Sc1ript.cs:19)
+7)
+UniteScript:FixedUpdate() (at C:\Git\NString, \Asect)
+UnityEnginmulateuScript.rcs(Obje)t)
+ 
+Wa
+(Filenoamce: C:FixedU0)d
+
+e(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedU
+pdatenityEngine.Debug:Intern(al_Log(Int32, SNope\Assetect)
+UntstyEngine.Debug:LogError(O.cs:15)
+SilkActionScript:FixedUpdate)(TrtaC:\Git\N pe\giodbody) (at C:\Git\Nope\Ntepe\ipt.cs\Scrip
+ 
+(Filenam\e: C Line: c0)p
+
+cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.c, 0.0, 5
+.1
+)
+UnityEngiCe DLine: n0)
+
+al_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate((5.1, or.0, Rigid
+body) (at C:\Giug:Inpt\ernalAssets\Scri_Log(Int32, String, Object)
+Uni:19y
+SimulateSbript:FixedUpdate() (a
+t C:\Git\Nope\NopeiAxedtU\pcratte(Tiralnsforrm, .Ri:178)
+ 
+(FilenameG C \iop: \0)
+
+\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\GitHNople
+Unope\Asgets.Dcripts\SimulateScript.cs:178)
+ 
+(Fileen)
+Ue: yE Liine: 0)g
+
+ogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\AssetH\Scrip
+Un\tActgioe.Debug:cInternal_Log(Int32
+,imulring, ObjectxeUpdateE) ngine.Debug:LogError\(Object)rWalkActionScript:Fixed:178)
+e(T
+ransfname: C Libody ) (
+a
+t C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\-Scr, 0.0, -7.5)
+UnityEngine.D8)
+ 
+(Filename: C Line: , St
+r
+ing, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate()((-0 .:9, 0.Nope\Nope0Assets\S
+cripttyEngine.Debug:Internal_L
+og
+(Int32, S:tringne: 0)
+
+t)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.9, 0.0, 5.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.9, 0.0, -7.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScripHs\SlmuoaeUnityEngine.Deb
+ug
+:Internal_Log(Int32, S
+t
+ring, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.9, 0.0, 5.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScriptHeSillo
+teScript.cs:1e7ug:I
+n
+(Filename: nC Line: in) 
+bject)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody(-0.t C:0.0, -7.3)
+UpeityEnginec.Debsg:Intern\WalkActionS, Strinsg,5)
+Simula
+UnityEngine.Debug:LogErrat C:\Git\N
+opekActi\nScript:FixedUpdamularansform, Rigidbo
+dy
+) (at C:\Git\Nine: 0)e
+
+\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C(4.8, 0.0, 4.8)
+Unsets\Scripts\SimulateScript.cs:178)
+ 
+rFilename: ct)
+Une: En0i)
+
+Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+U-0.9, 0.0, -7.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() nityE:g\Ge.Deope\NopeeAsset_Los(\nS3cri String, ateScct)
+.cs:tyEng
+ n
+e.Debug:LogErrone(:bj0ct)
+
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.8, 0.0, 4.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkAction(cr-pt:9,ix0e.Upda-e7.1)
+Unity,ngined.Debug:Internal_LNope\Nope\Atsseisng, Obje\Act)
+nUnialkActioe.Debug:LogE5)o
+Simbject)
+ript:FixonScript:FixetUpdate(Transform, Rigidb\dyr) (at C:\Git\Nope\Nope\Asset
+s\
+SFilename: CoLinns\Wal
+k
+ActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Si.7, ateScript.
+cs:178)
+ 
+(Filbuame: ternine: 0)
+
+nt32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.9, 0.0, -6.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.7, 0.0, 4.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.9, 0.0, -6.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(IHello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+nalk2,c String, O:Fixetd
+Update(Trna.DsformL,g Rigidbody) )(
+Wat Cl:A\Git\Nopep\NFix\esdUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+ts\Scri(4.5, 0.0, 4.6)
+UnityEngine.Debug:Internal_Log(Int32, Stping, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, RigWalkAcy)ionScript.cs:15)\SimulateScriptripts\Actates\WalkActi\GScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+pe\Assets\Scripts\SimulateScripello
+UnityEngine.Debut.cs:178)
+_ 
+(Filename: C Line: j0)
+)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\(ope\Nope\A 4.6)
+UnityEngActionbug:Intcernal_Log(Int325, 
+String, Object)
+UnityEngine.Debt C:\Girror(Object)
+Walks\SAcitisoSimcript:crixtecdUpdate
+(
+(Filename: RiLindbo 0)
+
+at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdat((-0(at, 0:\, -t\.7o
+peiNopengine.Debug:Ipts\SialulagtInSc32, String, Object)
+UnityEngine.Debug:LogError(.cs:178)
+
+ 
+(FilennScripC: iLeiUndate(Tr
+a
+nsform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:1H)
+Slo
+UaneScitpt:FyxedUpdate() (at C:\Git\Nope\Nop2\Assets\Scripts\Sim
+ulateScript.cs:178)
+ 
+(Filename: C 
+Line: 0)
+
+Script:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -6.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FilenamHello
+UnityEngine.Debug:Inte)
+
+l_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:F(4.4, date(Transf
+orm, Engine.Debug:Inter\aGit\Nope\Nope\Assets\Scject)
+UnityEngine.DActionSogError(Obje)t)
+S
+uWalkActionScript:FixedU) (at te(\Transform, Rigidbody\) (att C:\Gilt\Nope\Nope\Ass8ets
+ 
+(ripts\Actions\WalkAc
+io
+nScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs(478)
+0.0
+, 4.4)
+UnityELine: 0)e
+b
+ug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionHcrllo
+:FixedEngain(e.Debfog:In Rigidbody) (at ,C:tring, Object)
+\Assets\Sine.Deb\AgcLogErr\Wr(Object)
+Walipt.cs:19)
+SimulateScript:FixedUpdate() (at C:\Gi(at C:\Giope\Assets\Scrsitp\Scripts\Actions\WalkA178ion
+Sc
+(rilpname: C Line: 0)
+
+15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScriptsHSello
+UnityEngine.Debug:Internal_Log(Inti2, String, Object)
+UnityEngine.Debug:Logurror(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:ateScript.cs:178)
+ets
+\Sclripts: cC Lni\Wa: k0)t
+i
+onScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -6.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine(Deb.8, 0g0, :6.5)
+UoityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.r(bubject)
+Woa(Object)
+WalkActixedUpdatt:Fixedspdate(Transdbody) (aorm, Rigidbody)t at C:C:it\Nope\Nope\Ape\Nope\Assets\Scripts\Actions\nSalkAc.tionScr
+ipt.cs:19)
+ipt:FatedUpeaSec) ipat C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+t:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.HebullInte
+UnitLygEInt32, Stbuing, Object)
+UnityEngine.Debug:LogError
+(Object)
+WalkAbutgo:SLoipt:FixedUpdate(
+TranscotmioRigidbody) (at C:\Git\Nope\No, RAsgidbody) (at C:\Git\Nope\Nope\Assets\S.cs:15)
+ts\Actions\WalkActxoeScripdate() 5)
+t C:\Git\Ncript:FixedUpdate() (pas\SimulateScript.cs:178)
+s Sc
+ripts\Sime: C Lini: 0)
+
+:178)
+ 
+(Filename: C Line: 0)
+
+(4.3, 0.0, 4.3)
+UnityEngi(e..ebug: nte0.0, 4.3)
+Un32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalityEngine.DebugixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\ScripInternal_Log(Int32,onScript.cs:19))
+UnityEtngine.Debug:LogdError(Object)
+WalkActionScript:FixedUpdate(Transform,i Rigidbody)
+ 
+(Filename: C L\No: 0)
+
+ssets\Scripts\Actions\WalkActionScript.cs:19)
+Simello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Objeulat
+eScript:onScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+date() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: ()-
+0.8, 0.0, -6.3)
+U
+nityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() Hat lC
+UnityEngine.Debugssets\rnal_Log(SimulateSriript.cs:178)
+Uni
+tyEnginm.Debug:LogError
+(
+Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -6.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.1, 0.0, 4.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpHele(Transform, Rigidlod
+UnityEC:\neit\Nope\Nope\Assets\Sct32, Strting, Object)
+UnScringine.Debu
+g:LogError(ObjeFct)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\N
+ p
+(\Assets\ScriLine: 0)
+
+ns\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScHiptls\
+Simulatgine.Debug:Intern
+al
+_Log(Int32, Strie:g, Ob
+j
+ect)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody4.1, 0.:\Gi0, 4.2)
+UpityEngine.Debug:tns\ActioLs\WalkActionScript.cs:15)
+S
+imulyatgSirnpe:.iDebug:LogError(Object)
+WalkActionScript:FixedUp\date(Transfortm, Rigid
+ 
+(Filename: C Line: 0)
+
+e\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git(Nop.8, 0.0, -6ets\
+ScrtyEngine.DebuScripet.cs_Lo8)
+n 
+(Filename: C Line: 
+0)
+
+yEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at CH\ello
+UnityEngine.Des\Scrinternal_Log(Int32, String, Object)
+U
+nityEngine.Debug:LogError(Object)
+WalkActionScriept:FixedUcripts\Simulsform, Rigidbody)
+ 
+(Filename: C Line: 0)se
+t
+s\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -6.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.0, 0.0, 4.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\ScriptsHActions\WalkActionScript.cs:15)
+UiniltyEngript:FixedUpdate(a) (at(Int3G, String\ Object)
+UnityEngine.Debug:LeScriror(Obje8ct
+)
+WalkAcame: C Line:ixe)
+
+pdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionSc4.0, 0.0, 4.0)
+Unityiptngine.De
+bug:Internal_Log(Int3p,date()g (at C:\G
+Un\ityeEngpe\Assetsg:Lcoigtrr\rSOimuctate
+SackActionScript:
+ ixedUpdate(Transfo
+rF, Rigide: dy) ine: :0G)t\
+
+Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\N(p3.9o,e Asse, 3.9)
+Untsy\SimulateScriInternal_Lo
+ 
+(Filename: C Line: 0)
+
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Hello
+\NoptyEAngine.Dssets\Scripts\Actions\2WalkActionScrect)
+UnityEn
+ginulateScriptError(Objdate(
+) (at C:onScrippe\Nope\Assets\Scripor\SimulateScript.csC:178)
+ p(Fiopenase: s\ Linpts0)
+
+ions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScriptH\Simul
+ateSyEngine.Debug:
+In
+ternaname: C Int32, St
+r
+ing, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transfo(m, Ri,idb0ody) (at
+ Ci:\Git\Nope\Nope\Assernalcripts\A3ctions\WalkActionSc
+ript.cs:15)
+SimulateScript:FixedUpd
+ate() (at C:\Git\Nope\Nope\e(Tretsforcripts\SimulateScript.cs:178)
+ 
+(Filename:Scripts\Act)i
+o
+ns\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Simulate(-r0pt.c.:7, 0.
+0,
+ F-5.7)
+UnityLEnn: 0)
+
+Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.9, 0.0, 3.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LoHEellr(
+OnityEngi
+ne.Debug:Intript:FLog(Int32,eStrings Obrmect)
+UnityEngi(e.DebugGit\Nope\Nope\Asset
+Wa\lcripts\Scriions\xWalkActionScript.c, Rigi
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Noope\Assets\SonScriptimulateS
+cript.cs:178)
+ 
+(Filendate() (aLine: 0)
+
+ope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.9, 0.0, 3.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+(3.7, 0.0, 3.e8)
+UnityEngine.Debt)
+WalkActionScript:FixedUpdate(Tjansfo
+rm, Rigidbody) (at CgError(Objectp
+WalkAts\Scripts\Actions\Walk(Actiansforr, Ri.csd:1dy) (
+at C:\GeScript:NFiexedUets\Scrip(a\t tC:nsGWilkActio\Ncoipt.cs:19)
+SimulttsS\Simu:FixedUpdat.(c s:1 7:\)
+ t\
+(Fileename: C Line:cript
+s
+\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Objec
+t)ityE
+UnityEngine.Debug:LogErrInt3bjectt)
+gWalkAction
+Script:gine.Dpbug:LogEansformj,ctRi
+Wgidbody)n (rat C:\Geit\date(Transformets\Scripts)\(Acti:ons\WalkActionScript.cs:rip
+Simclions\WalkActFonScdUipd.ct:1(5 (
+Stm lCteGScriNote:Noixe\Assets\Script C:\Git\Nope\sopeim\AateScsriprtipts1Simul
+a eS
+(Fript.csme: )
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.6)
+UnityEngine.Debug:Internal_Log(Int32, Str Line: 0)
+
+)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:(9)0.
+7,m lateScript:FixedUpdate() (at C:\G t\5ope\Nope\Assets\.crip
+tsiSimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+yEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngin
+e.DeybugiLog.Deror(Onternal
+_Log(Int32, String, ObUpdate(
+Transfogrm, Rigidbody) (at( bjecG)i
+t\lkActNope\AssetsFixedUpdate(Transform,A Rigidbody) (at C:\Gitt\Nope\No
+SimulateSc\ririptixedUpdate() (at C:\Git\Nope\Nope5)s
+Setsu\ateScript:FixedUpdate()pt(at:178)
+ 
+(Filename: C Lin\Scrip
+t
+s\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.7, 0.0, 3.8)
+UnityEngine.Debug:Intern(l_Log(I.0,32, S)
+Unity Engine.D
+ebug:Internal_Log:LogError(Object)
+WalkAct
+ionScript:FixedUpdatgerror(Object)
+WalkActionScript:FixedUpdate(pe\Assets\Scripts\Actionat C:lkAit\Nope\Nope\Ass9)s
+SimulateScript:FialkActiote(criat C:\Git\N
+ope\NoteScript:FixedUpts\SimulateScriptt.cs:178pe\
+ 
+(Filename:ts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+ Line: 0)
+
+Hello
+UnityEngine.Debug:InteHeallLog(
+Intt2,Entrinng, Obj:Inte
+rnal_Log(Int32, String, Object)
+t)
+Walngine.Debug:LogError(date(cTra
+nslkrActionScript:FixedUpdate(Transform, Rsigs\Scripts\ActioGit\NlkActionScript.cs:15)
+SimulaitneScript:tFoixedUptdate() (
+at C:\Git\Niotpe\Nope\Aste() (aScripts\SimulateSceipt.ce:ts\)S
+cr
+iFptsn\me: Ca eLcript.c)
+
+78)
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.4)
+UnityEngine.Deb,g Internal_L)
+U(nityEngSine.D, Object)
+rnnityLnog(Int32, Storing,r Object)
+
+UnityEingine.Debug:LogEdatoreO(jectn)
+WalkActiodnScript:FiCe\dUpdatee\Toansform, Rigidbody) (at C:e\Assets\Scripts\Actions\WalkAc\iGit\Nope\NopepAssecs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+ts\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:IHterllo
+nnityEnginnt32, String,rnal_Log(I
+UnityEngine.DebObg:LogEr
+ror(Object)
+WalkActionScript:ject)
+WpalkActionScript:FixedUpdate(Transfortm, Rigiope\Assets\SCcriptsNope\Nope\Assets\Scripts\Actions\W
+alkActionScript.cxedUpda
+te()lateScript:FixedUpdate() (at C:\Git\Nope\NlateScssets\Scri8)
+\Si
+(FilulateScript.cs:178
+)
+
+ 
+(Filename: C Line: 0)
+
+(3.5, 0.0, 3.5)
+UnityEng(n3.Deb6g:,nt0r.0, Log(In
+32, String, Object)
+UnityEn_Log(Int32, Lotring, Object)
+U
+nityEngine.Debug:LoxgEUpdate(Tject)
+WalkARigidbodript:FixedUpdate(Transfeorm, Rigidbodys\Actions\WalkActionScript.cs:19)ri
+pts\Actions\WalkActionScript.cs:19)
+SimulateScriept:FixedUpdate() (at C:\Girt\Nope\N78op
+e
+(Filename:rip tine: 0)
+
+teScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Hieldbod
+UnityEngine.tDebpe\Internal_Log(cript, String, ObjkAect)
+UnripyEngine.D
+ebugl:teScript:FixedUpd
+ate(Action Sc\Git\Noixe\Nope\As(Tets\Scripts\Simulaty) (at C:\:1t\N)o
+pe
+\Nope\Ame: C Line: 0)
+
+tions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scr7, 0.0, -5.2)
+Unript.csine.Deb
+ug
+:Interanal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Objectme
+: lCAcLtionScri
+p
+t:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionSc(-0.7, 0.0,
+Simulat
+Unitipt:gFixedUpdg:Internal_Log(Int32, String, Obse\Scr
+ipts\SimilateScript.cs:178)n
+ 
+(Filename:DeC bine: 0)
+
+g:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.3, 0.0, 3.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.3, 0.0, 3.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.7, 0.0, -5.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Dybun:gninenal_Log(Inernal_Ltog(gInt32,c )
+UnityEngine.Deb
+ug:LogError(Object)
+WErrorc(Object)
+WalkActionScript:FixermdUpdate(Transform, RigidbopdyN) (\Asset\\ScriNop\ectiope\AsskettioSScript.cs:15)
+SimulateSionSpcripte.Up:a1e5) (
+at C:\GiS\Nope\Nope\Assets\Scripts\cimulateScrUppt.cs:178t)C:
+ 
+(Filene\Nope\ALseine: 0)
+
+s\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.2, 0.0, 3.2)
+UnityEngine.Debu(3.n2e, 0.0, 3.2)
+Un,iStyEngine.Debug:
+Inntternal_Log(Int32, rString,ectj
+ect)
+UtnonScript:FixedUpdate(Transfore, Rig
+idboAy) (onScript:FixedUpdatee(Tratnsform,ts\Actions\WalkActionScript.cs:19)A
+ssetsa\eScript:s\Actions\WalkActionScript.cs\N19)
+\imulats\Scripts\SimudUadtte() (at C:\Git\N
+op
+(\Nilename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Inteope\Assets\Scripts\Sng,iObject)
+UnityEngine.D
+ b
+g:LogEname: OC Line:
+ 0)
+A
+ctionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionSeriptllo
+Unit
+Simulate.Dceibug:Internal_Log(Int32, Git\Nope\Nope\Ass
+ets\Scripts\SimugateScript.cs:178)
+ 
+
+(Filename: Cipt:FixedUp
+d
+ate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+S-0im,u0.0teScript
+:FixeEdgpdateDebug:In:\Gitl_Lope\INop2e String, Obripts\S
+imulategSnc.rept.c:LogErr
+or
+(Object)
+WalkActeion)
+
+ipt:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkA(tionScript.cs:19)
+U
+nityEngine.Dpt:ug:IndUpdrnal)_(at C:\Git\Nope\inge\Assetct)
+UnityE\Scriptn\gimulainecribug:LogErro
+ 
+(FilenamectC 
+Line: 0)o
+n
+Script:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody)H(al lo
+Uit\Nope\Nope\Assets\Script_Log(tions\WaltkAng, Object)
+UnityE
+SinglateScript:FixedUpdine.Debug:LogError(Object)
+WalkActionScript:FixedUpdript.ransform
+, 
+Rigidbody) (at C:\Git\
+N
+ope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at(C:\Git\Nope\N1)e
+UnityEngine.Debug:IntetrSnal_Log(Int32,
+ S
+tring, Object)
+UnityEn
+g
+ine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\As)et
+snScripnsgicne.Debug:kIntionScript.cs:19)
+SSmuring,criptect)
+Unpitye() (Engine.Debug:LogError(sebjs\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: e)
+
+)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Hction
+UnityEngine.Debipt.cs:19)
+SimulaIeScript:FixedUpdate() (
+at C:\Git\N.pe\Noge\Assetsor(Object)
+WalkActionScript:FixedUpdate(Transform, RigidbScripts\SC:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\imulateScript.cs:1778)
+ 8
+(Filen)
+ 
+ Fil Lname:: C 
+L
+ine: 0)
+
+(-0.6, 0.0,H-4.6)
+Uniellno
+UnityEngine.ernalg:Internal_Log(Int32, String,
+Unitject)
+U.Debug:Log.Derobug:LogtEr
+ralkActect)
+WalkActionSpdaiptT:FixedUpdate(Transform, Rigidbody) (\at C:\Git\Nope\Nope\Assetns\Scripts\ActScris\Wacs:19)
+SimulateScript:F
+ixedlatpdate() (at C:\Git\Nop(aNo C:\Gistt\\Ncoipes\Sipe\Assets\Scripts\Simu
+la
+teScript.cs:178)
+: 
+(F
+i
+lename: C Line: 0)
+
+(-0.6, 0.0, -4.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, ObjectH
+ello
+nnityEngine.Debug:Internor(Object)
+WalkActionScript:Fi
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\NopexedUpdate(Transfocmtionsidbody) (at C:\Git\Nope\N
+ope\AsseSts\Scripts\Acdations\aWalkActionSce\Ntpe\Assets\Scr
+ipts\ateScript:FixedUpdate() 
+(a
+t C:\Git\Nope\Nope\Ass
+e
+ts\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.9, 0.0, 3.0)
+UnityEngine.Debug:Internal_Log(Int32(2.tr9ng, Ob.0, )3
+.0)
+UnigtyEngine.Debug:Internal_Log
+(Int32, String, ObjeedUpd
+ate(Transform, Rigidbody) (at C:\Gi
+t\NkoAe\NopnScript:FixedUpdate(Transform, Rigidbody) (at C:\G
+it\NopeeScript:FixedUpdate\()s(at C:\ripts\Actions\WalkActionScript.cs:19)
+SimulateScript
+:F
+iFiedUpdate() (ate:C:0Git
+\
+Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEnHine.Do
+Uni:toyEnrgr(Object)
+WalkAcnianlc_ipt:Fnxt3U2,atString, ObjectRig
+idbody) (at C:\ug:LogError(Objectt
+WalkActionAcript:FixedUpdtionacrte(Transfor
+m, RigidScdy)t (ate C:\Git\Nopae\No\pe\Assets\Scripts\Actions\tW\SimulateScript..cs:178)
+ 
+(Filename: C Line: 0)
+
+e() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.6, 0.0, -4.4)
+Unit(Eng-n0.6e, 0.0, -4.4)
+UnityEngi, ner.Debug:Intern
+alityEnIgine.Debug:LogObject)
+jeityE
+ngine.Debug:LogError(OUbject)
+WalkActionSigidbtdy) (at pdate(TNopransforAm,etR\igiiptsody) o(atWal:ActionScript.cs:Ass
+Simulatepts\ActiFonsd\pWate() (at C:\Git\Nop1\Nope\Assets\Scripts\SimulateScr9)
+.cs:178)
+ 
+(Filename: C Line: 0)
+
+lateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+HellH
+Unity
+Engine.Debug:Internal_Log(Int32, String, Object)
+Unity
+EnginEeg.nD.Debug:LogError(Objec)
+W
+alkActioonScript:FixedUpdate(Transform, Riigidbody) (at C:\Git\Nope\\Nope\AsssetScripts\Actions\WalkActionScript.cs:cs:1
+5im
+ulateScript:Fixeixedated() (at C:\Git\Nope\Nope\Assetse\s\cripts\SimulateScriipt.cs:178)
+ 
+
+(Filename: C Line Line
+:
+ 0)
+
+(2.8, , 0.0, 2.8
+)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript::FixedUpdate(Transform, Rigidbody) (aat C:\Git\Nope\Nope\Asseets\cripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScrirtsptSimulateScript.cs:178)
+ 
+(.ics:19)
+SimulateScri
+
+pt:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FilenaHe: lo
+UnityEngi
+n
+e.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkHelloncriittyEngine.DebugTransform, Log(Int3dy) (at C:\Git\Nope
+Nope\Assetse.Debpts\Actions\WalkActio
+nScriptiocs:15)
+SimuxldteUcrdate(Transform,t RixedUpdatbody) (a C:C:Git\Nope\Nopepes\Assets\Scripts\Actions\WalkActionSc
+ i
+pt.cs:15)
+SimuinteScri
+p
+t:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: (-0.6e: .0, 
+-
+4.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogErro((O0.6j, t)
+W0l.A0t,o S-ript:F
+ixedUpdate(Transform, Rngidbody) n(at 3:2, t\Nope\Nope\Assets\Scripts\Actions\ect)
+cUinitcrinpine.Debug:
+Logulateror(Object)
+WalkAte(c tionScript:NFixeNopedAssets\Scripts\UpmulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+date(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.7, 0.0, 2.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.5, 0.0, -4.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.7, 0.0, 2.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.5, 0.0, -4.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\GHtello
+Unity\Aginets\bug:Iptes\Actions\WalkActionScript.cs:15
+)
+StyEngine.Debug:ixedUpodatej() )
+WalkAcGit\Nope\Nope\AsUptste(Transform, RigScridp) (s:178)
+ t
+(Fil\Nope\As Line: 0)
+
+s\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets(Scrip ts\Simulat
+UnityEn.icne1.Deb
+ug
+:Internal_Lo Lint3 0)
+
+ring, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Trans(2.5, 0.0i 2.6)
+Unitat C:\Get.Noebug:InterAssets\(Int32, String, Object)
+Unitript.cs:19)
+SimulateScript:Fixe
+dUpkdcate() r(at C:\Git\Nope(Transformets\Scripts\SimulateScript.cs:178)
+ 
+(FilScename: C Lins\: 0)
+
+ctionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateSello
+.UnityEng
+in
+e.Debug:Internal_Log(I
+n
+t32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUHdallo
+UnityEnrm, Rigedbug:Internal_Log(Int32, StrAssetsObject)
+UnityEonsinWalkActionScrrror(Object
+)
+WalkActionScript:FixedUpdate(Transform, Rigidbodyss (at Cripts\SimpulateScrssets\S:178)s\
+ c
+tions\WalkAc LineScrip
+
+.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScr(pt-cs:178)
+ 
+(Filena
+me: C Line: 0)
+
+g:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScrip-0.5,xedUpdat3.9)
+UnitryEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Detiog:LogError(Objec
+t)
+WalkeScript:FixedUpdate() (at C:\Git\Nope\Nope\Asset(st C:\ipts\SopeuNope\Scretst.ccs:178Act
+ 
+nFilename: s\WankAe: 0)
+cr
+ipt.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScrHello:
+FiiteEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEnginSer.pts\ugctiogEsrralkAcbijnScr)i
+Wptk.cts:n1cr)
+SimulateScrte(TransFiorm, Riate() (yt C:\Git\Nope\Nope\oAssets\Scripts\SimulateScript.cs:178Sc
+ 
+(F.csn1ame
+: C lateScript
+:
+FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line2.4, 0
+
+.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:(2.4, 0.(O, bject
+Un
+WalkActionScriptInternapdate(Transform, Rigidbodct)
+)ni(yEt ginGeit\Nuo:LogError(Object)
+Wipts\ctioinSc\iWt:FixedionSce(Tpr.cs:f1r9)
+Simidbody) (at C:FixiedUopeate()\Assets\ScrtiNpts\Actions\WalkActionScript.ateScrip
+timulateSc
+ 
+(Filename: ateL) (at C:\
+G
+it\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEnello
+UnityEginee.De.uD:IbternLogError(Object)
+WalkActionScri
+pt:tyExgine.Debug:LogErorm, bjigidbo
+dy) (ction:\Git\Nope\Nope\Ass(Transform, Rigidoody)W(at Ac\tit\Nope\Nope\Asset
+s\Sclatptscript:FixedUpdate() (at pt.cs:15)
+SimulateScreipt:FixedUpdimulateScrip:\Git.cope\Nope
+\A
+ssels\Scripts\SimulateS
+c
+ript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.5, 0.0, -3.7)
+UnityEngine(Deb.5, 0.I, n3tern
+al_tLog(Int32eb ug:Ing, Object)
+(nityEngiSne.Debug:LeogEr
+ror(Objecte)De
+balkActionScript:Fixed
+UpdatctionScript:FRixedUpdate(TransfCrm, Rigidbody) (at C:\Git\rippes\Actions\WalkActionts\Scripts\ActioSc\WariActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+pt.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Trlnsform, Rigidbolo
+ UnityEnGgine.Debug:e\Assets\Log(Int32, Strin\g, kbject)Sc
+ripityEngine
+.Debug:LogError(Object)
+tWalkActionScri\pt:FixedUpdate(Transform, Rigiateocdy) (as:178)
+t\N
+opilename: C Line: 0)
+
+s\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Simul0ateScr3ip
+UnityE17ine
+.D
+ebug:Internal_ine: 0)
+
+2, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigi(2.3,) (at C:\Gi
+t\Nopen\Nop.Debug:Intecrnal_LogctInt32, SlkAng, Object)
+UnityEng
+ine.Debug:LogError(Obpeda)
+WalkActtio\nSc\rippt:Fpe\Assets\Scripts\SimulateScript.cs:178)
+Git
+\Nopen\Nope\Assee:s0)
+
+ripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\AHselso\
+SnctrEnpts\SDibmulanternal_.cs:178)
+ 
+(Filen, Object)
+Uen 0)
+
+ngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nopl\lo
+U\Assets\Scripts\Actions\Wa_Log(Int32, pt.cs:15)
+Simula
+tnScript:Fie.Debug:LogError(Ob\Gct)
+WapkA\ctpionScris\S:FixedUpdate(Transform, Rigidb
+ 
+(Filat C:\Git\Nope\Nop
+e
+\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\-N.5, 0.0, -3.5)
+UnStcrigine.DimulateScript.cs:178)
+ 2
+, String, ObjLene: 
+0)
+
+yEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C(\Git\Nope\N op.5)
+Unis\yEngptse.Acebuns\WalkActiLog(Intpt2.cs:1r9)
+SimulateSc
+riptyEngine.Debue(:LogEr)o (Ob jectit
+ope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+HeHloll
+oni
+tnityEygEne.Debug:InteInternal_Log(Int32, String, Obje
+ct)
+UnityEngineug:LogError(Objr(Obj
+ect)
+WalkActionScript:Fixaee(Update(rTr ansfobrm, Rigi db\Git\N(opeaNop C:\GsetsiScripps\e\tNope\WalkAts\Scricript.cs:15)
+WalukateScript:ipt.cs:15)
+SimulateScript:Fie\Nope\Asse) s(at C:\Git\Nope\Nope\Assets\Scri
+pt
+(\FSimulae:e cC Lt.nes:178)
+
+ 
+(Filename: C Line: 0)
+
+(2.1, 0.0, 2.1)
+Un(tyE1g, 0..0, 2:Int
+UrnityEngine.3D,ebug:Ig, Object)
+UnityEngine.Debug:LogEr
+UnriOtject)
+WalkActg:onScript:FixedUpda
+te(Transform,ipt:FixedUpdate(Transform,pe\gidbody) (ts\Script\s\Ae\Nope\\WalkActionScript.cis:19)
+Skimulatecrcript:s:19xedU
+SimulateScript:FixeNope\Nope\Ass C:\Git\Nope\Nope\Atssetis\Scripts\S
+im
+ulateScript.csine: :17
+8
+)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, Heling,
+ Objectgi
+ne.Debug:Internal:Loog(Int32, Stctn),
+Object)
+UnityEngine.xeebug:LogError(Obje, Ri
+gidbodyionScript:FixedUpdatepeTransformScRigitsoActions\WalkAittNope\Nope\Assets\S
+ciipulateScript:FixedUpdatec) (at Cs:1Git\
+Nomu\Nope\Asipt:sixedUpdas\S)imulateScripto.e\Nope)
+ ss
+ets\Scripts\ Line: 0)
+
+ript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.5, 0.0, -3.3)
+UnityEngi(-..5, 0.0, -3.3al
+_nLog(Int32, String, Object)
+UnInt32, StrDebg, ObjgErro
+r(ityEngin
+e.Debug:LogErrpt(Object)
+WalkActionScript:FgixedUpdate(Transform, RigidboAy) (ast C:\Git\ANope\Nope\Assets\Scripts\Actions
+\WallActionScpt:FixedUpdat
+e() (at C:\Git\NopxedUpdate(sets\Scripts\SimulateScript.s\ScriptssSimulateScri:t.1s:878)
+ 
+(Fil
+en
+ame: C Li: eC 0)i
+e:
+ 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.0, 0.0, 2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.4, 0.0, -3.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, RigiHello
+UnityCn:\Ge.Debug:Internal_ts\Scri3pts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+2, String, Object)
+UnityEngine.Debug:LogError(Object)
+W2.0kActi0,nScr0p)
+UnityEngine.Debug:Internal_Log(Int32, String, Objectpe\
+Assets\Scripts\Ag:LogError(Object)S
+cript.cs:15)
+SimulateScript:FixedUpdate() (at C:y) t\Nope\Nopt\Assets\Scripts\Ss\Scripts\Acpt.csns\Walk
+Ac
+tionScrip: C Line: 
+0)
+
+lateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.9, He0lo
+Un ty.9g)
+U.nityEngine.Debug:Internal_Log(Int32, Stting
+UnityEngine
+.Debug:LogE.Debug:LogErro
+r(lObject)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\GitAssets\NocriptsseActions\pts\Actions\cript.cs:15)
+SimulateScripn:SicedUpd.cts:)1(9t)C
+SGim\uope\Nope\pstets\Scripts\Sim (at C:\Git\.cs:1Nope
+\N
+oFileAase: C Line: 0)
+
+imulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.4, 0.0, -3.1)
+UnityEngine.DeHuellIn
+ternal_Log(Int32, Stternga Objog(Int
+32i,yEngine.Debug:LogE
+rrior(Objne.D)e
+bug:LogErrorriObject)
+WalkActionScript:Fixediddate(Transfo\Gi,\Nope\Nope\Assets\Scripts\Actions\WalkActionScriptc.ions\Wal
+kimulionScriptt.cs:15Updat)
+SimulateScript:Fi\Nope\Asse() (at C:\Git\NopateSce\Assets\7Scr
+ip
+tFs\Simue: t Line:pt.c
+s
+:178)
+ 
+(Filename: C Line: 0)
+
+(-0.4, 0.0, -2.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.9, 0.0, 1.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.4, 0.0, -2.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(TransfHrelloi
+gidbodEngine.Debug:Internal_Log(Int32,S String, Obonj\Wcalk
+ActionScrip.Debug5)
+SimulateScript:F
+WalkAUpdate() (at C:\Git\Nope\Nope\Atsets\ccriitp\timulatdeScript.cansfor
+ 
+ Rigidbod:) C at C:\G)i
+t
+\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript(1.7, 0.0
+,
+(Filen
+ame: C Line: 0)
+
+:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionSc(i1pt:FixedU.d7,e(0.ransfor)
+U Rigidbidy) Debug:Internal_Log(Int32, String, Object)
+UnityEngineonScript.ogEr19)
+Simulct)
+WalkActionScript:Fi)xedUpda\Ge(T\Nrpe\Nfoe\A, Ris\icripods\S(atlateSciip\Nocs\178pe
+ 
+ssets\Script Lis\: A)
+
+ions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScriptHello
+UnitsE\Sime.Debug:Internal78)
+ 
+(Filename: C Line: 0)
+
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, RigidbodH) (at 
+C:iGit\tyEnginpe.Debug:I\ncternal_Logonst32, String, Obiptcct)
+Uni
+tyEngine.Debug:LoxedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+ect)
+WalkActionScript:FixedUpdat-0.4, 0.0, -2.7)
+UnityEnge(Transfo:InteRigidbody(Int32, String, Obj) (at
+ CityEngine.DeNope\Assets\Scripts\Ac
+tions\WalkActionScript.cs:t1(5ra
+SimulateScript:Fi)xedUpdate() (at C:\Gi\t\Nope\Nope\As\sets\ScriptskAction\cript.cs:19)
+SimulateScript:FixedUpdate()S(at C:\Git\Nope\Nope\Assets\Scripcript.cs:178)
+ 
+(Fcs:178)
+ 
+(Filename: i line: 0)
+
+ename: C Line: 0)
+
+(-0.4, 0.0, -2.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionSHrello
+Unitypdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.6, 0.0, 1.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.nebug:Internal_LoggInt32, Sinieg, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:DebxedUpdug:Internal_Log(Igit32,dy) (ain C:\Gjet\No
+Ueniope\nsine.DeSbrupt:Loctionror(Objectio
+nScript.cs:cript
+:iFulxetdSUript:aFe(Trdandate() (igi Cbo\Gy) \Nat Cope\Nope\Assope\Ascsiets\ScrulateScriions\WalkAc
+ti
+onScript.cs: Lin
+e: 0)
+t
+eScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(File(ame:3, 0.0, -2.5)
+
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)(
+WalkActi0, 1cript
+:FixedUpdateDebug:Inorm, aigidbody) (at Ctr\iin\Nopbject)
+UnityEngine.Debug:LogError(Object)
+WalkActionSc
+riput:FixedUppdateedransform, Rigidbody) (at C:\Git\Nope\Nore\Assets\Sipts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+cripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.4, 0.0, -2.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WaHelAct
+ionScrngiiept:bug:Internal_Log(Int32, SFixedUpdajte(Tr
+ansform, Rigidbody) (at C:\Git\Nope
+\Nope\Assets\Scripts\Actions\WalkActrm, Rigipt.cs:19)
+Si:mulateScriNote:FixedUpdate() (at Cons\WalkAe\Nope\Assets\S15ipt
+s\SimulateScript.cs:178at
+e(
+) (aename: tC Line: 0)
+
+ssets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.5, 0.0, 1.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngineHDebug:LoeEror
+on(ityEngin
+e.DeAugt:Internpt:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScail_:FixedUpdate() (at C:\Git\No
+peityEngine.Debug:LogError(Object)
+WalkActionS
+cr
+ipt:Fiame: C Lene: 0)
+
+orm, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+llo
+UnityEngine.Debug:Internal_Log(Int32, Strinop, Object)
+UnityEngine.Debug:LogError(Obj
+ec
+t)
+Wename: ConScript:F
+i
+xedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkAc(ion6,c 0.0, s:11)
+Sim
+ulateScripet:FixedUpdarnal_Loat C:g(Int32, Strie\Assetect)
+Uipts\Sgine.DeScrgpt.cs:1:L)
+ E
+rror(Objeect)L
+iane: 0)
+
+Script:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Action(\WalkAct.0, -2.4)
+UiotyEngine.Debug:
+Internte_Log(Int32, Striag, Obj(act C
+Un\Gtit\Noipe.DNopeebss:eogError(Object)
+WalkActiptncs:1i8pt
+ 
+(FedUpdate(TraLiner:  0i)id
+b
+ody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Gie\NopeoNo
+Upe\Assets\Scripts\Sternal_Lcripttcs:12,8)
+ 
+(Filename: C Line: 0r
+
+ing, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.3, 0.0, -2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.5, 0.0, 1.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.3, 0.0, -2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEn(1.3, 0.0, 1g3)ne
+UnityEngine.Debug:Interorl(Log(Ict32,
+ Stringi OnScript:
+FixedUpdate(Transform,r or(Obdbody) 
+(at C:\Git\Nope\NFope\Assets\Scripts\Actions\bWdalk(at C:\Giript.cs\Nope
+\AsseateScrrpts\Actionsp\WalkActionScript\cNope\N
+opmulateSts\Scripts\Sidate() cript.cs:178)
+ e
+(Filename: C Line: 0)
+m
+ulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.3, 0.0, 1.3)
+UnityEngine.Debug:Internal_Log(Int3Hello
+Ung, yObject)
+UnityEngine.DeLogg(Int32, rString, O
+bjlkActi
+onityEngi:FixedUpdate(Transform, tRi
+gilkActi) (at C:\GixedUpdate(Transform,crigidbodc) (at C:alGit\ionSe\Nope\Ass9)
+s\ScriptS\cripons\WalkActite() (att C:\Git
+\NoplateScripssets\Scripts\Simula C:\Git\Nope\1o7e\As
+ 
+(sFSilenatse:S mulateeS 0)ip
+
+t.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Lo((In.t32, St -2.2)
+Unityt)
+UnityEngine.Dernal_Log(Iror(Objecing, O
+balkAct
+ionScript:FixedUpdate(Transform, Ri
+gidbody) (at C:\Git\Noppeateopre\sAsrm,ts\gicboiy) (at C:\nit\NolekNAcetiosnSc\Scrtpts\Actions\WalkActionScript.c.cs9)
+Sim
+ulaueScript:Fixedixedate() (at Ct C:\Git\pe\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.3, 0.0, -2.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(TransfHello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:Fixedmpd Rieidb(Transform,\Git\Nopedy) (at C:\Git\Nope\Nope\Asss\Ws\ScriptsnAScions\WalkAc
+SimulatiScrcs:15)
+SimulateScript:Fix\Git\Nope\Nope\Assets\Scripts\Simulaets\Scriipts\Simula
+ eS
+crilename: C L
+in
+(Filename: C Line: 0)
+
+0)
+
+(1.2, 0.0, 1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulaHeeclipt.co:1
+78)
+ 
+(File.nameg:Internel_Log
+(
+Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdaHe(Tra
+nnstyEnm, Rigidbog:Internal_Log(Inp32, String, Object)
+Un\tyEngine.DablgkLActrrorScbrect)
+WalkAct
+Simulatepc:Fixt:FixedUpdaansform, RiC:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:ons\)
+ kActionScri
+pt.csn:15: 
+C Line: 0)
+
+pt:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line( 0)
+,
+ 0.0, 1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine(-0bug 0.0, -2.r()
+UnictyEngine.Debug:Internat)
+og(Int3WalkActionScripct)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\:Git\Nope\Nope\Assets\Scripts\odyti (as\Wal\Git\Nope\Nope\Assets
+\Scripts\Actions\WalkAcatonScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\No
+pe
+\Assets\Scripts\Simula
+t
+eScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.3, 0.0, -2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateHello
+:FixedUpgdat.Debug: nternaliLog(IntN2, StrNng,ope\Ast)
+UniScrEipts\Simuug:teScrior(Object)
+ 
+(Filename: ip :Fixe: 0)at
+
+(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.1, 0.0, 1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.3, 0.0, -1.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\ActionH\ello
+UnittEngine.Debug:Inter
+nal_Lag(Intr2i ptrinxedUpdate)
+UnityEngine.Debug:LogError(ObjscSt)
+WalkActiontSScriipt.cs:17pdat
+ 
+(Filename, C Lgidbody)
+ 
+(at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript(F1.1, 0.0, 1.1)
+tnity\Git\Nope\NopInternal_Log(Int32, String, Opt.ct:17
+Uni
+ty
+Engine.De: C LogError(
+O
+bject)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Sc0.9, 0.0ction)s
+UWalkActionScript.cs:19)
+Si_LolateScript:FixgedUpdect)
+Unaty C:\Git\Nope\Nope\rAssets\ct)
+WaSkActios\SimulateScripdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scriptsc\Acti)
+ 
+\(Filectime:crC Line: 0)
+
+imulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FHello
+U: C Eine:ngin
+e
+.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkAcHiolnSc
+rnityEngine.Debug:Internal_Log(Int32, String, :Fject)
+UnityEngine.Debug:LoxEedUpdObject)
+Walatct(Tnraript:FixedUpdatensforsm, Ri iRiody)b(dt) ( t C:\Git\Nope\Npe\Assets\Scriptst\Actions\WalkActtonScriipt.cs:15))
+SimulateScriipt:FixedUpdate() (at C:\\Git\Nope\\opepe\ssetstsScripts\SimulateScript.cs:178)
+)
+ 
+
+(ilename: C Line: 0)
+
+
+(-0.2, 0.0, -1.6)
+Un(t-0.3,n .Deb,g:-n1.r8)l_
+Log(Int32,eStDiebu Objecerna
+l_LogEngnt32, ebug:Log Orror(Obj
+ect)
+WalknctiDebScript:FixedUbject)
+WalkActionScript:Fixe) (at C:e(Transform, Rigidbody) (at C:\Git\NopWalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FileScme: C Line: 0)
+
+ripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(ObHect)o
+Un
+WyEngiAecDeibuSc:Iript:FixedUpdate(T ansform, Rigidbody
+) (at C:\Git\Nope\Nope\Aor(Object)
+WalkActions\WalkActionScript.csransform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkAction1c5)
+t.mulateS
+cript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Simuipts\Simipt.cs:ript78)1 
+(F
+il
+ename: C Line: 0):
+ 
+0)
+
+(0.9, 0.0, 0.8)
+U
+nityEnnine.Debug:Internal_Log(Int32, S Stnri Ob, Otb
+UnityE
+ngine.Debug:LogError(Object)
+WalkAc
+tionScript:FixedUpdaedUpdate(Tra, sigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkfctionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Lineorm, 
+R
+igidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScrHello
+UnityEngine.Debui:IntFixedUpdate() (at C:\Git\Nope\Nop
+e\AtyEngine.Depts\SimulateScript.c
+W:178)
+ion
+Scrlpt:nFixedUpdine: 0ran
+s
+form, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScello
+UineiUpyEne() (at C:\Git\NIope\Naope\Assets\, Strins\SimulateSc
+riityEngine.D
+eb
+ug:LogEme: C Line: 0
+)
+
+kActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkAct(o-0.ri, .c0s -1.4
+S
+imutyaEnginipt:bug:eInpdate() (at C:\G, StNope\ Nope\A)
+Uns\Scripts.\eSigmulatreScribjecs:178)
+ 
+l(FilionScriptC Line: 0)t
+
+Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+S(-0l.2, 0.0, -1.6)
+UnityEngine.Debug:Internal_L\Nopo\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+g(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(0.7, 0.0, 0.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.2, 0.0, -1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+HeHlo
+UnityE
+gUne.Debug:Internalg:ILnternal_Log(Int32, String,
+ Object)
+UniteEbug:LogEbug:LoObjeror(O
+bject)
+WalkActionScript:FixedTransfo(Transigidbody) (at C:yGit\Nope\Nope\Assets\ScrAssets\Scripts\Actions\WclkActionScrip
+t.cs:15e)cr
+ipt:FixedUpdatt:FixedUpdate() (at CN:peG\Assets\Nope\Assetisu\ScrScript.cs:178)
+ t
+eSilenam.:cs Line: 
+0)
+
+
+ilename: C Line: 0)
+
+(0.7, 0.0, 0.7)
+Uni(-0.2, 0.0, -1.0)
+UnityEngine.Debug:Internalbject(
+nt32, ntring, Obje:Log
+Unrtor(Obinct)
+WalkActiEnrcrior:(ixedUpdateTransfcrm, Rigript:Fyi xae dUpdat\eNTpe\Nope\A,s Rigidrbotdy) (at sC:\Git\Nope\Nope\.ssets\S
+criptsteScript:FalkActionScript. Cs:19)
+Simul\Nope\Assets\Scripts\Simulat eS\Giip\Nope:\Nope
+\
+Assletsme: C Line: 0)
+
+\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Start
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Int32) (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:44)
+SimulateScript:simulateActionAtNextIndex() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:145)
+ActionScript:endSimulation() (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:54)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:22)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.2, 0.0, -1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(0.7, 0.0, 0.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.2, 0.0, -1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C LinH:el)
+
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+Walk(cti.o, 0.0, -0.8)
+UnitayE(nginneorDebuigiInodeyrn(al_Log(ItnNo32,NoSe\rAssets\ject)ts
+\nityEngine.DeActg:LnScrror(cs:ject
+)
+WallteScriont:FixedUpixee() (at (Tr\Gitformpe\Rigidbodeys\Scripts\GimulateS\Nopet\cs:17ts\S
+cr
+ipilsnaAct:ionsine: 0)
+
+ionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Si(ulateScr.p, t.cs)1
+Uni8)
+ 
+(Fileebug:Ime: na Liog( 0)
+
+2, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\AcSitas\Walktc
+ionUnityEngine.D
+ebug:Internal_:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Int32) (at C:\Gittart
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, \Nop2) (ape\tsse:tsi\\ScpriNppe\AAsets\Scrcriits\Action)
+Sript.cs:44)
+Simululatecrctit:simulatIndex()AtNextI:d\x(it\Not \:\Git\Nope\NopcriAssetsmuScriptcr\iimucs:e1c45pt.
+Acti45nS
+ActionSceindSimuSimilotion ()t(at CG\it\NNope\Nope\Assets\S\riNto\Actpe\SAssets\Script
+s\ActionScript.cs:54)
+WalkActionScript:FixedUpdate(Tra nsform, Rpe\Nope\Assets\Scripts\Actions\WalkActionScript.cs:22i
+SimulateScript:FixedUpdate() (at C:gidboNope\Nope\Assets\Scripts\Simulaty)c iptt C:\78)
+\No
+(pileName: C Leti\ne: 0ts
+
+Actions\WalkActionScript.cs:22)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.DeHel:lo
+Unial_EnogiInt32, ug:Internalj_Log(
+Int32, String, Object)
+UnityEngine.
+Debug:tiogScript:Fixeject)
+WalkActionm, Ript:FixedUpdate(Tran\sform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Act
+ions\WalkActionScript.cs:15)
+(at C:teScript:FixedUpdate() (ait C:\Git\Noepe\Nope\Assets\
+Sc
+riptsname:SimulateScri
+p
+t.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-7.0, 0.0, -3.8)
+UnityEngine.Debug:Inte(-7._Lo0, 0.0, -3.8)
+UniOtject)
+Un.Debug:Internal_Log(Int32, bjtring,
+ Object)
+Uncript:FixedUpdate(Transform, Rigid
+body) (at C:\Git\Nope\Nope\Assets\Scrrm,ts\Actioons\WalkACti\Git\Nope\Nope\As
+sets\Scripts\ActixedUpdatkActionScript.cs:19)
+ope\Assets\ipt:FixedUpdate() (at C:\G178)
+p 
+(Fpe\Asset C Line: 0)
+
+mulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:HixedUpdate() (at 
+UnityEngpene.DebuAs:Iets\Scaliptog(Int32, String, Object)
+Un
+ityEngine.DebLine: g)E
+r
+ror(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope-6.8, 0.0, -\Asse
+tsityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngripts\Actions\Waor(Object)
+WalkActio5nS
+criplt:eScrippdate(Transform, Rigidbody) NopeC\\Git\Nope\Nope\Assets\Scripts\Actions\Walk)
+c io
+nScriptmec: 19 Li
+ne: 0)
+
+Script:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line:-0)
+8,
+ 0.0, -3.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-6.6, 0.0, -3.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(IntH2,llo
+UnityEngi, Object)
+Uniernal_Log(IDt32, SoriEnrg, Objecc))
+WUlkiActioine.Dipbtg:LixedUpda(te(Trt)
+WalkAcsform, Rigidbxedy) d(at C:\Gsform, Rigidbody) (at C:\Gtit\Nope\Nope\Assets\Scripts\Asction
+simWalkActionScript.cs:15e(
+SimulateScriptopFixedUpdate() (at Cp:\Git\ulope\Ncrpe\t.cs:178)
+rip
+ts\lenaulateScripe: 0)
+
+78)
+ 
+(Filename: C Line: 0)
+
+(-6.5, 0.0, -3.5)
+Un(-6.6, 0.0, -ug:I)n
+ternyEngine.Debug:Intring, Objectt32,)S
+tring, Object)
+UnityEngine.Debugt)
+WalkActionScrip
+t:FixedUpdate(Tr:nsform, Rigidbody) (at C:\Git\Nope\Nope\Assit\Nocripts\Actions\Scripts\Actions\WalkAct
+SoimulateScript:F
+ixedUpdate() (at C:\Gpdt\te() (at C:\Git\NScripts\e\Assets\Scripts\Simulat
+eS
+(Filename: C L
+in
+e: 0)
+
+me: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(TransHorlm, Ro
+idbody) (ai C:\Giebug:pe\NorenAal_Log(Int32,\Actions\WOlkjctionS
+cripy.cs:1ne.
+Debulg:LogErro:F(ObjedUcta)
+() (at C:\Git\Nope\Nope\Assets\ScWipts\StmuonScript:Fixced178)
+ 
+(Filename: C Line: 0)
+
+(at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:Fi(ed6.5, 0.0, (3) )
+Un i:tyEngiope\eNuopIntesrsel_sLSori(Int32, utritg,Script.c)
+:17tyE
+ 
+n(.DebenaLoeErro (Line:t)
+)
+
+kActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actio(s\WalkAct0, -c3ipt.
+csi19)
+Siiulateebcri:I:FixedUpdLog(Int32t,C:\Grit\N pe\Nope)A
+Unis\ScrinesDebumuLaogError(Object)
+W
+a
+lkiAenamonSC Litn:: 0)
+d
+Update(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-6.1, 0.0, -3.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.DebugHLegError(Olject
+)
+WalkActionScrug:Internaldate(Transform, Rigidbody) (a
+t C:\Gig\Nonee\Nope\ALssetsor(Object)
+WalkActionScript:Fixedt.pdate(Tr
+ansform, Rigidbody) (at C:\Git\Nope\\Nopeope\Nope\Assett\Scripts\S\mulateScript.cs:t78)
+ 
+(Fi
+lename: Script:Fixed
+U
+pdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Lin(: 0.0,
+ 
+0.0, -3.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(O(-6ct1, 
+0.0kActi-3Scr)
+UnityEngine.Debug:Internal_Log(Int32, S r:\Git\Nope\t)
+UnityEngine.Debug:LogError(Objectt)
+WalkAt.tio:19)
+SimulateScripte(Transform, R)i(gt C:\Git\Nope\Nope\Assets\ criCt:\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Hbjecot
+)
+iniyEngine.Debug:Internal_rLOojectnt3
+2, SAttronScript:Fixed
+Update(Transform, Rigidbody) (at C:
+\Git\Nope\Nope\Assets\Scritets\Actions\WalkActionScript.cs:\Git\
+Nopule\Nocript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+\Assets\-5.8, 0.0, -S.cri
+pts\Acngiine.WalkActionScripLocs(:15)2
+ StimulateScript:
+FixedUpdate.Debug:LC:\Gitor(Obj\eNope
+\AlkActionScript:sets\Scripts\Simulate,SRcript.cs:17a8)
+: 
+(Filename: C Lsine: S0ri
+
+ts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScrip3.3s:
+178)
+ 
+(Filenabug:In tine:l_Lo
+g
+(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\ActioHs\Walk
+ActionnitiyEngine.De
+bug:Internal_Log(Int32, String, Objecit
+UnityEngine.Debug:LogError(Object)
+WalkActionScr
+ 
+(:FixedUpdate(Tran 0)
+
+m, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+Simulat(-5.6, :FixedUpdat
+enityEng ne.DGit\Nope\Nopel\LAssets\Sc ripts\SimulateSc
+ript.cs:178)
+ 
+(FilegError(Objine: 0
+)
+
+kActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkAc(-5.8, 0.0,cs:193.
+Sim
+ulatyEngine.Debug:Internal_LaogC:\Git\Nope\32o, \Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+g, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.6, 0.0, -3.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.6, 0.0, -3.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\GitHello
+UnityEngine\Nope\Nope\Assets\Scripts\Actiing, Object)
+UnityEngine.Deb
+uigulatgScriprtObFiect)
+pdate() ionScr pC:FixedUpdate(Transform, Rigidbody)G(at C:\Git\Nope\Nope\Aesets\Scripts\Actions\WalkActi\Nope\Asscss\Scri
+pts\SimulateScrFixedUpdate(
+ 
+(Fi C:\Git\NC L\Nope\0)
+
+ts\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.5, 0.0, -3.0)
+UnityEngine.Debug:Internal_(-5(5,Int0, 32, St
+ring, Object)
+Ung:InEngine.Debug:L3ogErrorng, ect)
+Wal
+UnityonScript:FixedUpdate(Transform
+, Rigidbody) (at C:xed\pdate(Tre\Nope\, Rigidbody) (atActions\Nope\\WpalkActionScripts\s:19)
+SimulateScriScript.cs:19)
+Simulat C:\Git\NoixedUpdate(setsat C:\Gtst\SimeulateScript.cs:178)
+\ 
+(FilenSaript.cs:1n78)0
+)
+
+Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\HelloctionScript
+cs:15)
+SimulateScug:tInixedUpdatg(Int32, String, Object)
+Unitys\SEnipts\SimulateScript(Object)
+W
+ a
+lkiletion: C Lpt:F: 0)
+
+date(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript(-5:15)
+SimulateSc
+UniptyEngineUpdate() (at C:\Git\Nope\Nope\Assets\Script
+s\SimulateScript.cs:g78)
+o (O
+bject)a
+me: C LionS 0)
+
+t:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActi(nSc.rip0.0, -2.9)
+
+imulyEteScript:FixedUpdate() og(Int32, String, Object)
+Unityiptgine.Debug:LogError:1Obje
+ct
+)
+ialkActionScriipt:Fixe
+d
+Update(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Oob
+UjieyEngine.
+Debug:Internal_L:FixedU3pd Stringa nsfecrm, 
+Rigiydbody) (ebug:Lagt Cor(Gbiett)
+WalkActionScript:FixetUs\ActiTransform, Rigidbody) (at C:\
+Gimuloae\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdaeScript:FixedUpdatoe()Noat C:\Git\Nope\Nope\Assets\Scripts\Si78)
+ate
+Script.cs: C Lin
+e:
+ 0)
+
+name: C Line: 0)
+
+(-5.1, 0.0, -2.8)
+Uni(-5.1,ne.Deb.g:Internal)Log(
+UnityEngring, Obbject)
+UnityEngine.De2, String, Object)
+Un
+ityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUp\diate(Transform, Rigidboidty\) (iona\t C:\Git\NopeiNope\Assets
+\SmulateScript:FixedUpdatonScript .:\Git\No
+pe\Nope\Assets\Scripts\Simu) ateScript.cs:178)
+o 
+(Filename: C Line: 0)
+t
+Script.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(ObjHcel
+
+UalkActionScript:FixedUpdate(Transform, Rigid, bbject)
+UnityEGit\Nope\Nope\gAssets\Scripts
+\Actions\WalkiActionSdUpda.csTransf
+orm,lRigidbrdy) (aixeCdUpdateo() (at C:\Git\Nocripts\Actions\WalkActionSmulateScript)
+Si:178)
+e 
+(iFtilename:daCe() (at C:\
+G
+it\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.9, 0.0, -2.7)
+Un(tyEn5in0.Debug:Internal_
+Log(yInt32, String, Objecl_L
+onityEngine.Debug:LogError
+UnityEng
+ine.DebugnSLogError(Object)
+WalkActoionScript:Fixed(Update(TraNope\N, Rigidbts\Scripts\Actt\Nope\Nope\Assets\pt.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateSSripi.cs:178)
+ 
+(Filename: C Line: 0)
+
+pts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.8, 0.0, -2.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Hellot)
+
+Untyinyginine.Debug:Internal_Log(In
+t32, String, Obt:Fixe
+dUptyEngine.Debug:LoigError(Object)
+WalkActionScript:FixedUpdate(Transform, RiActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Gidt\Nope\NopCe\Gite\s\Scripope\\Amssets\Scripts\Action
+ 
+(Filename: C iine: 0)
+
+)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Fil0, -2name
+: C Line: 0)
+
+bug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:Fixe(Up4.6, (Tr0.0, -2.6)
+UnityEn) (at C:\Git\NoeerNop_Log(Int32, ripts\Actijons\
+UlityEngine.Debug:LogErr
+or(Object)
+WalkActionScrte() (at C:\Git\Nope\Nope\Assegidbody) s\SimulGit\Nope\Nope\Asse
+ 
+(Firipts\A: C Line: 0A)t
+i
+onScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.6, 0.0, -2.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, Strin(,-4b.e4t) 
+0.0, -2.5)
+UnityEngine.Debug:Inte)
+WalkActionScript:FinegUpdatject)
+nUform, Rigidbody) (at C:\Git\Nope\No
+pe\Assets\Scripts\Actions\WalkActionScript.ids:15y) 
+S(malt C:cript:FixedUpdate() (atcripts\t\Nope\Nope\kAActionSccipts\SimulateScript.cs:178)
+ 
+(Filrname: i Li.ne: 0)
+
+imulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:17-4.4, 0.0, 8)
+5 
+Uni
+Engine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object(
+Walkname: C Linet:0)
+
+dUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.3, 0.0, -2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+HalkAct
+ioiScyEngineixedUg:Internal_Log(Int3i2, Stryi (at Object)
+UpeitNope\ne.Debug:LogEr\Actioror(Obkject)
+WalkActionScri
+pt:FixedUpdate(Transfoda, Rigidbody) (at\Nope\Nt\eNAspsetop\Scriptts\Scripts\Acriions\Wal78)
+t o
+(Filetncs:15:)C 
+LinulateS
+c
+ript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.3, 0.0, -2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScHiets\SimulateScript.os:
+Un7i)t
+yE
+ngilne.Dme: C Line: 0l
+
+Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedU(-4.e(Trans, -2rm, 
+Rigidbody) .Det C::Internal_Log(Int32, Strinipts\Acecions
+\WatyEngine.Debug:Los:15)
+SimulateS
+criptctFionScrdapte() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScrNope\As:178)\S
+c
+(Fitl\ectname\: CkALine:nScri
+p
+t.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs(-7.1)
+ 
+(Fi -2.3)
+UnityEngine)
+
+bug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.0, 0.0, -2.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogErHorlloj
+UnitcEn)
+WalkActionScript:FixedUInt32,e(Triag, Obje, Ri
+UnityEny) (at C:\GiogNrrpe\Nope\Ass
+ets\Scripts\Actions\WaUpdatte(Transform,:15gi
+dbodlateScript:FixedUpdatee\Assets\\Git\ts\Actions\WalkAc\Scripts\SimulateS
+cript.cs:178)
+ 
+i(Filename:  (at C:\G0)
+
+ope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.8, 0.0, -2.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScri3.8, 0p0, -t.1):
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnixedUpgdne.Debug:LogError(Object)
+WalkActGit\Nope\Nope\edUpdat\Scriptsforctions\Waoly) (aon C:\Git\Ns:19)
+SimulateScript:FixedUpdate() (at C:onGit\ipt.cs:19)
+SimulateScrips\SimulateScrip) (cs:178)
+ 
+(Filename: C Line: 0)
+
+ts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.6, 0.0, -2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (atHCe\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+llo
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngi-3.4, 0.n, -1.9)
+UnityEngine.Debug:Internal_Log(Int32, Stribug, Object)
+Unig:LogError(Obg:Log)
+WalkActionScr
+ipt:FixedUpdate(TriansUpdate(Traidbody) (at C:\Git\Nope\:Nope\Assets\Scripsets\ctcript\s\AcActionScript.cs:15)
+SimulateScr
+ipt:Fixedcridat:Fixe(dUpdatGi(t\Nat e\Nopet\Nope\Ns\Scripsets\SclateScriptulas:178)
+ 
+(Filen8)
+e: 
+C Line: 0)
+
+Line: 0)
+
+(-3.6, 0.0, -2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.4, 0.0, -1.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.DebugHLogEoro
+Object)it
+WylkActionSecrgipt:FixedUpdate(Transform, Rigbidbo)
+UnitatEng:\Git\Nope\Nope\Assets\Scrip
+ts\ActtionScWipt:FixedUpcripe(Trsnsf9r)
+SimulatoeScript:FixedUpdope() (at C:\GitScope\Nope\Assets\Scripts\SimulateScript
+.csulat1Sc7ipt:
+ i
+edUpdate() (at C:\Git\N
+o
+pe\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.3, 0.0, -1.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FiHename:
+ C Line: 0)
+
+ebug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:Fixe-3.3, te(0r, -1.8)
+UnityEngine.Debug:Internal_Log(Int32,ts\SringptsObject)
+UnityEngine.Debug:LogError
+(imulateSc
+ript:FiionScript:FixedUpdate(Transform, Rissetsdy) (at C:\Git\Nope\Nope\Assets\
+ c
+(FilencteioCsLine: 0)
+
+\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scri-3.1, 0.0, -1.7)p
+tsi\SimulateScript.cs:178)
+Log(Int32, String, Object 
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (
+at C:\Git: oC Line: 0)
+e
+ts\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:HGit\Nope\No
+UnityEngine.Detug:Internal_Log(tInt32, String, Ob
+ject)
+teScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C LinU:nity
+E
+ngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (a-3.1, 0.0t C:\Git
+\Nope\Nope\Assets\Scripts\Actions\WalkActionScripect.
+UnityEn
+gimu.DeeScripgError(Obdate()
+ (at C:\Git\Nope\Nope\Assets\Sransform, Rigidboript.cs:178)
+ 
+(Filename:As Line: 0i)
+
+\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+, 0.0, -1.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(FilHneme: ClLinel 0)
+
+o
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogEr(or(Ob, 0.0,
+ alkA)c
+tionScriine.Debug:Internaa_nogfornt32, Stringy) (at C:\G
+it\Nopegine.Debsg:LogEScripts\Action
+s\WalkAionScnScript.cs:15)
+Si(TrlateScript:FixedUpdate() (at C:\Gipt\Noppe\Nope\\Scris\ScriptonsimulateScripcript.cs:1
+ 
+(
+Filename: riptine: 0)
+
+te() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.9, 0.0, -1.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.DeHel:Lo
+gErtyror(Object)
+:Internal_Log(In:FixedUpdate(Transfor
+m, Rigidbod.y)b ga:L gError(Object)
+WalkActionScript:FixedUpd\Nepe\Nosform, etgidbcdriptat\Ac\Git\NopealkActionScript.cs:15)
+SimulateScript:FixedUpdate() (
+at C:\Git\Nope\Nixe\Assets\ScriptsC:\Git\Nopcript.cs:178)
+ 
+ripilename: teScript.cs:
+1
+78)
+ 
+(Filename: C Line: 0)
+
+(-2.8, 0.0-2.8,,0 0, 1.5)
+
+UntyEngiine..Debug:Internal_Loog(Int32, Strin, Object)
+UnityEngg, Object)
+onityror(Objectn
+WglkActionScript:FixedUpdate(Transferm, igidbody) (at C:\Git\Nope\ate(Transform, Riigsidbodyns\WalkActionScript.ope\Ass
+ets\SateScript:Fixed\pdate() (ao n:\Git\Nope:Nope
+SismtulactietScriptl:FiSxeipt.cs:178)
+ 
+(Cilename: C Line: 0)
+
+ssets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FiHellpdate() (at Co
+Git\NoEngine.Debug:Internal_Log(Int3t2, String, Objec
+t)
+
+UnityEnginC Linebu :Log
+E
+rror(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\(-2.t6, 0.0,t s\Ac)
+tions\WalkActionScript.cs:15)
+(imulateScript:F, Objecti
+UnityEngi()e (at C:\Git\Nope\Nope\As
+sets\Scripts\Sim:FixedUpdate(Transfor
+m,
+ RilgidbodyC  aL i:\Git0Nop
+
+e\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Sc, -1.5)
+UnlityEngine.Debug:Int
+er
+nal_Log(Int32, Sering, 
+O
+bject)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\AcHiolls\W
+alktActionScreiug:Internal
+_Log(IntS2c rtiipt: Fbject)
+Unit() ngit C:\Git\Nope\Nope\OAjssets
+\SlkAction\Simut:FixedUpdate(Tr:ns7orm,
+ R
+iFilename:( C Lineit\N)pe
+
+\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\G(t\Nope\Nope\-2.5, \S0, -1.4)
+UnityEngirie.Deb:178)
+ 
+(Fil_nLog: C Li2, Str0in
+g
+, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C
+:\Git\Nope\Nope\AsInternal_Log(Int32, Sts\Scriptject)
+UnityEngine.Debug:LogError(Object)
+WalkActionScrist\FictdUpdate(TrctionScript.cs:19)
+SimulateScript:Fixope\Assets\Scri C:\\Ait\Nope\Nope\Assets\Scripts\S)
+SimuteateScptipt:F178)
+ 
+(ate() (at C:\Git\Nop)
+
+Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogEHrello
+UnityEng
+inleActionS:Internal_Logd(In(T2, String,, Object)
+)nity(at C:\Git\Nope\Nope\Assets\t)
+WalkActionScSipt:Fixripts\Actionns\Wam, Rigldbody) (at C:\Git\Nope\Nope\Assett\ScnScript.csions\
+WalkActionScpt:FixedUpda
+te() (at C:\Git\Nopde\Nope\As(at C:criptts\SimulateScript.cs:178)
+Sim
+ulateSame: C Lin178)0)
+ 
+
+(Filename: C Line: 0)
+
+(-2.3, 0.0,(- .3, 0.0
+, i1.3)
+Uinet.Debug:Interg:Internal_Log(Int32, String, 
+UnityEng
+ine.Debug:LogEbug:(ogError)(
+Object)
+WalcrActionScript:Fte(eTradate(Transform, Rigi Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:
+1imu
+lamulatripc:riipt:FixedUpdate() (at C:\Git\Nope\Nope\Assets\ScriptlateScrulateScript.
+cs
+:178)
+ 
+(Filename: C L
+i
+ne: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.1, 0.0, -1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.1, 0.0, -1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+Un(-1.ngine.0ebug:-1.1)
+Unit(yEngine.
+WDebug:Internal_Log(Int32, String, Object)
+UnityEnginte.:Deit\Nope\Nope\Assetst)
+WalkActionScript:FixedUpdate(Transform
+, Rigidbody) (at C:\Git\Nop) (at e\Assets\Scripts\Actions\WalkActionScript.cs:t.c
+Simula
+te
+Script:Fixed LinUpdate
+(
+) (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+(
+-1.9, 0.0, -1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\Hello
+UnityEngine.Debug:Internal_Log(Int32, String, WalkActi
+UonScript.csDe1b)u
+SimLoateScripObFixedUp
+WdatectionScr:\G:Ft\Nope\Noe(T\Aassfors\ Rigidbody)ulateScript.cspe\No:e178)
+ s
+(Filepts\Actions\Wal0)
+
+tionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\Simu(-t1.8ri t.cs0178)
+1.0
+)Fi
+lenayEngin Linebug:)nt
+e
+rnal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionSc(ip1.8, 0e.0,dU-1p0da
+tn(Transform, Rigidbtody) (at C:\Git\Nopring, Object)
+UnitiEngi\e.Debons\WoglkActionScript.
+cs:1Acti)o
+SnScript:Fript:Update(pdrate() mat C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+a 
+Act(oniScnapt. s:19in
+e: ul)te
+S
+cript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionSello
+UnityEngine.Dcrigpt:FixedUpLog(Int32sform, nigidbodyc) 
+UnitayEC:gine.Dope\NoogError(ObjScri)p
+ts\AcctionScrilkAcFiionScrdate(Tr:15)
+Srmm, Rigidbody) ixat C:\Gie() (at C:\Git\sets\\NopiptAs\Actions\WalkASitiulateScript.cs:17
+8)
+ la
+teScripm:FixedUpdatee() (a
+t
+ C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.6, 0.0, -0.9(-1.6, 0.0, -0)9)
+U
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Lnitrror(Object)
+WalkActio_Locgipt:FixedUpdate( ransform,
+ Rigidbody) (at C:\Git\Nore(NObject)
+WalkActionScript:ni\WalkActionScript.cm,:19)
+Simuy) (at C:pt:FiNope\Nope\Assets\Scripts\Actions\WalkActioripts\SimulateSc
+rimulateScrip
+t:
+FixedUpdateC)Line: 0)
+
+it\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, ObHecl)
+Ulo
+ynEtyEng.Deb.g:LogE:Inr(Orjeac_Log
+(IlktA2,t onSringt:Fixjecd)
+UdaietyrEngiorm,Debug:LogError( C:\ject)
+WalNope\Assets\Scripts\Actte(Transform, Rigripd.bod1y)
+ (at C:\Gcrtpt:FpxedNpoape(\ Assets\ScriNope\Nope\AssetWalkripts\Simuipt.eScr1pt.c
+S178)
+ 
+(Filiptme: C Line: e0)
+
+) (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.5, 0.0, -0.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+Uni(y-1.5,e Debug:LogErr
+or(Object)
+WalkActionScript:og(Int32, String, foject)
+UnityEdy) (at C:gGit\Nope\Nope\Asset
+salScrcpts\Actript:FialkAdtionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Update(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.3, 0.0, -0.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, -0.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (Ht C:\G
+UnityEigite.NDpe\Nope\tAssets\Sgcrit32, ctions,\WalectkA
+ctionScript.cs:15)L
+oimuror(Script:F
+ixedUpdate() (at C:\Git\Nope\Nope\Assets\Scriptsy) (at CeScript.cs\178)
+ 
+(Filename: ts\Line: 0)
+
+lkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, -0.6)
+UnityEngine.Debug:Internal_(og1.0Int32, -S.t)r
+inigy,n iObject)g:In
+tnernalyEngine.Debug:LogError(ecte
+Unit)
+WankActioneSug:LogError(Object)
+ranlkAcrm, nigript:Fixedat C:\Git\Nope\Nope\Agiets\Scripts\Actions\WalkActionScrs\t.cs:19)
+Simons\WalcActiriScript.esd19pd
+ateulateactipt:FixteNoUp\Ntepe\AssetC:\GitiNope\Nope\Assetip\Scripts\Si
+ 
+(lateScript C Line: 
+ 
+(
+F
+ilename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:HGit\No
+pe\Nope\AsseDtsug:Intts\al_Log(Int32, String, Object)
+Un
+iimulateeScript:FixError(Objec tat 
+C:\Gittionpe\ript:FixedUpdacripts\SimulateScript.cs:178)
+ 
+(Filenape\No Line:ets)
+
+cripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\(-0.8, sets\Script
+s\SimulateScript.:cnternal_
+Lo
+g(Intnam, String,e:Obj)
+ct
+)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidb(d-) (at 0.0, -0.5)
+UnityEngine.Debug:Interctions\WalkActi StScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scriptsbject)
+UnicryEpt.cs:178)
+ 
+(Filename: C Line
+: 0)
+
+tionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -0.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Start
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Int32) (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:44)
+SimulateScript:simulateActionAtNextIndex() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:145)
+ActionScript:endSimulation() (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:54)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:22)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.8, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.9, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.5, 0.0, 2.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.9, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.5, 0.0, 2.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.9, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.8, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(6.0, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.8, 0.0, 2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.7, 0.0, 2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.5, 0.0, 2.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.3, 0.0, 2.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(5.1, 0.0, 2.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.9, 0.0, 2.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.8, 0.0, 2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.6, 0.0, 2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.4, 0.0, 1.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.2, 0.0, 1.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(4.1, 0.0, 1.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.9, 0.0, 1.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.7, 0.0, 1.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.5, 0.0, 1.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.4, 0.0, 1.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.2, 0.0, 1.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(3.0, 0.0, 1.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.9, 0.0, 1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.7, 0.0, 1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.5, 0.0, 1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.3, 0.0, 1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.2, 0.0, 0.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(2.0, 0.0, 0.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.8, 0.0, 0.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.6, 0.0, 0.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.5, 0.0, 0.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.3, 0.0, 0.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(1.1, 0.0, 0.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(0.9, 0.0, 0.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(0.8, 0.0, 0.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Start
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Int32) (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:44)
+SimulateScript:simulateActionAtNextIndex() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:145)
+ActionScript:endSimulation() (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:54)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:22)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-6.0, 0.0, -2.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.9, 0.0, -2.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.7, 0.0, -2.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.5, 0.0, -2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.3, 0.0, -2.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.1, 0.0, -2.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-5.0, 0.0, -2.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.8, 0.0, -2.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.6, 0.0, -2.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.4, 0.0, -2.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.3, 0.0, -1.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-4.1, 0.0, -1.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.9, 0.0, -1.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.8, 0.0, -1.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.6, 0.0, -1.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.4, 0.0, -1.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.2, 0.0, -1.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-3.1, 0.0, -1.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.9, 0.0, -1.3)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.7, 0.0, -1.2)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.5, 0.0, -1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.3, 0.0, -1.1)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.2, 0.0, -1.0)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-2.0, 0.0, -0.9)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.8, 0.0, -0.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.7, 0.0, -0.8)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.5, 0.0, -0.7)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.3, 0.0, -0.6)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.1, 0.0, -0.5)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-1.0, 0.0, -0.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Hello
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:15)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+(-0.8, 0.0, -0.4)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+WalkActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:19)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GUIScript.OnGUI () [0x00195] in C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:150 
+ 
+(Filename: C Line: 0)
+
+I am ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:162)
+ 
+(Filename: C Line: 0)
+
+1 ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:setReadyToSimulate() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkScript.cs:41)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:163)
+ 
+(Filename: C Line: 0)
+
+I am ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:162)
+ 
+(Filename: C Line: 0)
+
+2 ready
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:setReadyToSimulate() (at C:\Git\Nope\Nope\Assets\Scripts\NetworkScript.cs:41)
+GUIScript:OnGUI() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:163)
+ 
+(Filename: C Line: 0)
+
+Start
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Snt32)(ati C:\gGne.Debu\Nope\Asal_sLSoriptst32, String, Ocsj:4ct
+Si
+mniateEngint:simula:eLctgonArorxtIbdexc() 
+(ationScri\Nose\Nola\As(etstorc3, In\SimulateScript.csope\No
+pe\ulatetcript:starASimionScion() (s: C:)\
+Git\NopeS\Nipt:sAmulats\ctioiAptsxtInmexla eat ript.tc\:130)\
+No
+pFel\Asme: sC Liie: 0)
+
+mulateScript.cs:145)
+SimulateScript:startSimulation() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:130)
+ 
+(Filename: C Line: 0)
+
+UnitUnngine.NetworiMestagEngine.
+NntworkngeisageInbug
+:ninternale.Debug:3I, Stnteg, Ol_Log(I
+nnt32, String, Ob:joct)O
+Unity
+Firenme.Derip:Longe(wbrkecst)nt
+iate(metworkMptsageIeft) (atn C:ntGit\NepeN\NooerAksets\scrieInfo) (at s\FiriAmmoScr\Nopcs:Asset
+s
+(Filepts\W Capone: 0)
+
+AmmoScript.cs:14)
+ 
+(Filename: C Line: 0)
+
+Start
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ActionScript:simulate(Vector3, Int32) (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:44)
+SimulateScript:simulateActionAtNextIndex() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:145)
+ActionScript:endSimulation() (at C:\Git\Nope\Nope\Assets\Scripts\ActionScript.cs:54)
+WeaponActionScript:FixedUpdate(Transform, Rigidbody) (at C:\Git\Nope\Nope\Assets\Scripts\Actions\WeaponActionScript.cs:29)
+SimulateScript:FixedUpdate() (at C:\Git\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ 
+(Filename: C Line: 0)
+
+Waiting for finish
+Waiting for finish

@@ -10,7 +10,7 @@ public class GUIScript : MonoBehaviour {
 
     private bool positionSet;
     private Vector3 positionOnGame;
-    private SimulateScript selectedPlayer; // TODO set selected player
+    private SimulateScript selectedPlayer;
     private bool ended;
     private bool win;
     private Collider pointed;
@@ -77,13 +77,11 @@ public class GUIScript : MonoBehaviour {
                         RaycastHit hit;
                         if (Physics.Raycast(ray, out hit))
                         {
-
                             if (hit.collider.tag == "Player")
                             {
                                 pointed = hit.collider;
                                 hit.collider.renderer.material.color = Color.red;
                             }
-                            //hit.collider.renderer.material.color = Color.red;
                             positionOnGame = hit.point; 
                         }
                     }
@@ -99,7 +97,6 @@ public class GUIScript : MonoBehaviour {
                                 SimulateScript ss = hit.collider.GetComponent<SimulateScript>();
                                 if (hit.collider.GetComponent<SimulateScript>().owner == Network.player)
                                 {
-                                    //Debug.LogError(playerSelected.networkView.group);
                                     hit.collider.renderer.material.color = Color.blue;
                                     if (selectedPlayer != null)
                                         selectedPlayer.transform.renderer.material.color = Color.white;

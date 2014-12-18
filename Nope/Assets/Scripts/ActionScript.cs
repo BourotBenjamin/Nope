@@ -41,7 +41,6 @@ public abstract class ActionScript
     // Starts an action
     public void simulate(Vector3 destination, int duration)
     {
-        Debug.LogError("Start");
         started = true;
         this.startTime = Time.time;
     }
