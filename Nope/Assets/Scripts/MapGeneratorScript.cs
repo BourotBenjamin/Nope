@@ -211,19 +211,24 @@ public class MapGeneratorScript : MonoBehaviour {
         ground.transform.position = new Vector3(0, 0, 0);
         ground.transform.localScale = new Vector3(groundWidth, 1, groundHeight);
         ground.isStatic = true;
+        ground.tag = "Ground";
 
         GameObject wall1 =GameObject.CreatePrimitive(PrimitiveType.Cube);
         wall1.transform.position = new Vector3(0, 0, groundHeight * 5);
         wall1.transform.localScale = new Vector3(groundWidth*10, 1f, 0.2f);
+        wall1.tag = "Wall";
         GameObject wall11 = GameObject.CreatePrimitive(PrimitiveType.Cube);
         wall11.transform.position = new Vector3(0, 0, -groundHeight * 5);
         wall11.transform.localScale = new Vector3(groundWidth*10, 1f, 0.2f);
+        wall11.tag = "Wall";
         GameObject wall2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
         wall2.transform.position = new Vector3(groundWidth * 5, 0, 0);
         wall2.transform.localScale = new Vector3(0.2f, 1f, groundHeight*10);
+        wall2.tag = "Wall";
         GameObject wall22 = GameObject.CreatePrimitive(PrimitiveType.Cube);
         wall22.transform.position = new Vector3(-groundWidth * 5, 0, 0);
         wall22.transform.localScale = new Vector3(0.2f, 1f, groundHeight*10);
+        wall22.tag = "Wall";
 
 
         /*for (int i = -groundWidth; i <= groundWidth; i++)
@@ -244,7 +249,8 @@ public class MapGeneratorScript : MonoBehaviour {
 
         for (int i = 0; i < nbRoom; i++)
         {
-            GameObject.Instantiate(prefabList[1], posRoom[i], new Quaternion());
+            GameObject room =(GameObject) GameObject.Instantiate(prefabList[1], posRoom[i], new Quaternion());
+            room.tag = "Room";
         }
         for (int i = 0; i < nbChest; i++)
         {
@@ -253,6 +259,7 @@ public class MapGeneratorScript : MonoBehaviour {
                 chests[i] = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 chests[i].transform.position = posChest[i];
                 chests[i].isStatic = true;
+                chests[i].tag = "Chest";
             }
             
         }
@@ -263,6 +270,7 @@ public class MapGeneratorScript : MonoBehaviour {
                 traps[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 traps[i].transform.position = posTrap[i];
                 traps[i].isStatic = true;
+                traps[i].tag = "Trap";
             }
             
         }
