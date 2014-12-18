@@ -154,6 +154,7 @@ GameObject:
   - 92: {fileID: 701266291}
   - 124: {fileID: 701266290}
   - 81: {fileID: 701266289}
+  - 114: {fileID: 701266294}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -226,6 +227,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &701266294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701266288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc3f415e1ddd6f4ea49395b94a22ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  targetOffset: {x: 0, y: 0, z: 0}
+  distance: 5
+  maxDistance: 20
+  minDistance: .600000024
+  xSpeed: 200
+  ySpeed: 200
+  yMinLimit: -80
+  yMaxLimit: 80
+  zoomRate: 40
+  panSpeed: .300000012
+  zoomDampening: 5
 --- !u!1 &1084496909
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +497,7 @@ MonoBehaviour:
   - {fileID: 100000, guid: f172d4584ac2bc34eae850a1753ad343, type: 2}
   prefabByName:
   - warrior
-  isServer: 0
+  isServer: 1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
 --- !u!148 &1963592838
