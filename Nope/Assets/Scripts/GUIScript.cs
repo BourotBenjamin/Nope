@@ -23,7 +23,7 @@ public class GUIScript : MonoBehaviour {
     // Update is called once per frame setReadyToSimulate
 	void Update () 
     {
-        if (Network.isClient && !ended && !selectedPlayer.isInWaitingState())
+        if (Network.isClient && !ended && (!selectedPlayer || selectedPlayer.isInWaitingState()))
         {
             if (Input.GetMouseButtonDown(2))
             {
@@ -110,9 +110,9 @@ public class GUIScript : MonoBehaviour {
         {
             if (!ended)
             {
-                if (selectedPlayer != null && selectedPlayer.isInWaitingState())
+                if (selectedPlayer == null || selectedPlayer.isInWaitingState())
                 {
-                    if (selectedPlayer.getNBActions() >= 5)
+                    if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
                     {
                         positionSet = false;
                         GUI.Label(new Rect(0, 20, 1000, 20), "You have too much actions.");
