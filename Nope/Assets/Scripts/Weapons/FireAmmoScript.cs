@@ -41,6 +41,7 @@ public class FireAmmoScript : MonoBehaviour
                 if (collisionGameObject.tag == "Player")
                 {
                     Network.Destroy(collisionGameObject);
+                    collisionGameObject.GetComponent<SimulateScript>().warriorDies();
                 }
                 foreach (Collider collider in playersInRadius)
                 {
