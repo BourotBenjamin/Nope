@@ -13,6 +13,7 @@ public class SimulateScript : MonoBehaviour
     private int _id;
     private ActionScript currentAction = null;
     private PlayerScript player;
+    private float startTime;
 
     NetworkView _nV;
 
@@ -120,6 +121,7 @@ public class SimulateScript : MonoBehaviour
         currentActionsIndex = -1;
         simulateActionAtNextIndex();
         Debug.LogError("Start");
+        startTime = Time.time;
     }
 
     // Starts the next action
@@ -159,7 +161,13 @@ public class SimulateScript : MonoBehaviour
     void FixedUpdate()
     {
         if (currentAction != null)
+        {
             currentAction.FixedUpdate(this.transform, this.rigidbody);
+            if(Time.time - startTime > 30)
+            {
+                this.stopActions();
+            }
+        }
     }
 	
 }

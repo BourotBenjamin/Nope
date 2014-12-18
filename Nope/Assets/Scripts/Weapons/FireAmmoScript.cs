@@ -27,7 +27,7 @@ public class FireAmmoScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime);
+        rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime * 10);
     }
 
     void OnCollisionEnter(Collision collision)

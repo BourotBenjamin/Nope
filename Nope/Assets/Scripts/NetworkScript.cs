@@ -11,7 +11,29 @@ public class NetworkScript : MonoBehaviour
     [SerializeField]
     private PlayerScript playerOne;
     [SerializeField]
-    private PlayerScript playerTwo; 
+    private PlayerScript playerTwo;
+    private GUIScript gui;
+
+    void Start()
+    {
+        gui = this.gameObject.GetComponent<GUIScript>();
+    }
+
+    [RPC]
+    public void PlayerDied(NetworkPlayer owner)
+    {
+        Time.timeScale = 0;
+        playerOne.stopGame();
+        playerTwo.stopGame();
+        if(owner == Network.player)
+        {
+            gui.setWin();
+        }
+        else
+        {
+            gui.setLose();
+        }
+    }
 
     public void setReadyToSimulate()
     {
@@ -40,6 +62,8 @@ public class NetworkScript : MonoBehaviour
             playerTwo.SendSimulation();
             playerOne.Simulate();
             playerTwo.Simulate();
+            playerTwoIsReadyToSimulate = false;
+            playerOneIsReadyToSimulate = false;
         }
     }
 
