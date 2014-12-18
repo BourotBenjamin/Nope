@@ -233,7 +233,7 @@ public class NetworkManagerScript : MonoBehaviour {
         Network.InitializeSecurity();
         bool useNat = !Network.HavePublicAddress();
         Network.InitializeServer(2, 6600, useNat);
-        //MasterServer.RegisterHost("Nope", "nope nope nope", "let's play");
+        MasterServer.RegisterHost("Nope", "nope nope nope", "let's play");
     }
 
     void connectToServer()

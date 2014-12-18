@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _warriors: []
+  network: {fileID: 1458715600}
   _charactersList: []
   _characterPos: []
 --- !u!4 &1084496911
@@ -451,6 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _warriors: []
+  network: {fileID: 1458715600}
   _charactersList: []
   _characterPos: []
 --- !u!4 &1785479562

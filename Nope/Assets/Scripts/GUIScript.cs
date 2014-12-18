@@ -10,13 +10,20 @@ public class GUIScript : MonoBehaviour {
 
     private bool positionSet;
     private Vector3 positionOnGame;
-    private Vector3 positionOnScreen;
     private SimulateScript selectedPlayer; // TODO set selected player
+    private bool ended;
+    private bool win; 
+
+    void Start()
+    {
+        ended = false;
+        win = false;
+    }
 
     // Update is called once per frame setReadyToSimulate
 	void Update () 
     {
-        if (Network.isClient)
+        if (Network.isClient && !ended && (!selectedPlayer || selectedPlayer.isInWaitingState()))
         {
             if (Input.GetMouseButtonDown(2))
             {
@@ -29,8 +36,6 @@ public class GUIScript : MonoBehaviour {
                     {
                         hit.collider.renderer.material.color = Color.red;
                         positionOnGame = hit.point; // TODO get mousePositionOnGame
-                        positionOnScreen = new Vector2(0,0); // TODO get mousePositionOnScreen
-
                     }
                 }
                 else
@@ -68,9 +73,7 @@ public class GUIScript : MonoBehaviour {
                         if (Physics.Raycast(ray, out hit))
                         {
                             hit.collider.renderer.material.color = Color.red;
-                            positionOnGame = hit.point; // TODO get mousePositionOnGame
-                            positionOnScreen = new Vector2(0, 0); // TODO get mousePositionOnScreen
-
+                            positionOnGame = hit.point; 
                         }
                     }
                     else
@@ -103,32 +106,63 @@ public class GUIScript : MonoBehaviour {
 
     void OnGUI()
     {
-       if (Network.isClient)
-       {
-            if (positionSet)
+        if (Network.isClient)
+        {
+            if (!ended)
             {
-                if (GUI.Button(new Rect(0, 0, 80, 20), "WalkAction"))
+                if (selectedPlayer == null || selectedPlayer.isInWaitingState())
                 {
-                    WalkActionScript action = new WalkActionScript(positionOnGame, -1);
-                    selectedPlayer.addActionToAll(action);
-                    positionSet = false;
-                }
-                if (GUI.Button(new Rect(0, 20, 80, 20), "WeaponAction"))
-                {
-                    WeaponActionScript action = new WeaponActionScript(positionOnGame, -1);
-                    selectedPlayer.addActionToAll(action);
-                    positionSet = false;
+                    if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
+                    {
+                        positionSet = false;
+                        GUI.Label(new Rect(0, 20, 1000, 20), "You have too much actions.");
+                    }
+                    else if (positionSet)
+                    {
+                        if (GUI.Button(new Rect(0, 20, 120, 20), "WalkAction"))
+                        {
+                            WalkActionScript action = new WalkActionScript(positionOnGame, -1);
+                            selectedPlayer.addActionToAll(action);
+                            positionSet = false;
+                        }
+                        if (GUI.Button(new Rect(0, 40, 120, 20), "WeaponAction"))
+                        {
+                            WeaponActionScript action = new WeaponActionScript(positionOnGame, -1);
+                            selectedPlayer.addActionToAll(action);
+                            positionSet = false;
+                        }
+                        if (GUI.Button(new Rect(0, 60, 120, 20), "Cancel"))
+                        {
+                            WeaponActionScript action = new WeaponActionScript(positionOnGame, -1);
+                            selectedPlayer.addActionToAll(action);
+                            positionSet = false;
+                        }
+                    }
+                    if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
+                    {
+                        Debug.LogError("I am ready");
+                        networkScript.setReadyToSimulate();
+                    }
                 }
             }
             else
             {
-                if (GUI.Button(new Rect(0, 0, 80, 20), "FIGHT !!"))
-                {
-                    Debug.LogError("I am ready");
-                    networkScript.setReadyToSimulate();
-                }
+                if (win)
+                    GUI.Label(new Rect(0, 0, 100, 20), "You win ! :)");
+                else
+                    GUI.Label(new Rect(0, 0, 100, 20), "You lose ! :'(");
             }
-       }
+        }
+    }
+
+    public void setWin()
+    {
+        ended = true;
+        win = true;
+    }
+    public void setLose()
+    {
+        ended = true;
     }
 
 }

@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour {
 
     [SerializeField]
     private List<GameObject> _warriors;
+    [SerializeField]
+    private NetworkScript network;
     public List<GameObject> warriors
     {
         get { return _warriors; }
@@ -132,13 +134,23 @@ public class PlayerScript : MonoBehaviour {
     {
         warriors.Remove(warrior);
         SimulateScript sw =warrior.GetComponent<SimulateScript>();
+        sw.stopActions();
         charactersList.Remove(charactersList.ToArray()[sw.id]);
         simulateSrcipts.Remove(sw);
-        if(warriors.Count == 0)
+        if(Network.isServer && warriors.Count == 0)
         {
-            Debug.LogError("A player dies ! :'(");
+            network.networkView.RPC("PlayerDied", RPCMode.Others, owner);
         }
 	}
+
+    public void stopGame()
+    {
+        foreach(SimulateScript sim in simulateSrcipts)
+        {
+            sim.stopActions();
+        }
+    }
+
     void OnNetworkInstantiate(NetworkMessageInfo info)
     {
         Debug.Log("New object instantiated by " + info.sender);
