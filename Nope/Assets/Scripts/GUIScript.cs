@@ -132,6 +132,7 @@ public class GUIScript : MonoBehaviour {
                     {
                         if (GUI.Button(new Rect(0, 20, 120, 20), "WalkAction"))
                         {
+                            selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(positionOnGame);
                             selectedPlayer.transform.renderer.material.color = Color.white;
                             WalkActionScript action = new WalkActionScript(positionOnGame, -1);
                             selectedPlayer.addActionToAll(action);
