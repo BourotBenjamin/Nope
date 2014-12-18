@@ -129,6 +129,7 @@ public class SimulateScript : MonoBehaviour
         currentActionsIndex = -1;
         simulateActionAtNextIndex();
         startTime = Time.time;
+        nbActions = 0;
     }
 
     // Starts the next action
