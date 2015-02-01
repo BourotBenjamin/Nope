@@ -91,14 +91,15 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
-    public void InstantiateChar(int group)
+    public void InstantiateChar(List<GameObject> characterPrefab, List<string> prefabByName,int group)
     {
-        int j = 0;
-        for (int i = 0; i < warriors.ToArray().Length; i++ )
+        int j = 0, i = 0;
+        foreach (string s in charactersList)
         {
-            warriors.ToArray()[i].GetComponent<SimulateScript>().id = j++;
-            warriors.Add((GameObject)Network.Instantiate((GameObject)warriors.ToArray()[i], characterPos.ToArray()[i], Quaternion.identity,group));
-            warriors.Remove(warriors.ToArray()[i]);
+            GameObject newCharacter = (GameObject)Network.Instantiate((GameObject)characterPrefab.ToArray()[prefabByName.IndexOf(s)], characterPos.ToArray()[i], Quaternion.identity, group);
+            newCharacter.GetComponent<SimulateScript>().id = j++;
+            warriors.Add(newCharacter);
+            i++;
         }
     }
 

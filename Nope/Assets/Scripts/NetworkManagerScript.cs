@@ -38,19 +38,25 @@ public class NetworkManagerScript : MonoBehaviour {
             string test ="warrior";
             p1.addCharacterList(test);
             p2.addCharacterList(test);
-            foreach (string s in p1.charactersList)
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            p1.addCharacterList(test);
+            p2.addCharacterList(test);
+            /*foreach (string s in p1.charactersList)
             {
                 p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
             }
             foreach (string s in p2.charactersList)
             {
                 p2.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
-            }
+            }*/
 
             p1.addCharacterPos(1);
             p2.addCharacterPos(2);
-            p1.InstantiateChar(1);
-            p2.InstantiateChar(2);
+            p1.InstantiateChar(characterPrefab, prefabByName,1);
+            p2.InstantiateChar(characterPrefab, prefabByName, 2);
             p1.setSimulate();
             p2.setSimulate();
         }

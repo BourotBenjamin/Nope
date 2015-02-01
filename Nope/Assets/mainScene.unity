@@ -496,10 +496,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefab:
-  - {fileID: 100000, guid: 247af450960238a4e940b78f4ea3062e, type: 2}
+  - {fileID: 100000, guid: bd21e7c7e3776f145a449496e1b49c1b, type: 2}
   prefabByName:
   - warrior
-  isServer: 0
+  isServer: 1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
 --- !u!148 &1963592838
