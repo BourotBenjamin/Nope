@@ -12,6 +12,11 @@ public class WeaponActionScript : ActionScript
     {
         created = false;
     }
+    public WeaponActionScript()
+        : base()
+    {
+        created = false;
+    }
 
     public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
     {

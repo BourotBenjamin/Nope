@@ -6,10 +6,20 @@ public abstract class ActionScript
 {
 
 	protected int duration;
-    protected Vector3 destination;
+    protected Vector3 _destination;
+    public Vector3 destination
+    {
+        get { return _destination; }
+        set { _destination = value;}
+    }
     protected bool started;
     protected SimulateScript simulation;
     protected float startTime;
+
+    public ActionScript()
+    {
+        this.duration = -1;
+    }
 
     public ActionScript(Vector3 destination, int duration)
     {

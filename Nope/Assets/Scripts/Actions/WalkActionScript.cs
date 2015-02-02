@@ -8,6 +8,10 @@ public class WalkActionScript : ActionScript
     {
     }
 
+    public WalkActionScript() : base()
+    {
+    }
+
     public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
     {
         if (this.started)
