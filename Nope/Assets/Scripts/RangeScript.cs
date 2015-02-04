@@ -106,6 +106,15 @@ public class RangeScript : MonoBehaviour {
         view_range = _view_range;
         
     }
+
+    /*setAttackRange(){
+        
+
+    }*/
+    /*setMobilityRange(){
+       circle type for mobility range     
+       change material for mobility range
+    }*/
     float GetEnemyAngle()
     {
         return 90 - Mathf.Rad2Deg * Mathf.Atan2(transform.forward.z, transform.forward.x); // Left handed CW. z = angle 0, x = angle 90
