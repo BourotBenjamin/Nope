@@ -40,6 +40,7 @@ public class FireAmmoScript : MonoBehaviour
                 Debug.Log(collisionGameObject);
                 if (collisionGameObject.tag == "Player")
                 {
+                    collisionGameObject.transform.position = new Vector3(90, 90, 90);
                     Network.Destroy(collisionGameObject);
                     collisionGameObject.GetComponent<SimulateScript>().warriorDies();
                 }
@@ -48,9 +49,11 @@ public class FireAmmoScript : MonoBehaviour
                     GameObject colliderGameObject = collider.gameObject;
                     if (collisionGameObject != colliderGameObject)
                     {
+                        collisionGameObject.transform.position = new Vector3(90, 90, 90);
                         Network.Destroy(collisionGameObject);
                     }
                 }
+                transform.position = new Vector3(90, 90, 90);
                 Network.Destroy(gameObject);
             }
         }

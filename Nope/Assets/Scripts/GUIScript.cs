@@ -55,10 +55,11 @@ public class GUIScript : MonoBehaviour {
         {
             if (hit.collider.tag == "Player")
             {
-                clickState = selected.ClickOnGui;
+                
                 SimulateScript ss = hit.collider.GetComponent<SimulateScript>();
                 if (hit.collider.GetComponent<SimulateScript>().owner == Network.player)
                 {
+                    clickState = selected.ClickOnGui;
                     hit.collider.renderer.material.color = Color.blue;
                     if (selectedPlayer != null)
                         selectedPlayer.transform.renderer.material.color = Color.white;
@@ -153,6 +154,7 @@ public class GUIScript : MonoBehaviour {
             {
                 if (selectedPlayer == null || selectedPlayer.isInWaitingState())
                 {
+                    int i  = 20;
                     if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
                     {
                         positionSet = false;
@@ -160,6 +162,24 @@ public class GUIScript : MonoBehaviour {
                     }
                     else if (clickState == selected.ClickOnGui)
                     {
+                        action = null;
+                        
+                        foreach (string s in selectedPlayer.enabledActions)
+                        {
+                            if (GUI.Button(new Rect(0, i, 120, 20),s))
+                            {
+                                System.Type type = System.Type.GetType(s);
+                                object o = System.Activator.CreateInstance(type);
+                                action = (ActionScript)o;
+                            }
+                            if (action != null) 
+                            {
+                                clickState = selected.SetDestination;
+                                break;
+                            }
+                            
+                            i += 20;
+                        }/*
                         if (GUI.Button(new Rect(0, 20, 120, 20), "WalkAction"))
                         {
                             action = new WalkActionScript();
@@ -169,7 +189,7 @@ public class GUIScript : MonoBehaviour {
                         {
                             action = new WeaponActionScript();
                             clickState = selected.SetDestination;
-                        }
+                        }*/
                         if (GUI.Button(new Rect(0, 60, 120, 20), "Cancel"))
                         {
                             selectedPlayer.transform.renderer.material.color = Color.white;
