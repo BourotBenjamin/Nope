@@ -190,7 +190,7 @@ public class GUIScript : MonoBehaviour {
                             action = new WeaponActionScript();
                             clickState = selected.SetDestination;
                         }*/
-                        if (GUI.Button(new Rect(0, 60, 120, 20), "Cancel"))
+                        if (GUI.Button(new Rect(0, i, 120, 20), "Cancel"))
                         {
                             selectedPlayer.transform.renderer.material.color = Color.white;
                             selectedPlayer = null;

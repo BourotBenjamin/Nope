@@ -16,6 +16,7 @@ public class SimulateScript : MonoBehaviour
     private PlayerScript player;
     private float startTime;
     private int nbActions;
+    [SerializeField]
     private List<string> _enabledActions;
     public List<string> enabledActions
     {
@@ -53,9 +54,6 @@ public class SimulateScript : MonoBehaviour
     {
         _nV = this.GetComponent<NetworkView>();
         actions = new List<ActionScript>();
-        enabledActions = new List<string>();
-        enabledActions.Add("WalkActionScript");
-        enabledActions.Add("WeaponActionScript");
         nbActions = 0;
         ended = false;
         animating = false;

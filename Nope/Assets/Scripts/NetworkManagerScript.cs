@@ -17,13 +17,10 @@ public class NetworkManagerScript : MonoBehaviour {
     [SerializeField]
     PlayerScript p2;
 
-    int nbPlayer = 0;
 
     bool p1Vacant = true;
     bool p2Vacant = true;
 
-    bool isP1Instancied = false;
-    bool isP2Instancied = false;
 
     NetworkView _nV;
 
@@ -44,14 +41,6 @@ public class NetworkManagerScript : MonoBehaviour {
             p2.addCharacterList(test);
             p1.addCharacterList(test);
             p2.addCharacterList(test);
-            /*foreach (string s in p1.charactersList)
-            {
-                p1.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
-            }
-            foreach (string s in p2.charactersList)
-            {
-                p2.addCharacter(characterPrefab.ToArray()[prefabByName.IndexOf(s)]);
-            }*/
 
             p1.addCharacterPos(1);
             p2.addCharacterPos(2);

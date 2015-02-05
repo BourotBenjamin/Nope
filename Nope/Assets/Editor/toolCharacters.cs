@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 
 
@@ -34,8 +35,6 @@ public class toolCharacters : EditorWindow{
     GameObject newClass;
     Sprite subSprite;
     Sprite mySprite;
-    BoxCollider collider;
-    Rigidbody rigidb;
     Animator anim;
     
     [MenuItem ("Window/tool characters")]
@@ -50,7 +49,7 @@ public class toolCharacters : EditorWindow{
     {
         /*** add scripts in path to the tab and get only scripts names***/
         /* can choose any scripts */
-        string [] Tab = Directory.GetFiles("Assets/Scripts", "*.cs");
+        string [] Tab = Directory.GetFiles("Assets/Scripts/Actions", "*.cs");
         scriptTab = new string[Tab.Length + 1];
         scriptTab[0] = "aucun";
         for (int j = 0; j < Tab.Length; j++ )
@@ -143,14 +142,16 @@ public class toolCharacters : EditorWindow{
             newClass.AddComponent<NetworkView>();
          
             /*** assign choice script ***/
+            List<string> simulateScriptList = new List<string>();
             for (int s = 0 ; s < indexScriptTab.Length; s++)
             {
                 if (indexScriptTab[s] != 0)
                 {
-                    newClass.AddComponent(scriptTab[indexScriptTab[s]]);
+                    //newClass.AddComponent(scriptTab[indexScriptTab[s]]);
+                    simulateScriptList.Add(scriptTab[indexScriptTab[s]]);
                 }
             }
-            
+            newClass.GetComponent<SimulateScript>().enabledActions = simulateScriptList;
             /***  assign hp  ***/
             hp = int.Parse(hptext);
             attributes.hp = hp;
@@ -186,10 +187,10 @@ public class toolCharacters : EditorWindow{
             newClass.tag = "Player";
 
             /*** add BoxCollider to gameobject ***/
-            collider = newClass.AddComponent("BoxCollider") as BoxCollider;
+            newClass.AddComponent<BoxCollider>();
 
             /*** add rigidbody to gameobject ***/
-            rigidb = newClass.AddComponent("Rigidbody") as Rigidbody;
+            newClass.AddComponent<Rigidbody>();
 
             /*** assign gameobject to prefab  ***/
             PrefabUtility.ReplacePrefab(newClass, emptyObj, ReplacePrefabOptions.ConnectToPrefab);
