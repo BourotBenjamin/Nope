@@ -15,6 +15,7 @@ public class GUIScript : MonoBehaviour {
     private bool win;
     private enum selected {SelectPlayer, ClickOnGui, SetDestination};
     private Collider pointed;
+    private planeRangeScript rangeView;
     private selected clickState;
     private ActionScript _action;
     public ActionScript action
@@ -28,6 +29,7 @@ public class GUIScript : MonoBehaviour {
         ended = false;
         win = false;
         clickState = selected.SelectPlayer;
+        
     }
 
     private void setDestRaycast(Ray ray)
@@ -39,7 +41,6 @@ public class GUIScript : MonoBehaviour {
             {
                 pointed = hit.collider;
                 hit.collider.renderer.material.color = Color.red;
-
             }
             positionOnGame = hit.point;
             setDestinationToAction(positionOnGame);
@@ -64,6 +65,8 @@ public class GUIScript : MonoBehaviour {
                     if (selectedPlayer != null)
                         selectedPlayer.transform.renderer.material.color = Color.white;
                     selectedPlayer = ss;
+                    rangeView = hit.collider.GetComponent<planeRangeScript>();
+                    rangeView.addRange(2, 2, new Vector3(hit.point.x, 0.17f, hit.point.z));
                 }
             }
         }

@@ -26,17 +26,18 @@ public class planeRangeScript : MonoBehaviour {
     /// Update the plane so that its the same shape as the terrain under it
     /// Call after the position of the plane has changed
     /// </summary>
-    public void addRange(float sizex, float sizez)
+    public void addRange(float sizex, float sizez, Vector3 pos)
     {
         sizeX = sizex;
         sizeZ = sizez;
         primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        primitive.transform.position = pos;
         primitive.transform.localScale = new Vector3(sizeX, 0, sizeZ);
-        MeshRenderer renderer = primitive.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
+        //MeshRenderer renderer = primitive.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
         primitive.renderer.material.shader = Shader.Find("Particles/Alpha Blended");
 
-        Texture2D circleRange = new Texture2D(10, 10);
-        circleRange = Resources.Load("circleRange", typeof(Texture2D)) as Texture2D;
+        Texture2D circleRange = new Texture2D(2, 2);
+        circleRange = Resources.Load("Images/circleRange", typeof(Texture2D)) as Texture2D;
         Debug.Log(circleRange);
         primitive.renderer.material.mainTexture = circleRange;
 
@@ -63,7 +64,7 @@ public class planeRangeScript : MonoBehaviour {
             {
                 for (int i = 0; i < squaresize; i++)
                 {
-                    vertices[(n*squaresize)+i].y = Terrain.activeTerrain.SampleHeight(position);
+                    //vertices[(n*squaresize)+i].y = Terrain.activeTerrain.SampleHeight(position);
                     position.x -= xStep;
                 }
                 position.x += (((float)squaresize) *xStep);
