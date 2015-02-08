@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\HiddenExplosiveTrapScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\MeteorScript.cs" />
+     <Compile Include="Assets\Scripts\planeRangeScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -16,7 +16,13 @@ public class SimulateScript : MonoBehaviour
     private PlayerScript player;
     private float startTime;
     private int nbActions;
-
+    [SerializeField]
+    private List<string> _enabledActions;
+    public List<string> enabledActions
+    {
+        get { return _enabledActions; }
+        set { _enabledActions = value; }
+    }
     NetworkView _nV;
 
     [SerializeField]
@@ -63,6 +69,8 @@ public class SimulateScript : MonoBehaviour
     {
         _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
         addAction(action.getName(), action.getDestination(), action.getDuration());
+        //_nV.RPC("addActionp", RPCMode.Server, action.GetType(), action.getDestination(), action.getDuration());
+        //addActionp(action.GetType(), action.getDestination(), action.getDuration());
         nbActions++;
     }
     public void setOwnerInSimulateScript(NetworkPlayer p)
@@ -84,38 +92,37 @@ public class SimulateScript : MonoBehaviour
         }
     }
 
+    /*[RPC]
+    private void addActionp(System.Type actionType, Vector3 destination, int duration)
+    {
+        ActionScript action = null;
+        foreach (ActionScript a in enabledActions)
+        {
+            if(a.GetType().Equals(actionType))
+            {
+                action = a;
+                break;
+            }
+        }
+        action.setSimulation(this);
+        actions.Add(action);
+    }*/
+
     [RPC]
     private void addAction(string actionName, Vector3 destination, int duration)
     {
         ActionScript action = null;
-        switch(actionName)
+        foreach (string s in enabledActions)
         {
-            case "WalkActionScript":
-                action = new WalkActionScript(destination, duration);
+            if (s == actionName)
+            {
+                //Debug.LogError(destination);
+                System.Type type = System.Type.GetType(s);
+                object o = System.Activator.CreateInstance(type);
+                action = (ActionScript)o;
+                action.destination = destination;
                 break;
-            case "WeaponActionScript":
-                action = new WeaponActionScript(destination, duration, player.fireBallPrefab);
-                break;
-            case "MineDetectorActionScript":
-                action = new MineDetectorActionScript(destination, duration);
-                break;
-            case "TrapActionScript":
-                action = new TrapActionScript(destination, duration, player.minePrefab);
-                break;
-            case "StandActionScript":
-                action = new StandActionScript(destination, duration);
-                break;
-            case "BowActionScript":
-                action = new BowActionScript(destination, duration, player.arrowPrefab);
-                break;
-            case "MeteorActionScript":
-                action = new MeteorActionScript(destination, duration, player.meteorPrefab);
-                break;
-            case "SwordActionScript":
-                action = new SwordActionScript(destination, duration);
-                break;
-            default:
-                return;
+            }
         }
         action.setSimulation(this);
         actions.Add(action);
@@ -196,7 +203,7 @@ public class SimulateScript : MonoBehaviour
     {
         if (currentAction != null)
         {
-            currentAction.FixedUpdate(this.transform, this.rigidbody);
+            currentAction.doAction(this.transform, this.rigidbody);
         }
     }
 	

@@ -55,12 +55,9 @@ public class PlayerScript : MonoBehaviour {
         set { _simulateSrcipts = value; }
     }
 
-    private NetworkView _nV;
-
     void Start()
     {
         simulationsLaunched = 0;
-        _nV = GetComponent<NetworkView>();
         simulateSrcipts = new List<SimulateScript>();
         characterPos = new List<Vector3>();        
     }

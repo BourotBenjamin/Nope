@@ -19,14 +19,14 @@ public class MeteorActionScript : ActionScript
         created = false;
     }
 
-    public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
+    public override void doAction(Transform transform, Rigidbody rigidbody)
     {
         if (this.started)
         {
             if (!created && Network.isServer)
             {
                 created = true;
-                GameObject obj = (GameObject)Network.Instantiate(prefab, destination + Vector3.up * 2, simulation.transform.rotation, 0);
+                GameObject obj = (GameObject)Network.Instantiate(Resources.Load("Prefabs/Meteor", typeof(GameObject)), destination + Vector3.up * 2, simulation.transform.rotation, 0);
             }
             else if (Time.time - this.startTime > 1.0f)
             {

@@ -17,7 +17,7 @@ public class SwordActionScript : ActionScript
         created = false;
     }
 
-    public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
+    public override void doAction(Transform transform, Rigidbody rigidbody)
     {
         if (this.started)
         {

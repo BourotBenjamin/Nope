@@ -66,5 +66,17 @@ public abstract class ActionScript
 
     public abstract object[] getArrayOfParams();
     public abstract string getName();
-    public abstract void FixedUpdate(Transform transform, Rigidbody rigidbody);
+    public abstract void doAction(Transform transform, Rigidbody rigidbody);
+
+    /*public ActionScript actionButton( int yOffset)
+    {
+        if (GUI.Button(new Rect(0, yOffset, 120, 20), getName()))
+        {
+            return this;
+        }
+        else
+        {
+            return null;
+        }
+    }*/
 }

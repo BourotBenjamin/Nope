@@ -11,6 +11,7 @@ public class RangeScript : MonoBehaviour {
     float angle_fov ;
     float dist_min ;
     float dist_max ;
+    private Transform player_pos;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,8 @@ public class RangeScript : MonoBehaviour {
 
         mesh.uv = uv;
         mesh.normals = normals;
+     
+        player_pos = GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
@@ -42,11 +45,11 @@ public class RangeScript : MonoBehaviour {
             float angle_curr = angle_start;
             float angle_next = angle_start + angle_delta;
 
-            Vector3 pos_curr_min = Vector3.zero;
-            Vector3 pos_curr_max = Vector3.zero;
+            Vector3 pos_curr_min = player_pos.position;
+            Vector3 pos_curr_max = player_pos.position;
 
-            Vector3 pos_next_min = Vector3.zero;
-            Vector3 pos_next_max = Vector3.zero;
+            Vector3 pos_next_min = player_pos.position;
+            Vector3 pos_next_max = player_pos.position;
 
             Vector3[] vertices = new Vector3[4 * quality];   // Could be of size [2 * quality + 2] if circle segment is continuous
             int[] triangles = new int[3 * 2 * quality];
@@ -61,11 +64,11 @@ public class RangeScript : MonoBehaviour {
                 Mathf.Sin(Mathf.Deg2Rad * (angle_next)), 0,
                 Mathf.Cos(Mathf.Deg2Rad * (angle_next)));
 
-                pos_curr_min = transform.position + sphere_curr * dist_min;
-                pos_curr_max = transform.position + sphere_curr * dist_max;
+                pos_curr_min = player_pos.position + sphere_curr * dist_min;
+                pos_curr_max = player_pos.position + sphere_curr * dist_max;
 
-                pos_next_min = transform.position + sphere_next * dist_min;
-                pos_next_max = transform.position + sphere_next * dist_max;
+                pos_next_min = player_pos.position + sphere_next * dist_min;
+                pos_next_max = player_pos.position + sphere_next * dist_max;
 
                 int a = 4 * i;
                 int b = 4 * i + 1;

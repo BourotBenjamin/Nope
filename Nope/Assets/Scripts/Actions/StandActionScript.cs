@@ -13,7 +13,7 @@ public class StandActionScript : ActionScript
     {
     }
 
-    public override void FixedUpdate(Transform transform, Rigidbody rigidbody)
+    public override void doAction(Transform transform, Rigidbody rigidbody)
     {
         if(this.started && Time.time - this.startTime > duration)
         {
