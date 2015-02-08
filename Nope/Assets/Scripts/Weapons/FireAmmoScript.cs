@@ -49,6 +49,7 @@ public class FireAmmoScript : MonoBehaviour
                     if (collisionGameObject != colliderGameObject)
                     {
                         Network.Destroy(collisionGameObject);
+                        colliderGameObject.GetComponent<SimulateScript>().warriorDies();
                     }
                 }
                 Network.Destroy(gameObject);

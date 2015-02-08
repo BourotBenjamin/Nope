@@ -94,7 +94,25 @@ public class SimulateScript : MonoBehaviour
                 action = new WalkActionScript(destination, duration);
                 break;
             case "WeaponActionScript":
-                action = new WeaponActionScript(destination, duration);
+                action = new WeaponActionScript(destination, duration, player.fireBallPrefab);
+                break;
+            case "MineDetectorActionScript":
+                action = new MineDetectorActionScript(destination, duration);
+                break;
+            case "TrapActionScript":
+                action = new TrapActionScript(destination, duration, player.minePrefab);
+                break;
+            case "StandActionScript":
+                action = new StandActionScript(destination, duration);
+                break;
+            case "BowActionScript":
+                action = new BowActionScript(destination, duration, player.arrowPrefab);
+                break;
+            case "MeteorActionScript":
+                action = new MeteorActionScript(destination, duration, player.meteorPrefab);
+                break;
+            case "SwordActionScript":
+                action = new SwordActionScript(destination, duration);
                 break;
             default:
                 return;
@@ -147,6 +165,7 @@ public class SimulateScript : MonoBehaviour
             else
             {
                 animating = false;
+                player.SimulationEnded();
                 actions.Clear();
             }
         }
@@ -155,6 +174,7 @@ public class SimulateScript : MonoBehaviour
     // Stops the simulation
     public void stopActions()
      {
+        animating = false;
         ended = true;
         var action = this.getAction(currentActionsIndex);
         if (action != null && action.getStarted())
@@ -162,6 +182,7 @@ public class SimulateScript : MonoBehaviour
             currentAction = null;
             action.endSimulation();
         }
+        player.SimulationEnded();
      }
 
     [RPC]

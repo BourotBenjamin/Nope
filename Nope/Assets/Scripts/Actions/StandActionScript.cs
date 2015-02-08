@@ -3,7 +3,12 @@ using System.Collections;
 
 public class StandActionScript : ActionScript
 {
-    
+
+    public StandActionScript()
+        : base()
+    {
+    }
+
     public StandActionScript(Vector3 destination, int duration) : base(destination, duration)
     {
     }

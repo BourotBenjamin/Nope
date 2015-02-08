@@ -9,7 +9,6 @@ public class GUIScript : MonoBehaviour {
     private Camera camera;
 
     private bool positionSet;
-    private Vector3 positionOnGame;
     private SimulateScript selectedPlayer;
     private bool ended;
     private bool win;
@@ -41,10 +40,7 @@ public class GUIScript : MonoBehaviour {
                 hit.collider.renderer.material.color = Color.red;
 
             }
-            positionOnGame = hit.point;
-            setDestinationToAction(positionOnGame);
-
-            clickState = selected.SelectPlayer;
+            setDestinationToAction(hit.point);
         }
     }
 
@@ -55,7 +51,6 @@ public class GUIScript : MonoBehaviour {
         {
             if (hit.collider.tag == "Player")
             {
-                clickState = selected.ClickOnGui;
                 SimulateScript ss = hit.collider.GetComponent<SimulateScript>();
                 if (hit.collider.GetComponent<SimulateScript>().owner == Network.player)
                 {
@@ -63,6 +58,7 @@ public class GUIScript : MonoBehaviour {
                     if (selectedPlayer != null)
                         selectedPlayer.transform.renderer.material.color = Color.white;
                     selectedPlayer = ss;
+                    clickState = selected.ClickOnGui;
                 }
             }
         }
@@ -71,18 +67,24 @@ public class GUIScript : MonoBehaviour {
     private void setDestinationToAction(Vector3 dest)
     {
         selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(dest);
-        selectedPlayer.transform.renderer.material.color = Color.white;
         action.destination = dest;
-        selectedPlayer.addActionToAll(action);
-        positionSet = false;
-        selectedPlayer = null;
         if (pointed != null)
             pointed.transform.renderer.material.color = Color.white;
+        addActionToPlayer();
+    }
+
+    private void addActionToPlayer()
+    {
+        selectedPlayer.addActionToAll(action);
+        selectedPlayer.transform.renderer.material.color = Color.white;
+        positionSet = false;
+        selectedPlayer = null;
+        clickState = selected.SelectPlayer;
     }
 
     private void mouseControl()
     {
-        if (selectedPlayer != null && !positionSet && (clickState == selected.SetDestination))
+        if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
         {
             positionSet = true;
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -151,39 +153,81 @@ public class GUIScript : MonoBehaviour {
         {
             if (!ended)
             {
-                if (selectedPlayer == null || selectedPlayer.isInWaitingState())
+                if (!networkScript.isSimulating)
                 {
-                    if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
+                    if (selectedPlayer == null || selectedPlayer.isInWaitingState())
                     {
-                        positionSet = false;
-                        GUI.Label(new Rect(0, 20, 1000, 20), "You have too much actions.");
-                    }
-                    else if (clickState == selected.ClickOnGui)
-                    {
-                        if (GUI.Button(new Rect(0, 20, 120, 20), "WalkAction"))
+                        if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
                         {
-                            action = new WalkActionScript();
-                            clickState = selected.SetDestination;
-                        }
-                        if (GUI.Button(new Rect(0, 40, 120, 20), "WeaponAction"))
-                        {
-                            action = new WeaponActionScript();
-                            clickState = selected.SetDestination;
-                        }
-                        if (GUI.Button(new Rect(0, 60, 120, 20), "Cancel"))
-                        {
-                            selectedPlayer.transform.renderer.material.color = Color.white;
-                            selectedPlayer = null;
+                            positionSet = false;
                             clickState = selected.SelectPlayer;
+                            GUI.Label(new Rect(0, 20, 1000, 20), "You have too much actions.");
                         }
-                    }
-                    if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
-                    {
-                        Debug.LogError("I am ready");
-                        networkScript.setReadyToSimulate();
-                        clickState = selected.SelectPlayer;
+                        else if (clickState == selected.ClickOnGui)
+                        {
+                            if (GUI.Button(new Rect(0, 40, 120, 20), "BowAction"))
+                            {
+                                action = new BowActionScript();
+                                clickState = selected.SetDestination;
+                            }
+                            if (GUI.Button(new Rect(0, 60, 120, 20), "MeteorAction"))
+                            {
+                                action = new MeteorActionScript();
+                                clickState = selected.SetDestination;
+                            }
+                            if (GUI.Button(new Rect(0, 140, 120, 20), "WalkAction"))
+                            {
+                                action = new WalkActionScript();
+                                clickState = selected.SetDestination;
+                            }
+                            if (GUI.Button(new Rect(0, 160, 120, 20), "WeaponAction"))
+                            {
+                                action = new WeaponActionScript();
+                                clickState = selected.SetDestination;
+                            }
+                            if (GUI.Button(new Rect(0, 180, 120, 20), "SwordAction"))
+                            {
+                                action = new SwordActionScript();
+                                addActionToPlayer();
+                            }
+                            if (GUI.Button(new Rect(0, 80, 120, 20), "MineDetectorAction"))
+                            {
+                                action = new MineDetectorActionScript();
+                                addActionToPlayer();
+                            }
+                            if (GUI.Button(new Rect(0, 100, 120, 20), "StandAction"))
+                            {
+                                action = new StandActionScript();
+                                addActionToPlayer();
+                            }
+                            if (GUI.Button(new Rect(0, 120, 120, 20), "TrapAction"))
+                            {
+                                action = new TrapActionScript();
+                                addActionToPlayer();
+                            }
+                            if (GUI.Button(new Rect(0, 200, 120, 20), "Cancel"))
+                            {
+                                selectedPlayer.transform.renderer.material.color = Color.white;
+                                selectedPlayer = null;
+                                clickState = selected.SelectPlayer;
+                            }
+                        }
+                        if (clickState == selected.SelectPlayer)
+                        {
+                            if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
+                            {
+                                Debug.LogError("I am ready");
+                                networkScript.setReadyToSimulate();
+                                clickState = selected.SelectPlayer;
+                            }
+                        }
                     }
                 }
+                else
+                {
+                    GUI.Label(new Rect(0, 0, 100, 20), "Simulation In Progress");
+                }
+
             }
             else
             {

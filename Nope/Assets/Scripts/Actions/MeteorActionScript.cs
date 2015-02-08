@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponActionScript : ActionScript
+public class MeteorActionScript : ActionScript
 {
 
     private bool created;
     private GameObject prefab;
 
-    public WeaponActionScript(Vector3 destination, int duration, GameObject prefab )
+    public MeteorActionScript(Vector3 destination, int duration, GameObject prefab)
         : base(destination, duration)
     {
         this.prefab = prefab;
         created = false;
     }
-    public WeaponActionScript()
+    public MeteorActionScript()
         : base()
     {
         created = false;
@@ -23,12 +23,10 @@ public class WeaponActionScript : ActionScript
     {
         if (this.started)
         {
-            if(!created && Network.isServer)   
+            if (!created && Network.isServer)
             {
                 created = true;
-                simulation.transform.LookAt(this.destination);
-                GameObject obj = (GameObject)Network.Instantiate(prefab, simulation.transform.position + simulation.transform.forward * 2, simulation.transform.rotation, 0);
-                obj.networkView.RPC("initValues", RPCMode.All, new object[] { simulation.transform.position + simulation.transform.forward*2, destination, 10 });
+                GameObject obj = (GameObject)Network.Instantiate(prefab, destination + Vector3.up * 2, simulation.transform.rotation, 0);
             }
             else if (Time.time - this.startTime > 1.0f)
             {
@@ -40,12 +38,12 @@ public class WeaponActionScript : ActionScript
 
     public override object[] getArrayOfParams()
     {
-        object[] array = { "WeaponActionScript", destination, duration };
+        object[] array = { "MeteorActionScript", destination, duration };
         return array;
     }
 
     public override string getName()
     {
-        return "WeaponActionScript";
+        return "MeteorActionScript";
     }
 }
