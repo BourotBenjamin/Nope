@@ -11,6 +11,14 @@ public class CharactersAttributes : MonoBehaviour {
     }
 
     [SerializeField]
+    private int _currentHP = 0;
+    public int currentHP
+    {
+        get { return _currentHP; }
+        set { _currentHP = value; }
+    }
+
+    [SerializeField]
     private int _mp = 0;
     public int mp{
         get{return _mp;}
