@@ -18,6 +18,8 @@ public class GUIScript : MonoBehaviour {
     private RangeScript rangeView;
     private CharactersAttributes rangeAttribute;
     private GameObject plane;
+    private aimScript aimScript;
+    private Vector3 pullMarker;
     private float rayRange;
     private selected clickState;
     private ActionScript _action;
@@ -47,15 +49,29 @@ public class GUIScript : MonoBehaviour {
             }
             Debug.Log("hit.point  :" + hit.point);
             positionOnGame = hit.point;
-            //Vector3.
-            Vector3 newPos = positionOnGame - selectedPlayer.transform.position;
-            newPos.y = 0;
-            rayRange = rangeView.getCircleRay();
-            positionOnGame = selectedPlayer.transform.position + Vector3.ClampMagnitude(newPos,rangeAttribute.mobilityRange);
-            positionOnGame.y = 0.17f;
-            setDestinationToAction(positionOnGame);
-            rangeView.deleteRange();
-            rangeView.addPointDest(positionOnGame);
+            
+            
+            if (action.getName() == "WalkActionScript")
+            {
+
+                Vector3 newPos = positionOnGame - selectedPlayer.transform.position;
+                newPos.y = 0;
+                rayRange = rangeView.getCircleRay();
+                positionOnGame = selectedPlayer.transform.position + Vector3.ClampMagnitude(newPos, rangeAttribute.mobilityRange);
+                positionOnGame.y = 0.17f;
+                setDestinationToAction(positionOnGame);
+                rangeView.deleteRange();
+                rangeView.addPointDest(positionOnGame);
+
+            }
+            else
+            {   
+
+                setDestinationToAction(positionOnGame);
+                GameObject marker = aimScript.aimDone();
+                marker.transform.localScale = new Vector3(0.2f, 0, 1.0f);
+                
+            }
             clickState = selected.SelectPlayer;
             
         }
@@ -77,6 +93,7 @@ public class GUIScript : MonoBehaviour {
                     if (selectedPlayer != null)
                         selectedPlayer.transform.renderer.material.color = Color.white;
                     selectedPlayer = ss;
+                    aimScript = hit.collider.GetComponent<aimScript>();
                 }
             }
         }
@@ -192,8 +209,9 @@ public class GUIScript : MonoBehaviour {
                                 }
                                 else
                                 {
+                                    rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
                                     rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    aimScript.setValues(rangeView, rangeAttribute.attackRange, 5f, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                 }
                             }
                             if (action != null) 

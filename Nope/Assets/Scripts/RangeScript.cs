@@ -9,9 +9,11 @@ public class RangeScript : MonoBehaviour {
     private Vector3 scale;
     private Vector3 position;
     private Mesh mesh;
+    private aimScript aim;
     // only change if using with a custom created plane that has a different number of segments
     private int m_planeSegments = 10;
     Texture2D circleRange;
+    Texture2D attackRange;
     // Use this for initialization
     void Start () {
         //UpdatePlane();
@@ -39,10 +41,26 @@ public class RangeScript : MonoBehaviour {
         primitive.collider.enabled = false;
         circleRange = new Texture2D(2, 2);
         circleRange = Resources.Load("Materials/circleRange", typeof(Texture2D)) as Texture2D;
-        Debug.Log(circleRange);
-        primitive.renderer.material.mainTexture = circleRange;        
+        primitive.renderer.material.mainTexture = circleRange;
     }
 
+    public GameObject addRangeAttack(float sizex, float sizez, Vector3 pos)
+    {
+        sizeX = sizex/5;
+        sizeZ = sizez/5;
+        primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        primitive.transform.position = pos;
+        primitive.transform.localScale = new Vector3(sizeX, 0, sizeZ);
+        primitive.renderer.material.shader = Shader.Find("Particles/Alpha Blended");
+        primitive.collider.enabled = false;
+        primitive.transform.position = new Vector3(pos.x, 0.2f, pos.z-5);
+        attackRange = new Texture2D(2, 2);
+        attackRange = Resources.Load("Materials/healthEnemyFull", typeof(Texture2D)) as Texture2D;
+        primitive.renderer.material.mainTexture = attackRange;
+        primitive.transform.parent = transform;
+        
+        return primitive;
+    }
     public float getCircleRay()
     {
         return primitive.transform.localScale.z*10;
@@ -58,7 +76,19 @@ public class RangeScript : MonoBehaviour {
         circleRange = Resources.Load("Materials/circleRange", typeof(Texture2D)) as Texture2D;
         primitive.renderer.material.mainTexture = circleRange;
         primitive.collider.enabled = false;
-        //mesh = ((MeshFilter)primitive.GetComponent(typeof(MeshFilter))).mesh as Mesh;
+    }
+
+    public void addPointPull(Vector3 posDest)
+    {
+        primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        primitive.transform.position = posDest;
+        primitive.transform.localScale = new Vector3(0.05f, 0, 1.0f);
+        primitive.renderer.material.shader = Shader.Find("Particles/Alpha Blended");
+        attackRange = new Texture2D(2, 2);
+        attackRange = Resources.Load("Materials/healthEnemyFull", typeof(Texture2D)) as Texture2D;
+        primitive.renderer.material.mainTexture = attackRange;
+        primitive.collider.enabled = false;
+
     }
 
     public void deleteRange()
