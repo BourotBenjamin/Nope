@@ -19,7 +19,7 @@ public class WalkActionScript : ActionScript
             Vector3 direction = this.destination - transform.position;
             direction.y = 0f;
 
-            if ((duration != -1 && Time.time - this.startTime > duration) || direction.magnitude < 1.0f)
+            if (/*(duration != -1 && Time.time - this.startTime > duration) ||*/ direction.magnitude < 0.1f)
             {
                 this.endSimulation();
             }

@@ -14,7 +14,10 @@ public class GUIScript : MonoBehaviour {
     private bool win;
     private enum selected {SelectPlayer, ClickOnGui, SetDestination};
     private Collider pointed;
-    private planeRangeScript rangeView;
+    private RangeScript rangeView;
+    private CharactersAttributes rangeAttribute;
+    private GameObject plane;
+    private float rayRange;
     private selected clickState;
     private ActionScript _action;
     public ActionScript action
@@ -41,7 +44,18 @@ public class GUIScript : MonoBehaviour {
                 pointed = hit.collider;
                 hit.collider.renderer.material.color = Color.red;
             }
-            setDestinationToAction(hit.point);
+            Debug.Log("hit.point  :" + hit.point);
+            positionOnGame = hit.point;
+            //Vector3.
+            Vector3 newPos = positionOnGame - selectedPlayer.transform.position;
+            newPos.y = 0;
+            rayRange = rangeView.getCircleRay();
+            positionOnGame = selectedPlayer.transform.position + Vector3.ClampMagnitude(newPos,rangeAttribute.mobilityRange);
+            positionOnGame.y = 0.17f;
+            setDestinationToAction(positionOnGame);
+            rangeView.deleteRange();
+            rangeView.addPointDest(positionOnGame);
+            clickState = selected.SelectPlayer;
         }
     }
 
@@ -60,8 +74,6 @@ public class GUIScript : MonoBehaviour {
                     if (selectedPlayer != null)
                         selectedPlayer.transform.renderer.material.color = Color.white;
                     selectedPlayer = ss;
-                    rangeView = hit.collider.GetComponent<planeRangeScript>();
-                    rangeView.addRange(2, 2, new Vector3(hit.point.x, 0.17f, hit.point.z));
                 }
             }
         }
@@ -69,7 +81,7 @@ public class GUIScript : MonoBehaviour {
 
     private void setDestinationToAction(Vector3 dest)
     {
-        selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(dest);
+        // selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(dest);
         action.destination = dest;
         if (pointed != null)
             pointed.transform.renderer.material.color = Color.white;
@@ -175,6 +187,17 @@ public class GUIScript : MonoBehaviour {
                                 System.Type type = System.Type.GetType(s);
                                 object o = System.Activator.CreateInstance(type);
                                 action = (ActionScript)o;
+                                if (action.getName() == "WalkActionScript")
+                                {
+                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                    rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
+                                    rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                }
+                                else
+                                {
+                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                    rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                }
                             }
                             if (action != null) 
                             {

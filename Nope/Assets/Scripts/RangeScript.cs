@@ -3,124 +3,102 @@ using System.Collections;
 
 public class RangeScript : MonoBehaviour {
 
-    
-    Mesh mesh;
-    public Material material;
-    bool view_range = false;
-    int quality ;
-    float angle_fov ;
-    float dist_min ;
-    float dist_max ;
-    private Transform player_pos;
+    private float sizeX;
+    private float sizeZ;
+    private GameObject primitive;
+    private Vector3 scale;
+    private Vector3 position;
+    private Mesh mesh;
+    // only change if using with a custom created plane that has a different number of segments
+    private int m_planeSegments = 10;
+    Texture2D circleRange;
+    // Use this for initialization
+    void Start () {
+        //UpdatePlane();
+    }
+   
+    // Update is called once per frame
+    void FixedUpdate () {
+      //  UpdatePlane();
+       
+    }
+ 
+    /// <summary>
+    /// Update the plane so that its the same shape as the terrain under it
+    /// Call after the position of the plane has changed
+    /// </summary>
+    public void addRange(float sizex, float sizez, Vector3 pos)
+    {
+        sizeX = sizex/5;
+        sizeZ = sizez/5;
+        primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        primitive.transform.position = pos;
+        primitive.transform.localScale = new Vector3(sizeX, 0, sizeZ);
+        //MeshRenderer renderer = primitive.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
+        primitive.renderer.material.shader = Shader.Find("Particles/Alpha Blended");
+        primitive.collider.enabled = false;
+        circleRange = new Texture2D(2, 2);
+        circleRange = Resources.Load("Materials/circleRange", typeof(Texture2D)) as Texture2D;
+        Debug.Log(circleRange);
+        primitive.renderer.material.mainTexture = circleRange;        
+    }
 
-	// Use this for initialization
-	void Start () {
-        mesh = new Mesh();
-        mesh.vertices = new Vector3[4 * quality];   // Could be of size [2 * quality + 2] if circle segment is continuous
-        mesh.triangles = new int[3 * 2 * quality];
+    public float getCircleRay()
+    {
+        return primitive.transform.localScale.z*10;
+    }
 
-        Vector3[] normals = new Vector3[4 * quality];
-        Vector2[] uv = new Vector2[4 * quality];
+    public void addPointDest(Vector3 posDest)
+    {
+        primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        primitive.transform.position = posDest;
+        primitive.transform.localScale = new Vector3(0.05f, 0, 0.05f);
+        primitive.renderer.material.shader = Shader.Find("Particles/Alpha Blended");
+        circleRange = new Texture2D(2, 2);
+        circleRange = Resources.Load("Materials/circleRange", typeof(Texture2D)) as Texture2D;
+        primitive.renderer.material.mainTexture = circleRange;
+        primitive.collider.enabled = false;
+        //mesh = ((MeshFilter)primitive.GetComponent(typeof(MeshFilter))).mesh as Mesh;
+    }
 
-        for (int i = 0; i < uv.Length; i++)
-            uv[i] = new Vector2(0, 0);
-        for (int i = 0; i < normals.Length; i++)
-            normals[i] = new Vector3(0, 1, 0);
-
-        mesh.uv = uv;
-        mesh.normals = normals;
-     
-        player_pos = GetComponent<Transform>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (view_range == true) {
-            float angle_lookat = GetEnemyAngle();
-
-            float angle_start = angle_lookat - angle_fov;
-            float angle_end = angle_lookat + angle_fov;
-            float angle_delta = (angle_end - angle_start) / quality;
-
-            float angle_curr = angle_start;
-            float angle_next = angle_start + angle_delta;
-
-            Vector3 pos_curr_min = player_pos.position;
-            Vector3 pos_curr_max = player_pos.position;
-
-            Vector3 pos_next_min = player_pos.position;
-            Vector3 pos_next_max = player_pos.position;
-
-            Vector3[] vertices = new Vector3[4 * quality];   // Could be of size [2 * quality + 2] if circle segment is continuous
-            int[] triangles = new int[3 * 2 * quality];
-
-            for (int i = 0; i < quality; i++)
+    public void deleteRange()
+    {
+        Destroy(primitive);
+        mesh = null;
+    }
+    public void UpdatePlane()
+    {   
+        
+        if (mesh != null)
+        {
+            position = new Vector3(transform.position.x+ (sizeX/2), transform.position.y, transform.position.z+(sizeZ/2));
+            Vector3[] vertices = mesh.vertices;
+           
+            float xStep = (sizeX / m_planeSegments);
+            float zStep = (sizeZ / m_planeSegments);
+            int squaresize = m_planeSegments + 1;
+            for (int n = 0; n < squaresize; n++)
             {
-                Vector3 sphere_curr = new Vector3(
-                Mathf.Sin(Mathf.Deg2Rad * (angle_curr)), 0,   // Left handed CW
-                Mathf.Cos(Mathf.Deg2Rad * (angle_curr)));
-
-                Vector3 sphere_next = new Vector3(
-                Mathf.Sin(Mathf.Deg2Rad * (angle_next)), 0,
-                Mathf.Cos(Mathf.Deg2Rad * (angle_next)));
-
-                pos_curr_min = player_pos.position + sphere_curr * dist_min;
-                pos_curr_max = player_pos.position + sphere_curr * dist_max;
-
-                pos_next_min = player_pos.position + sphere_next * dist_min;
-                pos_next_max = player_pos.position + sphere_next * dist_max;
-
-                int a = 4 * i;
-                int b = 4 * i + 1;
-                int c = 4 * i + 2;
-                int d = 4 * i + 3;
-
-                vertices[a] = pos_curr_min;
-                vertices[b] = pos_curr_max;
-                vertices[c] = pos_next_max;
-                vertices[d] = pos_next_min;
-
-                triangles[6 * i] = a;       // Triangle1: abc
-                triangles[6 * i + 1] = b;
-                triangles[6 * i + 2] = c;
-                triangles[6 * i + 3] = c;   // Triangle2: cda
-                triangles[6 * i + 4] = d;
-                triangles[6 * i + 5] = a;
-
-                angle_curr += angle_delta;
-                angle_next += angle_delta;
-
+                for (int i = 0; i < squaresize; i++)
+                {
+                    //Debug.Log(vertices[(n * squaresize) + i].y);
+                    vertices[(n*squaresize)+i].y = 10;
+                    //Debug.Log(vertices[(n * squaresize) + i].y);
+                    mesh.vertices[i].y = vertices[(n * squaresize) + i].y;
+                    position.x -= xStep;
+                }
+                position.x += (((float)squaresize) *xStep);
+                position.z -= zStep;
             }
-
-            mesh.vertices = vertices;
-            mesh.triangles = triangles;
-
-            Graphics.DrawMesh(mesh, Vector3.zero, Quaternion.identity, material, 0);
-
-	    }
-	}
-
-    public void setFieldOfView(int _quality, float _angle_fov, float _dist_min, float _dist_max, bool _view_range )
-    {
-        quality = _quality;
-        angle_fov = _angle_fov;
-        dist_min = _dist_min;
-        dist_max = _dist_max;
-        view_range = _view_range;
-        
+            //mesh.vertices = vertices;
+            foreach(var i in mesh.vertices)
+            {
+                Debug.Log(i.y);
+                mesh.Clear();
+                mesh.RecalculateBounds();
+                //mesh.RecalculateNormals();
+            }
+            
+        }
     }
-
-    /*setAttackRange(){
-        
-
-    }*/
-    /*setMobilityRange(){
-       circle type for mobility range     
-       change material for mobility range
-    }*/
-    float GetEnemyAngle()
-    {
-        return 90 - Mathf.Rad2Deg * Mathf.Atan2(transform.forward.z, transform.forward.x); // Left handed CW. z = angle 0, x = angle 90
-    }
-
 }
