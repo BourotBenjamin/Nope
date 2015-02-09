@@ -7,10 +7,12 @@ public class StandActionScript : ActionScript
     public StandActionScript()
         : base()
     {
+        destinationNeeded = false;
     }
 
     public StandActionScript(Vector3 destination, int duration) : base(destination, duration)
     {
+        destinationNeeded = false;
     }
 
     public override void doAction(Transform transform, Rigidbody rigidbody)

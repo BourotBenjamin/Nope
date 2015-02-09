@@ -7,15 +7,16 @@ public class TrapActionScript : ActionScript
     private bool created;
     private GameObject prefab;
 
-    public TrapActionScript(Vector3 destination, int duration, GameObject prefab)
+    public TrapActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
-        this.prefab = prefab;
+        destinationNeeded = false;
         created = false;
     }
     public TrapActionScript()
         : base()
     {
+        destinationNeeded = false;
         created = false;
     }
 

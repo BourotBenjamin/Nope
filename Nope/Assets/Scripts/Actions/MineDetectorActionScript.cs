@@ -10,11 +10,13 @@ public class MineDetectorActionScript : ActionScript
     public MineDetectorActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
+        destinationNeeded = false;
         created = false;
     }
     public MineDetectorActionScript()
         : base()
     {
+        destinationNeeded = false;
         created = false;
     }
 
@@ -29,7 +31,6 @@ public class MineDetectorActionScript : ActionScript
                 int i = 0;
                 while (i < hitColliders.Length)
                 {
-                    Debug.LogError(hitColliders[i].name);
                     if (hitColliders[i].tag == "Trap")
                     {
                         hitColliders[i].gameObject.renderer.enabled = true;

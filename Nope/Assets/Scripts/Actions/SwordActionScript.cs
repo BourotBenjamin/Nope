@@ -9,11 +9,13 @@ public class SwordActionScript : ActionScript
     public SwordActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
+        destinationNeeded = false;
         created = false;
     }
     public SwordActionScript()
         : base()
     {
+        destinationNeeded = false;
         created = false;
     }
 

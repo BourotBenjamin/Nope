@@ -10,12 +10,14 @@ public class BowActionScript : ActionScript
     public BowActionScript(Vector3 destination, int duration, GameObject prefab)
         : base(destination, duration)
     {
+        destinationNeeded = true;
         created = false;
         this.prefab = prefab;
     }
     public BowActionScript()
         : base()
     {
+        destinationNeeded = true;
         created = false;
     }
 

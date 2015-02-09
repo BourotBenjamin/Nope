@@ -100,6 +100,7 @@ public class GUIScript : MonoBehaviour {
 
     private void mouseControl()
     {
+        Debug.LogError(clickState);
         if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
         {
             positionSet = true;
@@ -108,7 +109,7 @@ public class GUIScript : MonoBehaviour {
         }
         else if (clickState == selected.SelectPlayer)
         {
-
+            Debug.LogError("Select a player");
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             setSelectionRaycast(ray);
         }
@@ -188,22 +189,28 @@ public class GUIScript : MonoBehaviour {
                                 System.Type type = System.Type.GetType(s);
                                 object o = System.Activator.CreateInstance(type);
                                 action = (ActionScript)o;
-                                if (action.getName() == "WalkActionScript")
+                                if (action.isDestinationNeeded())
                                 {
-                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
-                                    rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    if (action.getName() == "WalkActionScript")
+                                    {
+                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                        rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
+                                        rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    }
+                                    else
+                                    {
+                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                        //rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    }
+                                    clickState = selected.SetDestination;
+                                    break;
                                 }
                                 else
                                 {
-                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    //rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    positionSet = true;
+                                    addActionToPlayer();
+                                    break;
                                 }
-                            }
-                            if (action != null) 
-                            {
-                                clickState = selected.SetDestination;
-                                break;
                             }
                             i += 20;
                         }

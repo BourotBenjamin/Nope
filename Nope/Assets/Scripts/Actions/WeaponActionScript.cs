@@ -12,11 +12,13 @@ public class WeaponActionScript : ActionScript
     {
         this.prefab = prefab;
         created = false;
+        destinationNeeded = true;
     }
     public WeaponActionScript()
         : base()
     {
         created = false;
+        destinationNeeded = true;
     }
 
     public override void doAction(Transform transform, Rigidbody rigidbody)

@@ -10,12 +10,14 @@ public class MeteorActionScript : ActionScript
     public MeteorActionScript(Vector3 destination, int duration, GameObject prefab)
         : base(destination, duration)
     {
+        destinationNeeded = true;
         this.prefab = prefab;
         created = false;
     }
     public MeteorActionScript()
         : base()
     {
+        destinationNeeded = true;
         created = false;
     }
 
