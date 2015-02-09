@@ -41,7 +41,7 @@ public class ArrowScript : MonoBehaviour
                 collisionGameObject.GetComponent<SimulateScript>().warriorDies();
                 Network.Destroy(collisionGameObject);
             }
-            Network.Destroy(gameObject);
+            Network.Destroy(this.gameObject);
         }
     }
 

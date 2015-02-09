@@ -20,6 +20,7 @@ public class GUIScript : MonoBehaviour {
     private float rayRange;
     private selected clickState;
     private ActionScript _action;
+    private Vector3 positionOnGame;
     public ActionScript action
     {
         get { return _action; }
@@ -47,14 +48,14 @@ public class GUIScript : MonoBehaviour {
             Debug.Log("hit.point  :" + hit.point);
             positionOnGame = hit.point;
             //Vector3.
-            Vector3 newPos = positionOnGame - selectedPlayer.transform.position;
+            /*Vector3 newPos = positionOnGame - selectedPlayer.transform.position;
             newPos.y = 0;
             rayRange = rangeView.getCircleRay();
             positionOnGame = selectedPlayer.transform.position + Vector3.ClampMagnitude(newPos,rangeAttribute.mobilityRange);
-            positionOnGame.y = 0.17f;
+            positionOnGame.y = 0.17f;*/
             setDestinationToAction(positionOnGame);
-            rangeView.deleteRange();
-            rangeView.addPointDest(positionOnGame);
+            /*rangeView.deleteRange();
+            rangeView.addPointDest(positionOnGame);*/
             clickState = selected.SelectPlayer;
         }
     }
@@ -196,7 +197,7 @@ public class GUIScript : MonoBehaviour {
                                 else
                                 {
                                     rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    //rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                 }
                             }
                             if (action != null) 

@@ -16,6 +16,7 @@ GameObject:
   - 148: {fileID: 14800000}
   - 65: {fileID: 6500000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: cheatedwarrior
   m_TagString: Player
@@ -129,6 +130,17 @@ MonoBehaviour:
   _specifications: "Tenacit\xE9"
   _mobilityRange: 10
   _moveSpeed: 10
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79363531c9a7cb489d3ee9169d5adcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

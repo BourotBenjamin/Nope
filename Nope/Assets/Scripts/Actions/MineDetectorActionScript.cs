@@ -22,7 +22,7 @@ public class MineDetectorActionScript : ActionScript
     {
         if (this.started)
         {
-            if (!created && Network.isServer || Network.player == simulation.owner)
+            if (!created && (Network.isServer || Network.player == simulation.owner))
             {
                 created = true;
                 Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5.0f);

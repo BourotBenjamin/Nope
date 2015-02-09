@@ -172,7 +172,7 @@ public class SimulateScript : MonoBehaviour
             else
             {
                 animating = false;
-                player.SimulationEnded();
+                //player.SimulationEnded();
                 actions.Clear();
             }
         }
@@ -189,7 +189,7 @@ public class SimulateScript : MonoBehaviour
             currentAction = null;
             action.endSimulation();
         }
-        player.SimulationEnded();
+        //player.SimulationEnded();
      }
 
     [RPC]
