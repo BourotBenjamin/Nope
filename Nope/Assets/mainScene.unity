@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefab:
-  - {fileID: 100002, guid: 4c1d0b631a02a6b4a89a9de60908b4e1, type: 2}
+  - {fileID: 100000, guid: e38201744c015a44c8bab65455761ba0, type: 2}
   prefabByName:
   - warrior
   isServer: 1

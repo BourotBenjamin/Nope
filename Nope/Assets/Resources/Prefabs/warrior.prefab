@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400006}
   - 148: {fileID: 14800000}
   - 65: {fileID: 6500000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: warrior
   m_TagString: Player
@@ -72,6 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 110
+  _currentHP: 0
   _mp: 10
   _strengh: 10
   _armor: 10
@@ -80,7 +81,7 @@ MonoBehaviour:
   _specifications: "Tenacit\xE9"
   _mobilityRange: 10
   _moveSpeed: 10
---- !u!114 &11400006
+--- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -91,6 +92,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc003ceee75b6db4cbf5bf8993caae52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enabledActions:
+  - BowActionScript
+  - MeteorActionScript
+  - MineDetectorActionScript
+  - StandActionScript
+  - SwordActionScript
+  - TrapActionScript
+  - WalkActionScript
+  - WeaponActionScript
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

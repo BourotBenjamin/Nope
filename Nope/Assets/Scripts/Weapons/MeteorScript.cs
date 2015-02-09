@@ -13,8 +13,8 @@ public class MeteorScript : MonoBehaviour {
             {
                 if (hitColliders[i].tag == "Player")
                 {
-                    Destroy(hitColliders[i].gameObject);
                     hitColliders[i].gameObject.GetComponent<SimulateScript>().warriorDies();
+                    Network.Destroy(hitColliders[i].gameObject);
                 }
                 i++;
             }

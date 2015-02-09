@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CharactersAttributes.cs" />
      <Compile Include="Assets\Scripts\GUIScript.cs" />
+     <Compile Include="Assets\Scripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
      <Compile Include="Assets\Scripts\NetworkManagerScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScript.cs" />
