@@ -21,6 +21,8 @@ public class NetworkManagerScript : MonoBehaviour {
     bool p1Vacant = true;
     bool p2Vacant = true;
 
+    private bool clientConnected;
+
 
     NetworkView _nV;
 
@@ -51,7 +53,8 @@ public class NetworkManagerScript : MonoBehaviour {
         }
         else
         {
-            connectToServer();
+            MasterServer.RequestHostList("Nope");
+            clientConnected = false;
         }
 	}
 
@@ -133,22 +136,27 @@ public class NetworkManagerScript : MonoBehaviour {
         MasterServer.RegisterHost("Nope", "nope nope nope", "let's play");
     }
 
-    void connectToServer()
+    void Update()
     {
-        HostData[] data = MasterServer.PollHostList();
-        string tmpIp = "";
-        foreach (var element in data)
+        if (!clientConnected && !isServer)
         {
-            
+            HostData[] data = MasterServer.PollHostList();
             int i = 0;
-            while (i < element.ip.Length)
+            while (i < data.Length)
             {
-                tmpIp = element.ip[i] + " ";
-                i++;
+                string tmpIp = "";
+                int j = 0;
+                while (j < data[i].ip.Length)
+                {
+                    tmpIp = data[i].ip[j] + " ";
+                    j++;
+                }
+                Debug.LogError(data[i].gameName + " ip: " + tmpIp + ":" + data[i].port);
+                Network.Connect(tmpIp, data[i].port);
+                clientConnected = true;
+                break;
             }
-           
         }
-        Network.Connect(tmpIp, 6600);
     }
 
     
