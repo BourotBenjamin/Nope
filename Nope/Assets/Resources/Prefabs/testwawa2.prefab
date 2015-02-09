@@ -49,7 +49,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -72,7 +72,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4f0b24ed43830842b5bbec7246edc0b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2f1d9454743ce904482ceb0280080e9c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -122,7 +122,7 @@ MonoBehaviour:
   _attackRange: 1
   _weaponType: 
   _specifications: "Tenacit\xE9"
-  _mobilityRange: 1
+  _mobilityRange: 5
   _moveSpeed: 1
 --- !u!114 &11400006
 MonoBehaviour:
