@@ -328,6 +328,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _warriors: []
   network: {fileID: 1458715600}
+  arrowPrefab: {fileID: 100000, guid: 07cda52e6eafc2b4fbd3c575a9a3607b, type: 2}
+  minePrefab: {fileID: 100000, guid: 3f0593a16bbe27c4fbfee7445bee4e35, type: 2}
+  meteorPrefab: {fileID: 100000, guid: ae46af03f8e64cb449e5efccd8276da4, type: 2}
+  fireBallPrefab: {fileID: 100000, guid: f058967bdef261d4dbac909203f6a18f, type: 2}
+  simulationsLaunched: 0
   _charactersList: []
   _characterPos: []
 --- !u!4 &1084496911
@@ -448,6 +453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOne: {fileID: 1084496910}
   playerTwo: {fileID: 1785479561}
+  playerOneIsSimulating: 0
+  playerTwoIsSimulating: 0
+  isSimulating: 0
 --- !u!114 &1458715601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +510,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _warriors: []
   network: {fileID: 1458715600}
+  arrowPrefab: {fileID: 100000, guid: 07cda52e6eafc2b4fbd3c575a9a3607b, type: 2}
+  minePrefab: {fileID: 100000, guid: 3f0593a16bbe27c4fbfee7445bee4e35, type: 2}
+  meteorPrefab: {fileID: 100000, guid: ae46af03f8e64cb449e5efccd8276da4, type: 2}
+  fireBallPrefab: {fileID: 100000, guid: f058967bdef261d4dbac909203f6a18f, type: 2}
+  simulationsLaunched: 0
   _charactersList: []
   _characterPos: []
 --- !u!4 &1785479562
@@ -545,7 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefab:
-  - {fileID: 100002, guid: 4c1d0b631a02a6b4a89a9de60908b4e1, type: 2}
+  - {fileID: 100000, guid: e38201744c015a44c8bab65455761ba0, type: 2}
   prefabByName:
   - warrior
   isServer: 1

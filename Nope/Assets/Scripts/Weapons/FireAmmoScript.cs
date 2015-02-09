@@ -41,8 +41,8 @@ public class FireAmmoScript : MonoBehaviour
                 if (collisionGameObject.tag == "Player")
                 {
                     collisionGameObject.transform.position = new Vector3(90, 90, 90);
-                    Network.Destroy(collisionGameObject);
                     collisionGameObject.GetComponent<SimulateScript>().warriorDies();
+                    Network.Destroy(collisionGameObject);
                 }
                 foreach (Collider collider in playersInRadius)
                 {
@@ -50,6 +50,7 @@ public class FireAmmoScript : MonoBehaviour
                     if (collisionGameObject != colliderGameObject)
                     {
                         collisionGameObject.transform.position = new Vector3(90, 90, 90);
+                        colliderGameObject.GetComponent<SimulateScript>().warriorDies();
                         Network.Destroy(collisionGameObject);
                     }
                 }

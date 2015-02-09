@@ -9,7 +9,6 @@ public class GUIScript : MonoBehaviour {
     private Camera camera;
 
     private bool positionSet;
-    private Vector3 positionOnGame;
     private SimulateScript selectedPlayer;
     private bool ended;
     private bool win;
@@ -23,6 +22,7 @@ public class GUIScript : MonoBehaviour {
     private float rayRange;
     private selected clickState;
     private ActionScript _action;
+    private Vector3 positionOnGame;
     public ActionScript action
     {
         get { return _action; }
@@ -49,8 +49,6 @@ public class GUIScript : MonoBehaviour {
             }
             Debug.Log("hit.point  :" + hit.point);
             positionOnGame = hit.point;
-            
-            
             if (action.getName() == "WalkActionScript")
             {
 
@@ -73,7 +71,6 @@ public class GUIScript : MonoBehaviour {
                 
             }
             clickState = selected.SelectPlayer;
-            
         }
     }
 
@@ -84,7 +81,6 @@ public class GUIScript : MonoBehaviour {
         {
             if (hit.collider.tag == "Player")
             {
-                
                 SimulateScript ss = hit.collider.GetComponent<SimulateScript>();
                 if (hit.collider.GetComponent<SimulateScript>().owner == Network.player)
                 {
@@ -101,19 +97,26 @@ public class GUIScript : MonoBehaviour {
 
     private void setDestinationToAction(Vector3 dest)
     {
-        //selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(dest);
-        selectedPlayer.transform.renderer.material.color = Color.white;
+        // selectedPlayer.GetComponent<AnimationCharacters>().sendAnimationToAll(dest);
         action.destination = dest;
-        selectedPlayer.addActionToAll(action);
-        positionSet = false;
-        selectedPlayer = null;
         if (pointed != null)
             pointed.transform.renderer.material.color = Color.white;
+        addActionToPlayer();
+    }
+
+    private void addActionToPlayer()
+    {
+        selectedPlayer.addActionToAll(action);
+        selectedPlayer.transform.renderer.material.color = Color.white;
+        positionSet = false;
+        selectedPlayer = null;
+        clickState = selected.SelectPlayer;
     }
 
     private void mouseControl()
     {
-        if (selectedPlayer != null && !positionSet && (clickState == selected.SetDestination))
+        Debug.LogError(clickState);
+        if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
         {
             positionSet = true;
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -121,7 +124,7 @@ public class GUIScript : MonoBehaviour {
         }
         else if (clickState == selected.SelectPlayer)
         {
-
+            Debug.LogError("Select a player");
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             setSelectionRaycast(ray);
         }
@@ -182,7 +185,7 @@ public class GUIScript : MonoBehaviour {
         {
             if (!ended)
             {
-                if (selectedPlayer == null || selectedPlayer.isInWaitingState())
+                if (!networkScript.isSimulating)
                 {
                     int i  = 20;
                     if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
@@ -201,37 +204,34 @@ public class GUIScript : MonoBehaviour {
                                 System.Type type = System.Type.GetType(s);
                                 object o = System.Activator.CreateInstance(type);
                                 action = (ActionScript)o;
-                                if (action.getName() == "WalkActionScript")
+                                if (action.isDestinationNeeded())
                                 {
-                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
-                                    rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    if (action.getName() == "WalkActionScript")
+                                    {
+                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                        rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
+                                        rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    }
+                                    else
+                                    {
+                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
+                                        //rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    }
+                                    clickState = selected.SetDestination;
+                                    break;
                                 }
                                 else
                                 {
                                     rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
                                     rangeView = selectedPlayer.GetComponent<RangeScript>();
                                     aimScript.setValues(rangeView, rangeAttribute.attackRange, 5f, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                    positionSet = true;
+                                    addActionToPlayer();
+                                    break;
                                 }
                             }
-                            if (action != null) 
-                            {
-                                clickState = selected.SetDestination;
-                                break;
-                            }
-                            
                             i += 20;
-                        }/*
-                        if (GUI.Button(new Rect(0, 20, 120, 20), "WalkAction"))
-                        {
-                            action = new WalkActionScript();
-                            clickState = selected.SetDestination;
                         }
-                        if (GUI.Button(new Rect(0, 40, 120, 20), "WeaponAction"))
-                        {
-                            action = new WeaponActionScript();
-                            clickState = selected.SetDestination;
-                        }*/
                         if (GUI.Button(new Rect(0, i, 120, 20), "Cancel"))
                         {
                             selectedPlayer.transform.renderer.material.color = Color.white;
@@ -246,6 +246,11 @@ public class GUIScript : MonoBehaviour {
                         clickState = selected.SelectPlayer;
                     }
                 }
+                else
+                {
+                    GUI.Label(new Rect(0, 0, 100, 20), "Simulation In Progress");
+                }
+
             }
             else
             {

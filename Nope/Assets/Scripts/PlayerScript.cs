@@ -8,6 +8,16 @@ public class PlayerScript : MonoBehaviour {
     private List<GameObject> _warriors;
     [SerializeField]
     private NetworkScript network;
+    [SerializeField]
+    public GameObject arrowPrefab;
+    [SerializeField]
+    public GameObject minePrefab;
+    [SerializeField]
+    public GameObject meteorPrefab;
+    [SerializeField]
+    public GameObject fireBallPrefab;
+
+    public int simulationsLaunched;
     public List<GameObject> warriors
     {
         get { return _warriors; }
@@ -47,6 +57,7 @@ public class PlayerScript : MonoBehaviour {
 
     void Start()
     {
+        simulationsLaunched = 0;
         simulateSrcipts = new List<SimulateScript>();
         characterPos = new List<Vector3>();        
     }
@@ -134,6 +145,16 @@ public class PlayerScript : MonoBehaviour {
         foreach (SimulateScript simulation in simulateSrcipts)
         {
             simulation.startAllSimulations();
+            ++simulationsLaunched;
+        }
+    }
+
+    public void SimulationEnded()
+    {
+        --simulationsLaunched;
+        if(simulationsLaunched == 0)
+        {
+            network.SimulationEnded(this);
         }
     }
 

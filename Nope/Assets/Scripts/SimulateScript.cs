@@ -68,7 +68,7 @@ public class SimulateScript : MonoBehaviour
     public void addActionToAll(ActionScript action)
     {
         _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
-        addAction(action.getName(), action.getDestination(), action.getDuration());
+        //addAction(action.getName(), action.getDestination(), action.getDuration());
         //_nV.RPC("addActionp", RPCMode.Server, action.GetType(), action.getDestination(), action.getDuration());
         //addActionp(action.GetType(), action.getDestination(), action.getDuration());
         nbActions++;
@@ -114,7 +114,6 @@ public class SimulateScript : MonoBehaviour
         ActionScript action = null;
         foreach (string s in enabledActions)
         {
-            
             if (s == actionName)
             {
                 //Debug.LogError(destination);
@@ -173,6 +172,7 @@ public class SimulateScript : MonoBehaviour
             else
             {
                 animating = false;
+                //player.SimulationEnded();
                 actions.Clear();
             }
         }
@@ -181,6 +181,7 @@ public class SimulateScript : MonoBehaviour
     // Stops the simulation
     public void stopActions()
      {
+        animating = false;
         ended = true;
         var action = this.getAction(currentActionsIndex);
         if (action != null && action.getStarted())
@@ -188,6 +189,7 @@ public class SimulateScript : MonoBehaviour
             currentAction = null;
             action.endSimulation();
         }
+        //player.SimulationEnded();
      }
 
     [RPC]

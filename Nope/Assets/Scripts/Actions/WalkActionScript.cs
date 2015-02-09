@@ -6,10 +6,12 @@ public class WalkActionScript : ActionScript
 
     public WalkActionScript(Vector3 destination, int duration) : base(destination, duration)
     {
+        destinationNeeded = true;
     }
 
     public WalkActionScript() : base()
     {
+        destinationNeeded = true;
     }
 
     public override void doAction(Transform transform, Rigidbody rigidbody)

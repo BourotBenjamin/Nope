@@ -16,6 +16,13 @@ public abstract class ActionScript
     protected SimulateScript simulation;
     protected float startTime;
 
+    protected bool destinationNeeded;
+
+    public bool isDestinationNeeded()
+    {
+        return destinationNeeded;
+    }
+
     public ActionScript()
     {
         this.duration = -1;

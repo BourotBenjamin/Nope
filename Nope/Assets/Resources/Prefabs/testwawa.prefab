@@ -103,6 +103,11 @@ MonoBehaviour:
   - WalkActionScript
   - WeaponActionScript
   - StandActionScript
+  - BowActionScript
+  - MeteorActionScript
+  - MineDetectorActionScript
+  - SwordActionScript
+  - TrapActionScript
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

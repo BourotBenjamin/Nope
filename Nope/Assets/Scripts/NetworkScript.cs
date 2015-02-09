@@ -14,6 +14,10 @@ public class NetworkScript : MonoBehaviour
     private PlayerScript playerTwo;
     private GUIScript gui;
 
+    public bool playerOneIsSimulating;
+    public bool playerTwoIsSimulating;
+    public bool isSimulating;
+
     void Start()
     {
         gui = this.gameObject.GetComponent<GUIScript>();
@@ -58,6 +62,9 @@ public class NetworkScript : MonoBehaviour
         if(playerTwoIsReadyToSimulate && playerOneIsReadyToSimulate)
         {
             Debug.LogError("Everyone is ready");
+            playerOneIsSimulating = true;
+            playerTwoIsSimulating = true;
+            isSimulating = true;
             playerOne.SendSimulation();
             playerTwo.SendSimulation();
             playerOne.Simulate();
@@ -65,6 +72,16 @@ public class NetworkScript : MonoBehaviour
             playerTwoIsReadyToSimulate = false;
             playerOneIsReadyToSimulate = false;
         }
+    }
+
+    public void SimulationEnded(PlayerScript player)
+    {
+        if (player == playerOne)
+            playerOneIsSimulating = false;
+        if (player == playerTwo)
+            playerTwoIsSimulating = false;
+        if (!playerOneIsSimulating && !playerTwoIsSimulating)
+            isSimulating = false;
     }
 
 }
