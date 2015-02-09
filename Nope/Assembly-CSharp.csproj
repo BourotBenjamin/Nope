@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -47,19 +47,35 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\BowActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\MeteorActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\MineDetectorActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\StandActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\SwordActionScript.cs" />
+     <Compile Include="Assets\Scripts\Actions\TrapActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\WalkActionScript.cs" />
      <Compile Include="Assets\Scripts\Actions\WeaponActionScript.cs" />
+     <Compile Include="Assets\Scripts\AnimationCharacters.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CharactersAttributes.cs" />
      <Compile Include="Assets\Scripts\GUIScript.cs" />
+     <Compile Include="Assets\Scripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
      <Compile Include="Assets\Scripts\NetworkManagerScript.cs" />
      <Compile Include="Assets\Scripts\NetworkScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\RangeScript.cs" />
      <Compile Include="Assets\Scripts\SimulateScript.cs" />
      <Compile Include="Assets\Scripts\UI\UIManagerScript.cs" />
+     <Compile Include="Assets\Scripts\Weapons\ArrowScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
+     <Compile Include="Assets\Scripts\Weapons\HiddenExplosiveTrapScript.cs" />
+     <Compile Include="Assets\Scripts\Weapons\MeteorScript.cs" />
+     <Compile Include="Assets\Scripts\aimScript.cs" />
+     <Compile Include="Assets\Scripts\planeRangeScript.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
