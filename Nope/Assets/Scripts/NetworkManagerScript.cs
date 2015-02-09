@@ -53,8 +53,6 @@ public class NetworkManagerScript : MonoBehaviour {
         }
         else
         {
-            MasterServer.ipAddress = "89.93.129.73";
-            MasterServer.port = 23466;
             MasterServer.RequestHostList("Nope");
             clientConnected = false;
         }
@@ -132,8 +130,6 @@ public class NetworkManagerScript : MonoBehaviour {
 
     void initServer()
     {
-        MasterServer.ipAddress = "89.93.129.73";
-        MasterServer.port = 23466;
         Network.InitializeSecurity();
         bool useNat = !Network.HavePublicAddress();
         Network.InitializeServer(2, 6600, useNat);
@@ -156,7 +152,6 @@ public class NetworkManagerScript : MonoBehaviour {
                     j++;
                 }
                 Debug.LogError(data[i].gameName + " ip: " + tmpIp + ":" + data[i].port);
-                i++;
                 Network.Connect(tmpIp, data[i].port);
                 clientConnected = true;
                 break;
