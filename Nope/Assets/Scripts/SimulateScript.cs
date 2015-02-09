@@ -68,7 +68,7 @@ public class SimulateScript : MonoBehaviour
     public void addActionToAll(ActionScript action)
     {
         _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
-        addAction(action.getName(), action.getDestination(), action.getDuration());
+        //addAction(action.getName(), action.getDestination(), action.getDuration());
         //_nV.RPC("addActionp", RPCMode.Server, action.GetType(), action.getDestination(), action.getDuration());
         //addActionp(action.GetType(), action.getDestination(), action.getDuration());
         nbActions++;
