@@ -9,10 +9,6 @@ public class ArrowScript : MonoBehaviour
     protected int damage;
     protected List<Collider> playersInRadius;
 
-    void OnNetworkInstantiate(NetworkMessageInfo info)
-    {
-        Debug.Log(info);
-    }
 
     [RPC]
     public void initValues(Vector3 startPos, Vector3 target, int damage)
@@ -35,7 +31,6 @@ public class ArrowScript : MonoBehaviour
         if (Network.isServer)
         {
             GameObject collisionGameObject = collision.gameObject;
-            Debug.Log(collisionGameObject);
             if (collisionGameObject.tag == "Player")
             {
                 collisionGameObject.GetComponent<SimulateScript>().warriorDies();

@@ -42,7 +42,6 @@ public class NetworkScript : MonoBehaviour
     public void setReadyToSimulate()
     {
         networkView.RPC("setPlayerReadyToSimulate", RPCMode.Server, Network.player);
-        Debug.LogError(Network.player + " ready");
     }
 
     [RPC]
@@ -51,17 +50,14 @@ public class NetworkScript : MonoBehaviour
         if (playerOne.owner == player)
         {
             playerOneIsReadyToSimulate = true;
-            Debug.LogError("1 is ready so I wait");
         }
         else if (playerTwo.owner == player)
         {
             playerTwoIsReadyToSimulate = true;
-            Debug.LogError("2 is ready so I wait");
         }
 
         if(playerTwoIsReadyToSimulate && playerOneIsReadyToSimulate)
         {
-            Debug.LogError("Everyone is ready");
             playerOneIsSimulating = true;
             playerTwoIsSimulating = true;
             isSimulating = true;

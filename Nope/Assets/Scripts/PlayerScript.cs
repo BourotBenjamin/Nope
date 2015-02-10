@@ -85,7 +85,6 @@ public class PlayerScript : MonoBehaviour {
         foreach (var i in simulateSrcipts)
         {
             i.setOwnerInSimulateScript(p);
-            Debug.LogError(i.owner);
         }
     }
 

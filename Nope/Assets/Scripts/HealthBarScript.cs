@@ -54,7 +54,6 @@ public class HealthBarScript : MonoBehaviour {
         //Camera cam = Camera.current;         
         //keeps bar facing camera
 
-        //Debug.Log(cam.transform.position);
         pos.localRotation = Quaternion.LookRotation(cam.position-pos.position);
         //emptyBar.localRotation = Quaternion.LookRotation(cam.position - pos.position);
     }

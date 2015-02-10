@@ -9,11 +9,6 @@ public class FireAmmoScript : MonoBehaviour
     protected int damage;
     protected List<Collider> playersInRadius;
 
-    void OnNetworkInstantiate(NetworkMessageInfo info)
-    {
-        Debug.Log(info);
-    }
-
     [RPC]
     public void initValues(Vector3 startPos, Vector3 target, int damage)
     {
@@ -37,7 +32,6 @@ public class FireAmmoScript : MonoBehaviour
             GameObject collisionGameObject = collision.gameObject;
             if (collisionGameObject.tag != "Ground")
             {
-                Debug.Log(collisionGameObject);
                 if (collisionGameObject.tag == "Player")
                 {
                     collisionGameObject.transform.position = new Vector3(90, 90, 90);

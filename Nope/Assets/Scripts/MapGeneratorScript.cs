@@ -104,7 +104,6 @@ public class MapGeneratorScript : MonoBehaviour {
             _nV = this.GetComponent<NetworkView>();
 
             _seed = getRandomString();
-            Debug.Log(_seed);
             hCode = _seed.GetHashCode();
             if (hCode < 0)
                 hCode = -hCode;

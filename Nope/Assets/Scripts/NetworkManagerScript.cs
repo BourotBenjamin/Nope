@@ -165,7 +165,6 @@ public class NetworkManagerScript : MonoBehaviour {
                 }
                 if (data[i].connectedPlayers < 3)
                 {
-                    Debug.LogError(data[i].gameName + " ip: " + tmpIp + ":" + data[i].port);
                     Network.Connect(tmpIp, data[i].port);
                     clientConnected = true;
                     break;

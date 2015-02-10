@@ -38,7 +38,6 @@ public class planeRangeScript : MonoBehaviour {
 
         Texture2D circleRange = new Texture2D(2, 2);
         circleRange = Resources.Load("Images/circleRange", typeof(Texture2D)) as Texture2D;
-        Debug.Log(circleRange);
         primitive.renderer.material.mainTexture = circleRange;
 
         mesh = ((MeshFilter)primitive.GetComponent(typeof(MeshFilter))).mesh as Mesh;

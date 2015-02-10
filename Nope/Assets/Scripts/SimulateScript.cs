@@ -116,7 +116,6 @@ public class SimulateScript : MonoBehaviour
         {
             if (s == actionName)
             {
-                //Debug.LogError(destination);
                 System.Type type = System.Type.GetType(s);
                 object o = System.Activator.CreateInstance(type);
                 action = (ActionScript)o;

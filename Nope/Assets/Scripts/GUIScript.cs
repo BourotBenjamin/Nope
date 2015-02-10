@@ -47,7 +47,6 @@ public class GUIScript : MonoBehaviour {
                 pointed = hit.collider;
                 hit.collider.renderer.material.color = Color.red;
             }
-            Debug.Log("hit.point  :" + hit.point);
             positionOnGame = hit.point;
             if (action.getName() == "WalkActionScript")
             {
@@ -57,7 +56,6 @@ public class GUIScript : MonoBehaviour {
                 rayRange = rangeView.getCircleRay();
                 positionOnGame = selectedPlayer.transform.position + Vector3.ClampMagnitude(newPos, rangeAttribute.mobilityRange);
                 positionOnGame.y = 0.17f;
-                setDestinationToAction(positionOnGame);
                 rangeView.deleteRange();
                 rangeView.addPointDest(positionOnGame);
 
@@ -66,8 +64,8 @@ public class GUIScript : MonoBehaviour {
             {   
                 GameObject marker = aimScript.aimDone();
                 marker.transform.localScale = new Vector3(0.2f, 0, 1.0f);
-                setDestinationToAction(positionOnGame);
             }
+            setDestinationToAction(positionOnGame);
             clickState = selected.SelectPlayer;
         }
     }
@@ -113,7 +111,6 @@ public class GUIScript : MonoBehaviour {
 
     private void mouseControl()
     {
-        Debug.LogError(clickState);
         if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
         {
             positionSet = true;
@@ -122,7 +119,6 @@ public class GUIScript : MonoBehaviour {
         }
         else if (clickState == selected.SelectPlayer)
         {
-            Debug.LogError("Select a player");
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             setSelectionRaycast(ray);
         }
@@ -237,7 +233,6 @@ public class GUIScript : MonoBehaviour {
                     }
                     if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
                     {
-                        Debug.LogError("I am ready");
                         networkScript.setReadyToSimulate();
                         clickState = selected.SelectPlayer;
                     }

@@ -7,7 +7,7 @@ public class MeteorScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10.0f);
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.0f);
             int i = 0;
             while (i < hitColliders.Length)
             {

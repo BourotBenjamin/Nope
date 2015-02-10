@@ -111,9 +111,7 @@ public class RangeScript : MonoBehaviour {
             {
                 for (int i = 0; i < squaresize; i++)
                 {
-                    //Debug.Log(vertices[(n * squaresize) + i].y);
                     vertices[(n*squaresize)+i].y = 10;
-                    //Debug.Log(vertices[(n * squaresize) + i].y);
                     mesh.vertices[i].y = vertices[(n * squaresize) + i].y;
                     position.x -= xStep;
                 }
@@ -123,7 +121,6 @@ public class RangeScript : MonoBehaviour {
             //mesh.vertices = vertices;
             foreach(var i in mesh.vertices)
             {
-                Debug.Log(i.y);
                 mesh.Clear();
                 mesh.RecalculateBounds();
                 //mesh.RecalculateNormals();

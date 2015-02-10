@@ -23,14 +23,12 @@ public class MeteorActionScript : ActionScript
 
     public override void doAction(Transform transform, Rigidbody rigidbody)
     {
-        Debug.LogError("Meteor");
         if (this.started)
         {
             if (!created && Network.isServer)
             {
                 created = true;
                 GameObject obj = (GameObject)Network.Instantiate(Resources.Load("Prefabs/Meteor", typeof(GameObject)), destination + Vector3.up * 2, simulation.transform.rotation, 0);
-                Debug.LogError(destination + Vector3.up * 2);
             }
             else if (Time.time - this.startTime > 1.0f)
             {
