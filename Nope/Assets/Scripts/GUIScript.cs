@@ -62,13 +62,11 @@ public class GUIScript : MonoBehaviour {
                 rangeView.addPointDest(positionOnGame);
 
             }
-            else
+            if (action.getName() == "WeaponActionScript")
             {   
-
-                setDestinationToAction(positionOnGame);
                 GameObject marker = aimScript.aimDone();
                 marker.transform.localScale = new Vector3(0.2f, 0, 1.0f);
-                
+                setDestinationToAction(positionOnGame);
             }
             clickState = selected.SelectPlayer;
         }
@@ -212,19 +210,17 @@ public class GUIScript : MonoBehaviour {
                                         rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
                                         rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                     }
-                                    else
+                                    if (action.getName() == "WeaponActionScript")
                                     {
+                                        rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
                                         rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                        //rangeView.addRange(rangeAttribute.attackRange, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                        aimScript.setValues(rangeView, rangeAttribute.attackRange, 5f, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                     }
                                     clickState = selected.SetDestination;
                                     break;
                                 }
                                 else
                                 {
-                                    rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
-                                    rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                    aimScript.setValues(rangeView, rangeAttribute.attackRange, 5f, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                     positionSet = true;
                                     addActionToPlayer();
                                     break;
