@@ -78,7 +78,7 @@ public class RangeScript : MonoBehaviour {
         primitive.collider.enabled = false;
     }
 
-    public void addPointPull(Vector3 posDest)
+    /*public void addPointPull(Vector3 posDest)
     {
         primitive = GameObject.CreatePrimitive(PrimitiveType.Plane);
         primitive.transform.position = posDest;
@@ -89,14 +89,14 @@ public class RangeScript : MonoBehaviour {
         primitive.renderer.material.mainTexture = attackRange;
         primitive.collider.enabled = false;
 
-    }
+    }*/
 
     public void deleteRange()
     {
         Destroy(primitive);
         mesh = null;
     }
-    public void UpdatePlane()
+   /* public void UpdatePlane()
     {   
         
         if (mesh != null)
@@ -127,5 +127,5 @@ public class RangeScript : MonoBehaviour {
             }
             
         }
-    }
+    }*/
 }

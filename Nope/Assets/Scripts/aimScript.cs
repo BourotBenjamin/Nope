@@ -54,9 +54,10 @@ public class aimScript : MonoBehaviour {
     public GameObject aimDone()
     {
         started = false;
+        first = false;
         //Destroy(rangeIndicator);
         //rangeIndicator.transform.localScale = new Vector3(0.2f, 0, 1.0f);
-        
+        Debug.Log(rangeIndicator.name);
         return rangeIndicator;
     }
 

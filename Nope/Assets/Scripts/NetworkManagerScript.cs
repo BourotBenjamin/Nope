@@ -45,8 +45,6 @@ public class NetworkManagerScript : MonoBehaviour {
             p2.addCharacterList(test);
             p1.addCharacterList(test);
             p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
 
             p1.addCharacterPos(1);
             p2.addCharacterPos(2);

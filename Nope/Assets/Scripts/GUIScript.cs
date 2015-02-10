@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 public class GUIScript : MonoBehaviour {
 
     [SerializeField]
@@ -17,12 +17,14 @@ public class GUIScript : MonoBehaviour {
     private RangeScript rangeView;
     private CharactersAttributes rangeAttribute;
     private GameObject plane;
+    private GameObject go;
     private aimScript aimScript;
     private Vector3 pullMarker;
     private float rayRange;
     private selected clickState;
     private ActionScript _action;
     private Vector3 positionOnGame;
+    private List<GameObject> marker;
     public ActionScript action
     {
         get { return _action; }
@@ -33,6 +35,7 @@ public class GUIScript : MonoBehaviour {
     {
         ended = false;
         win = false;
+        marker = new List<GameObject>();
         clickState = selected.SelectPlayer;
         
     }
@@ -60,10 +63,12 @@ public class GUIScript : MonoBehaviour {
                 rangeView.addPointDest(positionOnGame);
 
             }
-            if (action.getName() == "WeaponActionScript")
+            else if (action.getName() == "WeaponActionScript")
             {   
-                GameObject marker = aimScript.aimDone();
-                marker.transform.localScale = new Vector3(0.2f, 0, 1.0f);
+                go = aimScript.aimDone();
+                go.transform.localScale = new Vector3(0.2f, 0, 1.0f);
+                marker.Add(go);
+                positionOnGame.y = 0.17f;
             }
             setDestinationToAction(positionOnGame);
             clickState = selected.SelectPlayer;
@@ -210,7 +215,7 @@ public class GUIScript : MonoBehaviour {
                                     {
                                         rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
                                         rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                        aimScript.setValues(rangeView, rangeAttribute.attackRange, 5f, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+                                        aimScript.setValues(rangeView, 1f, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
                                     }
                                     clickState = selected.SetDestination;
                                     break;
@@ -233,13 +238,21 @@ public class GUIScript : MonoBehaviour {
                     }
                     if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
                     {
+                        //Debug.Log("lol"+marker.Count);
+                        foreach (GameObject g in marker)
+                        { 
+                            Destroy(g);
+                            //Debug.Log("buabua" + g.name);
+                        }
                         networkScript.setReadyToSimulate();
                         clickState = selected.SelectPlayer;
+
                     }
+                    
                 }
                 else
                 {
-                    GUI.Label(new Rect(0, 0, 100, 20), "Simulation In Progress");
+                    GUI.Label(new Rect(0, 0, 100, 20), "Simulation In Progress"); 
                 }
 
             }
