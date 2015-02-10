@@ -1,0 +1,106 @@
+Initialize engine version: 4.6.0f3 (30840d631a27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     2094 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 66)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 4.6.0f3 (30840d631a27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     2094 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 66)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\System.Core.dll (this message is harmless)
+SelectPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Select a player
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_client_Data\Managed\System.Core.dll (this message is harmless)
+ClickOnGui
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SetDestination
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit.point  :(-4.4, 0.0, 12.8)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SelectPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Select a player
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SelectPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Select a player
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+I am ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1 ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SelectPlayer
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Select a player
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+I am ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2 ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

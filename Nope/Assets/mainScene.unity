@@ -562,6 +562,8 @@ MonoBehaviour:
   prefabByName:
   - warrior
   isServer: 1
+  useMastserServer: 0
+  localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
 --- !u!148 &1963592838

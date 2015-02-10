@@ -1,0 +1,113 @@
+Initialize engine version: 4.6.0f3 (30840d631a27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     2094 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 66)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\nope_server_Data\Managed\System.Core.dll (this message is harmless)
+
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The connection request to 67.225.180.24:50005 failed. Are you sure the server can be connected to?
+ 
+(Filename:  Line: 650)
+
+Failed to connect to master server at 67.225.180.24:23466
+ 
+(Filename:  Line: 231)
+
+2 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Everyone is ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.OnTriggerEnter (UnityEngine.Collider collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.OnTriggerExit (UnityEngine.Collider collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+2 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Everyone is ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Everyone is ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.OnTriggerEnter (UnityEngine.Collider collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+2 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1 is ready so I wait
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Everyone is ready
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.OnTriggerExit (UnityEngine.Collider collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HiddenExplosiveTrapScript.OnTriggerEnter (UnityEngine.Collider collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

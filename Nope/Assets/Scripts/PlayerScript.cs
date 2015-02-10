@@ -124,7 +124,7 @@ public class PlayerScript : MonoBehaviour {
         warriors.Remove(warrior);
         SimulateScript sw =warrior.GetComponent<SimulateScript>();
         sw.stopActions();
-        charactersList.Remove(charactersList.ToArray()[sw.id]);
+        //charactersList.Remove(charactersList.ToArray()[sw.id]);
         simulateSrcipts.Remove(sw);
         if(Network.isServer && warriors.Count == 0)
         {
