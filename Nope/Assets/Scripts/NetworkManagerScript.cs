@@ -13,6 +13,10 @@ public class NetworkManagerScript : MonoBehaviour {
     [SerializeField]
     bool isServer = true;
     [SerializeField]
+    bool useMastserServer = true;
+    [SerializeField]
+    string localServerIp;
+    [SerializeField]
     PlayerScript p1;
     [SerializeField]
     PlayerScript p2;
@@ -53,8 +57,16 @@ public class NetworkManagerScript : MonoBehaviour {
         }
         else
         {
-            MasterServer.RequestHostList("Nope");
-            clientConnected = false;
+            if (useMastserServer)
+            {
+                MasterServer.RequestHostList("Nope");
+                clientConnected = false;
+            }
+            else
+            {
+                clientConnected = true;
+                Network.Connect(localServerIp, 6600);
+            }
         }
 	}
 
@@ -151,10 +163,14 @@ public class NetworkManagerScript : MonoBehaviour {
                     tmpIp = data[i].ip[j] + " ";
                     j++;
                 }
-                Debug.LogError(data[i].gameName + " ip: " + tmpIp + ":" + data[i].port);
-                Network.Connect(tmpIp, data[i].port);
-                clientConnected = true;
-                break;
+                if (data[i].connectedPlayers < 3)
+                {
+                    Debug.LogError(data[i].gameName + " ip: " + tmpIp + ":" + data[i].port);
+                    Network.Connect(tmpIp, data[i].port);
+                    clientConnected = true;
+                    break;
+                }
+                i++;
             }
         }
     }
