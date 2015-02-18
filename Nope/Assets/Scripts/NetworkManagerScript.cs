@@ -20,6 +20,16 @@ public class NetworkManagerScript : MonoBehaviour {
     PlayerScript p1;
     [SerializeField]
     PlayerScript p2;
+    [SerializeField]
+    RectTransform serverCanevas;
+    [SerializeField]
+    GameObject buttonPrefab;
+
+    private string[] serversIps;
+    private int[] serversPorts;
+    private int[] serversUsers;
+    private GameObject[] serverBtns;
+    private float lastServerListLoad = 0f;
 
 
     bool p1Vacant = true;
@@ -32,6 +42,7 @@ public class NetworkManagerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        serverBtns = new GameObject[0];
         Application.runInBackground = true;
         _nV = this.GetComponent<NetworkView>();
 
@@ -150,22 +161,73 @@ public class NetworkManagerScript : MonoBehaviour {
     {
         if (!clientConnected && !isServer)
         {
+            if (Time.timeSinceLevelLoad - lastServerListLoad > 5f)
+            {
+                lastServerListLoad = Time.timeSinceLevelLoad;
+                MasterServer.ClearHostList();
+                MasterServer.RequestHostList("Nope");
+            }
+            var allBtnChanged = false;
             HostData[] data = MasterServer.PollHostList();
+            if (serverBtns.Length != data.Length)
+            {
+                serversPorts = new int[data.Length];
+                serversIps = new string[data.Length];
+                serversUsers = new int[data.Length];
+                for (int k = 0; k < serverBtns.Length; k++)
+                    Destroy(serverBtns[k]);
+                serverBtns = new GameObject[data.Length];
+                allBtnChanged = true;
+            }
             int i = 0;
             while (i < data.Length)
             {
+                var btnChanged = false;
                 string tmpIp = "";
                 int j = 0;
+                int port = data[i].port;
                 while (j < data[i].ip.Length)
                 {
                     tmpIp = data[i].ip[j] + " ";
                     j++;
                 }
-                if (data[i].connectedPlayers < 3)
+                if (port != serversPorts[i])
                 {
-                    Network.Connect(tmpIp, data[i].port);
-                    clientConnected = true;
-                    break;
+                    serversPorts[i] = port;
+                    btnChanged = true;
+                }
+                if (tmpIp != serversIps[i])
+                {
+                    serversIps[i] = tmpIp;
+                    btnChanged = true;
+                }
+                if (data[i].connectedPlayers != serversUsers[i])
+                {
+                    serversUsers[i] = data[i].connectedPlayers;
+                    btnChanged = true;
+                }
+
+                if (btnChanged || allBtnChanged)
+                {
+                    if (serverBtns[i] != null)
+                        Destroy(serverBtns[i]);
+                    var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
+                    btn.MainRectTransform.SetParent(serverCanevas);
+                    btn.MainRectTransform.localPosition = Vector3.zero;
+                    btn.MainRectTransform.anchorMin = new Vector3(0f, 1f - (i + 1) / (float)data.Length);
+                    btn.MainRectTransform.anchorMax = new Vector3(1f, 1f - i / (float)data.Length);
+                    btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+                    btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+                    btn.MainRectTransform.localScale = Vector3.one;
+                    btn.Text.text = tmpIp + " (" + (data[i].connectedPlayers - 1) + " / 2)";
+                    btn.ButtonScript.onClick.AddListener(() =>
+                    {
+                        Network.Connect(tmpIp, port);
+                        clientConnected = true;
+                        for (int k = 0; k < serverBtns.Length; k++)
+                            Destroy(serverBtns[k]);
+                    });
+                    serverBtns[i] = btn.gameObject;
                 }
                 i++;
             }
