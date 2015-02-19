@@ -8,6 +8,13 @@ public class GUIScript : MonoBehaviour {
     [SerializeField]
     private Camera camera;
 
+    [SerializeField]
+    RectTransform parentCanvas;
+
+    [SerializeField]
+    GameObject buttonPrefab;
+
+    public GameObject[] buttonList;
     private bool positionSet;
     private SimulateScript selectedPlayer;
     private bool ended;
@@ -35,6 +42,7 @@ public class GUIScript : MonoBehaviour {
     {
         ended = false;
         win = false;
+        //buttonList = new List<GameObject>();
         marker = new List<GameObject>();
         clickState = selected.SelectPlayer;
         
@@ -72,6 +80,10 @@ public class GUIScript : MonoBehaviour {
             }
             setDestinationToAction(positionOnGame);
             clickState = selected.SelectPlayer;
+            for (int i = 0; i < parentCanvas.childCount; i++)
+            {
+                Destroy(parentCanvas.GetChild(i).gameObject);
+            }
         }
     }
 
@@ -91,6 +103,7 @@ public class GUIScript : MonoBehaviour {
                         selectedPlayer.transform.renderer.material.color = Color.white;
                     selectedPlayer = ss;
                     aimScript = hit.collider.GetComponent<aimScript>();
+                    displayGUI();
                 }
             }
         }
@@ -111,6 +124,7 @@ public class GUIScript : MonoBehaviour {
         selectedPlayer.transform.renderer.material.color = Color.white;
         positionSet = false;
         selectedPlayer = null;
+        //deleteGUI();
         clickState = selected.SelectPlayer;
     }
 
@@ -176,7 +190,72 @@ public class GUIScript : MonoBehaviour {
         }
 	}
 
+    void deleteGUI()
+    {
+        for (int i = 0; i < parentCanvas.childCount; i++)
+        {
+            Destroy(parentCanvas.GetChild(i).gameObject);
+        }
+    }
 
+    void displayGUI()
+    {
+        for (int i = 0; i < parentCanvas.childCount; i++)
+        {
+            Destroy(parentCanvas.GetChild(i).gameObject);
+        }
+        int j = 0;
+        int length = selectedPlayer.enabledActions.ToArray().Length;
+        buttonList = new GameObject[length];
+        foreach (string s in selectedPlayer.enabledActions)
+        {
+            GameObject g = (GameObject)Instantiate(buttonPrefab);
+            var cacheScript = g.GetComponent<ServerButtonCustomCacheScript>();
+            buttonList[j] = g;
+            cacheScript.MainRectTransform.SetParent(parentCanvas);
+            cacheScript.MainRectTransform.localPosition = Vector3.zero;
+            cacheScript.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
+            cacheScript.MainRectTransform.anchorMax = new Vector3(1f, 1f - j / (float)length);
+            cacheScript.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+            cacheScript.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+            cacheScript.MainRectTransform.localScale = Vector3.one;
+            cacheScript.Text.text = s;
+            j++;
+            var str = s;
+            //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
+            cacheScript.ButtonScript.onClick.AddListener(() => clickButton(str, selectedPlayer.gameObject));
+            
+        }
+    }
+
+    void clickButton(string s, GameObject selectedPlayer)
+    {
+        System.Type type = System.Type.GetType(s);
+        object o = System.Activator.CreateInstance(type);
+        action = (ActionScript)o;
+        if (action.isDestinationNeeded())
+        {
+            if (action.getName() == "WalkActionScript")
+            {
+                rangeView = selectedPlayer.GetComponent<RangeScript>();
+                rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
+                rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+            }
+            if (action.getName() == "WeaponActionScript")
+            {
+                rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
+                rangeView = selectedPlayer.GetComponent<RangeScript>();
+                aimScript.setValues(rangeView, 1f, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
+            }
+            clickState = selected.SetDestination;
+        }
+        else
+        {
+            positionSet = true;
+            addActionToPlayer();
+        }
+        //deleteGUI();
+    }
 
     void OnGUI()
     {

@@ -6,7 +6,6 @@ using System.Collections.Generic;
 // Store and launch actions
 public class SimulateScript : MonoBehaviour 
 {
-
     private int currentActionsIndex;
     private List<ActionScript> actions;
     private bool ended;
