@@ -1,76 +1,57 @@
-Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0x116)
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
     Vendor:   Intel
-    VRAM:     64 MB
+    VRAM:     2094 MB
 Default GameObject Tag: Player already registered
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/BaseClasses/Tags.cpp Line: 66)
+(Filename: C:/buildslave/unity/build/Runtime/BaseClasses/Tags.cpp Line: 67)
 
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.062 seconds
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.053 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.dll (this message is harmless)
 Profiler is only supported with Pro License
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+(Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
 
-Initialize engine version: 4.6.0b20 (a3ecf55f1347)
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0x116)
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
     Vendor:   Intel
-    VRAM:     64 MB
+    VRAM:     2094 MB
 Default GameObject Tag: Player already registered
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/BaseClasses/Tags.cpp Line: 66)
+(Filename: C:/buildslave/unity/build/Runtime/BaseClasses/Tags.cpp Line: 67)
 
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\ESGI 4A\Unity\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.069 seconds
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.051 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: D:\ESGI 4A\Unity\clibeta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.dll (this message is harmless)
 Profiler is only supported with Pro License
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+(Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
 
-Plane
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-aimScript:aimDone() (at C:\Git\Nope\Nope\Assets\Scripts\aimScript.cs:60)
-GUIScript:setDestRaycast(Ray) (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:68)
-GUIScript:mouseControl() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:123)
-GUIScript:Update() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:170)
- 
-(Filename: C Line: 0)
-
-Plane
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-aimScript:aimDone() (at C:\Git\Nope\Nope\Assets\Scripts\aimScript.cs:60)
-GUIScript:setDestRaycast(Ray) (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:68)
-GUIScript:mouseControl() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:123)
-GUIScript:Update() (at C:\Git\Nope\Nope\Assets\Scripts\GUIScript.cs:170)
- 
-(Filename: C Line: 0)
-
-Waiting for finish
 Waiting for finish
