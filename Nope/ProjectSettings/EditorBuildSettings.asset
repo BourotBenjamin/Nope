@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/loseScene.unity
   - enabled: 1
     path: Assets/winScene.unity
+  - enabled: 1
+    path: Assets/endScene.unity

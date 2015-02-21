@@ -25,7 +25,7 @@ public class CameraScript : MonoBehaviour
     private Quaternion rotation;
     private Vector3 position;
     private float isOrbiting = 0;
-    void Start() { Init(); }
+    void Awake() { Init(); }
     void OnEnable() { Init(); }
     public void Init()
     {

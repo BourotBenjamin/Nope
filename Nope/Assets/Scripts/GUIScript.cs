@@ -37,7 +37,7 @@ public class GUIScript : MonoBehaviour {
         set { _action = value; }
     }
 
-    void Start()
+    void Awake()
     {
         ended = false;
         win = false;

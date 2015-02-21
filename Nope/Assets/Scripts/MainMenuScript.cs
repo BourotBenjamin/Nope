@@ -12,8 +12,11 @@ public class MainMenuScript : MonoBehaviour {
     [SerializeField]
     RectTransform serverCanevas;
 
-    void Start()
+    void Awake()
     {
+        GameOptionsScript.warriors[0] = null;
+        GameOptionsScript.warriors[1] = null;
+        GameOptionsScript.warriors[2] = null;
         var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
         btn.MainRectTransform.SetParent(serverCanevas);
         btn.MainRectTransform.localPosition = Vector3.zero;
@@ -55,8 +58,8 @@ public class MainMenuScript : MonoBehaviour {
                 var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
                 btn.MainRectTransform.SetParent(serverCanevas);
                 btn.MainRectTransform.localPosition = Vector3.zero;
-                btn.MainRectTransform.anchorMin = new Vector3(0.33f * (j), 0.33f * (i));
-                btn.MainRectTransform.anchorMax = new Vector3(0.33f*(j+1), 0.33f*(i+1));
+                btn.MainRectTransform.anchorMin = new Vector3((1f / classes.Length) * (j), 0.33f * (i));
+                btn.MainRectTransform.anchorMax = new Vector3((1f / classes.Length)*(j+1), 0.33f*(i+1));
                 btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
                 btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
                 btn.MainRectTransform.localScale = Vector3.one;

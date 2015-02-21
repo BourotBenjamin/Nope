@@ -18,7 +18,7 @@ public class NetworkScript : MonoBehaviour
     public bool playerTwoIsSimulating;
     public bool isSimulating;
 
-    void Start()
+    void Awake()
     {
         gui = this.gameObject.GetComponent<GUIScript>();
     }

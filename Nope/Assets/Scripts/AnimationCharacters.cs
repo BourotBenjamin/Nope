@@ -20,7 +20,7 @@ public class AnimationCharacters : MonoBehaviour {
         set { _positionToGo = value; }
     }
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         _nV = this.GetComponent<NetworkView>();
         simulation = this.GetComponent<SimulateScript>();

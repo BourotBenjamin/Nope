@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour {
         set { _simulateSrcipts = value; }
     }
 
-    void Start()
+    void Awake()
     {
         simulationsLaunched = 0;
         simulateSrcipts = new List<SimulateScript>();
@@ -128,6 +128,7 @@ public class PlayerScript : MonoBehaviour {
         if(Network.isServer && warriors.Count == 0)
         {
             network.networkView.RPC("PlayerDied", RPCMode.Others, owner);
+            Application.LoadLevel("endScene");
         }
 	}
 

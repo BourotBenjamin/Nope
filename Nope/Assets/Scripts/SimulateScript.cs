@@ -50,9 +50,9 @@ public class SimulateScript : MonoBehaviour
     }
 
     // Initialise the script
-    public void Start()
+    public void Awake()
     {
-        _nV = this.GetComponent<NetworkView>();
+        Debug.LogError("Level loaded");
         life = this.GetComponent<CharactersAttributes>();
         actions = new List<ActionScript>();
         nbActions = 0;
@@ -68,7 +68,7 @@ public class SimulateScript : MonoBehaviour
     // Add an action to the simulation
     public void addActionToAll(ActionScript action)
     {
-        _nV.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
+        this.networkView.RPC("addAction", RPCMode.Server, action.getArrayOfParams());
         //addAction(action.getName(), action.getDestination(), action.getDuration());
         //_nV.RPC("addActionp", RPCMode.Server, action.GetType(), action.getDestination(), action.getDuration());
         //addActionp(action.GetType(), action.getDestination(), action.getDuration());

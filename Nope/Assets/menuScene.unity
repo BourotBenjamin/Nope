@@ -281,8 +281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   classes:
   - WaWa
-  - Fufu
-  - Tata
   buttonPrefab: {fileID: 194832, guid: fee2b1772a9cefd4293e7fcbab95dad6, type: 2}
   serverCanevas: {fileID: 146309349}
 --- !u!81 &1695065169

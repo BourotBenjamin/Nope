@@ -12,7 +12,7 @@ public class HiddenExplosiveTrapScript : MonoBehaviour {
         this.renderer.enabled = true;
     }
 
-    void Start()
+    void Awake()
     {
         if(Network.isServer)
         {
