@@ -143,17 +143,29 @@ public class PlayerScript : MonoBehaviour {
     {
         foreach (SimulateScript simulation in simulateSrcipts)
         {
-            simulation.startAllSimulations();
             ++simulationsLaunched;
+            simulation.startAllSimulations();
+        }
+        this.networkView.RPC("SimulationStarted", RPCMode.All, simulationsLaunched);
+    }
+
+    [RPC]
+    public void SimulationStarted(int nb)
+    {
+        simulationsLaunched = nb;
+        network.SimulationStarted(this);
+        if (simulationsLaunched == 0)
+        {
+            network.SimulationEnded(this);
         }
     }
 
     public void SimulationEnded()
     {
         --simulationsLaunched;
-        if(simulationsLaunched == 0)
+        if (simulationsLaunched == 0)
         {
-            network.SimulationEnded(this);
+            this.networkView.RPC("SimulationStarted", RPCMode.All, 0);
         }
     }
 

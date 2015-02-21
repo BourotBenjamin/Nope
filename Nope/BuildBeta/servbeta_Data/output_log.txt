@@ -16,7 +16,7 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\servbet
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\servbeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\servbeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\servbeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.048 seconds
+- Completed reload, in  0.049 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -26,12 +26,247 @@ Profiler is only supported with Pro License
  
 (Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
 
-Couldn't send RPC function 'removeOwner'
-
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
 UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
 UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
-NetworkManagerScript:OnPlayerDisconnected(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkManagerScript.cs:114)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
 
-[C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp line 2463] 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/Networking.cs Line: 408)
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
 
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+SimulateScript:startSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:156)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+SimulateScript:startAllSimulations() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:147)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:147)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:149)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:149)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:Simulate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:149)
+NetworkScript:setPlayerReadyToSimulate(NetworkPlayer) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:67)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ActionScript:endSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\ActionScript.cs:70)
+WalkActionScript:doAction(Transform, Rigidbody) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:26)
+SimulateScript:FixedUpdate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:222)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ActionScript:endSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\ActionScript.cs:70)
+WalkActionScript:doAction(Transform, Rigidbody) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:26)
+SimulateScript:FixedUpdate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:222)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+PlayerScript:SimulationEnded() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:168)
+SimulateScript:simulateActionAtNextIndex() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:178)
+ActionScript:endSimulation() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\ActionScript.cs:70)
+WalkActionScript:doAction(Transform, Rigidbody) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\Actions\WalkActionScript.cs:26)
+SimulateScript:FixedUpdate() (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\SimulateScript.cs:222)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+Waiting for finish

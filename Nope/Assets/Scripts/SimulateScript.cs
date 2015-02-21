@@ -173,7 +173,10 @@ public class SimulateScript : MonoBehaviour
             else
             {
                 animating = false;
-                //player.SimulationEnded();
+                if (Network.isServer)
+                {
+                    player.SimulationEnded();
+                }
                 actions.Clear();
             }
         }
@@ -184,17 +187,20 @@ public class SimulateScript : MonoBehaviour
      {
         animating = false;
         ended = true;
+        currentAction = null;
         if (currentActionsIndex >= 0)
         {
             var action = this.getAction(currentActionsIndex);
             if (action != null && action.getStarted())
             {
-                currentAction = null;
                 action.endSimulation();
             }
         }
         actions.Clear();
-        //player.SimulationEnded();
+        if (Network.isServer)
+        {
+            player.SimulationEnded();
+        }
      }
 
     [RPC]
@@ -205,10 +211,7 @@ public class SimulateScript : MonoBehaviour
             Debug.LogError("Died");
             player.EntityDied(this.gameObject);
             this.stopActions();
-            if(Network.isServer)
-            {
-                Network.Destroy(this.gameObject);
-            }
+            Destroy(this.gameObject);
         }
     }
 

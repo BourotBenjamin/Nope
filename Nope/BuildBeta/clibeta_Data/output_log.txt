@@ -16,16 +16,10 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.053 seconds
+- Completed reload, in  0.060 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.dll (this message is harmless)
-Profiler is only supported with Pro License
- 
-(Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
-
 Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -44,7 +38,7 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.053 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -54,4 +48,249 @@ Profiler is only supported with Pro License
  
 (Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
 
-Waiting for finish
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildBeta\clibeta_Data\Managed\System.dll (this message is harmless)
+Profiler is only supported with Pro License
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+P
+(Filena1e: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1True
+UnityEngine.Debug:rnternal_Log(Intue
+USnring, Object)
+UnityEngine.Debug:LogError(Ebject)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+ngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+Ne2False
+UnityEngitworkScript:Snternal_Log(Int32, String, Object)
+UnityEngine.Dibug:LogError(Object)
+NetworkScript:SimulatilationEn(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nopded(Playesets\Scripts\Playerrcript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/wrrkspace/ipt) (at C:\Upe/Aserss/hiloupe\wetworkScripttcs Line: 80)
+
+sets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStartedL(Ine
+UnityEngine.Debug:Internal_Log(Inpe\woSksiace\Objec\No
+pe\Nopngine.Debueg:LogError(PlayerSc
+ritt.cs:159)
+ 
+(Filename: C:/UPlayerecript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScr
+i
+pt.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PP2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\ScripayerScript.cs:159)
+ 
+(Filename: C:/UserorkScrippe/workspace/Unity/Nope/tope/Asse
+ts/Seriprs/NetScrkpt:Simucatione: 81)
+
+Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\NopePAssrue
+UnityEngine.Debug:Internal_Logets\32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/PhilropuspPe/worksypraccie/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\No.cs:159)
+ 
+(Filename: C:/Userscript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/S/Philoupe/workScript.cs Line: 80)
+
+nity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.DebuP:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81Tr
+ue
+UnrScripttyEimulationStarted(Int32) (at C:\Users\Philoupe\workspact)
+UnityEngine.Dce\Unity\Nope\Nope\Ass
+ets\Scripts\PlaymueationEnded(Player
+Sc
+ript) (at C:\Users\Philoupe\worksspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)cs
+PLine: 81rip
+t
+:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(InP1True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LotrError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\ing, Object)
+UnityEngine.Debug:Log\rror(Object)
+Netwtrks\Scrtp:s\NetworkaSionEpte.(clsy:r79)ip
+t) (at Cr\Use:sSPhiloatienStortes(Iat32\ (ai t:\UNeos\e\Nope\Assets\Scripts\Ny\Nope\Nope\Assets\S
+cripts\PlayerScript.cs:159)
+ 
+(Filena (a: C:/Ust C:\Users\Philorkspace/Unityce\Unity\No/Assets/Scripts/NetworkScript.cs Line: s:159
+)
+
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PP1yree
+UnrtyEtg) e.DebC::Inserna\_Lhi(Intpe,\worikgs Objec\)
+UiityEnNone.DNbugeL\gArsor(tbjeSc)
+NpttoskScriwt:SkmulrtiopEn.eds:80)
+alayerScript:SimulationStar(aed(Int32) (at C:\Users\t C:\Upe\workspace\Unity\Nope\Nope\Assets\Scripsers\Philoupe\workspace\
+Un
+ity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarted(Int32) (at C:\Us
+e
+rs\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspaceGLTrue
+Uni/yEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEnginenDibug:LtyEropor(ObeeNt)
+NetworkScAipt:SimslationEnded(PlayerScript) (at C:\Userts\Schipts/Networkspace\t.csty\Nope\N9)
+
+\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\alne
+tUnityEngine.Debuts\Scripnas\PLoayeInt32, String,9)
+ 
+(File
+name: C:/Uesers/Philourror(Objepace/
+Untity/Nore/NtpeSimulats/Scriped(PlayerScriript.cs LC:\Users)
+
+hiloupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P1False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:79)
+PlayerScript:SimulationStarteP(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope
+\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 79)
+
+UnityEngine.Debug:Internal_LoP(IFalse
+UnityEnnite.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filenam2e: C:/Users/Philoupe/workspace/Unity/Nope/Nope/A, String, Ots/NetworkScript.cs Line: 80)
+
+bject)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerGLTrue
+UnityEngine.Debug:Internal_Log(Int32, SttinC:\Usersct)\
+Philoupe\worksbug:LogError(ObjNope\Nopt)
+Ne\Aorkts\ScripimuletionEncripPlayerScri
+pt) (rt C:\Users\Philoupe\worScript:SimulationStare\Assnts\Scripts\Nt C:\Users\Philsupe\wo
+PlayerScript:Simulatoone\Asseed(Int32) (at ayerScript.cloupe\w
+ 
+(Fspence\Un:ity\Nope\Nope\Asse/worSkspace/Unity/Nopipt.cs:159)
+ s/
+Scripnts/NetworkScriphiloupe/workspac
+e
+/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+
+P2False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:80)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 80)
+
+GLTrue
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+NetworkScript:SimulationEnded(PlayerScript) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\NetworkScript.cs:81)
+PlayerScript:SimulationStarted(Int32) (at C:\Users\Philoupe\workspace\Unity\Nope\Nope\Assets\Scripts\PlayerScript.cs:159)
+ 
+(Filename: C:/Users/Philoupe/workspace/Unity/Nope/Nope/Assets/Scripts/NetworkScript.cs Line: 81)
+

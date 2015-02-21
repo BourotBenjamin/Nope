@@ -130,35 +130,41 @@ public class GUIScript : MonoBehaviour {
 
     private void mouseControl()
     {
-        if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
-        {
-            positionSet = true;
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            setDestRaycast(ray);
-        }
-        else if (clickState == selected.SelectPlayer)
-        {
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            setSelectionRaycast(ray);
+        if (!networkScript.isSimulating)
+        { 
+            if (selectedPlayer != null && !positionSet && clickState == selected.SetDestination)
+            {
+                positionSet = true;
+                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+                setDestRaycast(ray);
+            }
+            else if (clickState == selected.SelectPlayer)
+            {
+                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+                setSelectionRaycast(ray);
+            }
         }
     }
 
     private void touchControl()
     {
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase == TouchPhase.Began)
-        {
-            if (selectedPlayer != null && !positionSet)
+        if (!networkScript.isSimulating)
+        { 
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
             {
-                positionSet = true;
-                Ray ray = camera.ScreenPointToRay(touch.position);
-                setDestRaycast(ray);
-            }
-            else
-            {
+                if (selectedPlayer != null && !positionSet)
+                {
+                    positionSet = true;
+                    Ray ray = camera.ScreenPointToRay(touch.position);
+                    setDestRaycast(ray);
+                }
+                else
+                {
 
-                Ray ray = camera.ScreenPointToRay(touch.position);
-                setSelectionRaycast(ray);
+                    Ray ray = camera.ScreenPointToRay(touch.position);
+                    setSelectionRaycast(ray);
+                }
             }
         }
     }
@@ -331,7 +337,7 @@ public class GUIScript : MonoBehaviour {
                 }
                 else
                 {
-                    GUI.Label(new Rect(0, 0, 100, 20), "Simulation In Progress"); 
+                    GUI.Label(new Rect(0, 0, 400, 20), "Simulation In Progress"); 
                 }
 
             }
