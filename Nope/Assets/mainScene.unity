@@ -441,8 +441,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 309.5, y: 176}
-  m_SizeDelta: {x: 619, y: 352}
+  m_AnchoredPosition: {x: 311.5, y: 195}
+  m_SizeDelta: {x: 623, y: 390}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -849,13 +849,13 @@ MonoBehaviour:
   - {fileID: 100000, guid: 01cf44303c19f6d46bf12b12b222ca7e, type: 2}
   prefabByName:
   - warrior
-  isServer: 1
+  isServer: 0
   useMastserServer: 0
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
-  serverCanevas: {fileID: 0}
-  buttonPrefab: {fileID: 0}
+  serverCanevas: {fileID: 1665569446}
+  buttonPrefab: {fileID: 194832, guid: fee2b1772a9cefd4293e7fcbab95dad6, type: 2}
 --- !u!148 &1963592838
 NetworkView:
   m_ObjectHideFlags: 0

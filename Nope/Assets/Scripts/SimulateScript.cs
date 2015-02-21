@@ -17,6 +17,8 @@ public class SimulateScript : MonoBehaviour
     private int nbActions;
     [SerializeField]
     private List<string> _enabledActions;
+    [SerializeField]
+    private CharactersAttributes life;
     public List<string> enabledActions
     {
         get { return _enabledActions; }
@@ -52,6 +54,7 @@ public class SimulateScript : MonoBehaviour
     public void Start()
     {
         _nV = this.GetComponent<NetworkView>();
+        life = this.GetComponent<CharactersAttributes>();
         actions = new List<ActionScript>();
         nbActions = 0;
         ended = false;
@@ -181,20 +184,32 @@ public class SimulateScript : MonoBehaviour
      {
         animating = false;
         ended = true;
-        var action = this.getAction(currentActionsIndex);
-        if (action != null && action.getStarted())
+        if (currentActionsIndex >= 0)
         {
-            currentAction = null;
-            action.endSimulation();
+            var action = this.getAction(currentActionsIndex);
+            if (action != null && action.getStarted())
+            {
+                currentAction = null;
+                action.endSimulation();
+            }
         }
+        actions.Clear();
         //player.SimulationEnded();
      }
 
     [RPC]
-    public void warriorDies()
+    public void warriorHurt(int hp)
     {
-        this.stopActions();
-        player.EntityDied(this.gameObject);
+        if (life.hurt(hp))
+        {
+            Debug.LogError("Died");
+            player.EntityDied(this.gameObject);
+            this.stopActions();
+            if(Network.isServer)
+            {
+                Network.Destroy(this.gameObject);
+            }
+        }
     }
 
     void FixedUpdate()

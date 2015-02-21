@@ -45,8 +45,7 @@ public class SwordActionScript : ActionScript
                 }
                 if(nearest != null)
                 {
-                    Network.Destroy(nearest.gameObject);
-                    nearest.gameObject.GetComponent<SimulateScript>().warriorDies();
+                    nearest.networkView.RPC("warriorHurt", RPCMode.All, 3);
                 }
             }
             else if (Time.time - this.startTime > 1.0f)

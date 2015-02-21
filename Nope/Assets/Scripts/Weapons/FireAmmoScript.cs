@@ -34,22 +34,18 @@ public class FireAmmoScript : MonoBehaviour
             {
                 if (collisionGameObject.tag == "Player")
                 {
-                    collisionGameObject.transform.position = new Vector3(90, 90, 90);
-                    collisionGameObject.GetComponent<SimulateScript>().warriorDies();
-                    Network.Destroy(collisionGameObject);
+                    collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 2);
                 }
                 foreach (Collider collider in playersInRadius)
                 {
                     GameObject colliderGameObject = collider.gameObject;
                     if (collisionGameObject != colliderGameObject)
                     {
-                        collisionGameObject.transform.position = new Vector3(90, 90, 90);
-                        colliderGameObject.GetComponent<SimulateScript>().warriorDies();
-                        Network.Destroy(collisionGameObject);
+                        collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 2);
                     }
                 }
                 transform.position = new Vector3(90, 90, 90);
-                Network.Destroy(gameObject);
+                Network.Destroy(this.gameObject);
             }
         }
     }

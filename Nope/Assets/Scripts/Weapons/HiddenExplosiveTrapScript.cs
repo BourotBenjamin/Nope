@@ -48,8 +48,7 @@ public class HiddenExplosiveTrapScript : MonoBehaviour {
             {
                 if (hitColliders[i].tag == "Player")
                 {
-                    hitColliders[i].gameObject.GetComponent<SimulateScript>().warriorDies();
-                    Network.Destroy(hitColliders[i].gameObject);
+                    hitColliders[i].networkView.RPC("warriorHurt", RPCMode.All, 5);
                 }
                 i++;
             }

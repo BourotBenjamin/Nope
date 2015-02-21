@@ -79,5 +79,17 @@ public class CharactersAttributes : MonoBehaviour {
         get { return _moveSpeed; }
         set { _moveSpeed = value; }
     }
+    public bool hurt(int hp)
+    {
+        _currentHP -= hp;
+        Debug.LogError(_currentHP);
+        if (_currentHP <= 0)
+        {
+            Debug.LogError("WTF ^ 9000");
+            _currentHP = 0;
+            return true;
+        }
+        return false;
+    }
 }
 
