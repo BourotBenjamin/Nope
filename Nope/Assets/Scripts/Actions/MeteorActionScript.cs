@@ -5,13 +5,11 @@ public class MeteorActionScript : ActionScript
 {
 
     private bool created;
-    private GameObject prefab;
 
     public MeteorActionScript(Vector3 destination, int duration, GameObject prefab)
         : base(destination, duration)
     {
         destinationNeeded = true;
-        this.prefab = prefab;
         created = false;
     }
     public MeteorActionScript()
@@ -28,7 +26,7 @@ public class MeteorActionScript : ActionScript
             if (!created && Network.isServer)
             {
                 created = true;
-                GameObject obj = (GameObject)Network.Instantiate(Resources.Load("Prefabs/Meteor", typeof(GameObject)), destination + Vector3.up * 2, simulation.transform.rotation, 0);
+                Network.Instantiate(Resources.Load("Prefabs/Meteor", typeof(GameObject)), destination + Vector3.up * 2, simulation.transform.rotation, 0);
             }
             else if (Time.time - this.startTime > 1.0f)
             {

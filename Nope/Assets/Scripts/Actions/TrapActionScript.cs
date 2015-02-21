@@ -27,8 +27,7 @@ public class TrapActionScript : ActionScript
             if (!created && Network.isServer)
             {
                 created = true;
-                GameObject obj = (GameObject)Network.Instantiate(Resources.Load("Prefabs/Mine", typeof(GameObject)), simulation.transform.position, simulation.transform.rotation, 0);
-                //obj.networkView.RPC("Show", simulation.owner);
+                Network.Instantiate(Resources.Load("Prefabs/Mine", typeof(GameObject)), simulation.transform.position, simulation.transform.rotation, 0);
             }
             else if (Time.time - this.startTime > 1.0f)
             {

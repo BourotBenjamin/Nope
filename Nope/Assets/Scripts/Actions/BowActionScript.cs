@@ -5,14 +5,12 @@ public class BowActionScript : ActionScript
 {
 
     private bool created;
-    private GameObject prefab;
 
-    public BowActionScript(Vector3 destination, int duration, GameObject prefab)
+    public BowActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
         destinationNeeded = true;
         created = false;
-        this.prefab = prefab;
     }
     public BowActionScript()
         : base()

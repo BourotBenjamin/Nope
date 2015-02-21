@@ -82,10 +82,8 @@ public class CharactersAttributes : MonoBehaviour {
     public bool hurt(int hp)
     {
         _currentHP -= hp;
-        Debug.LogError(_currentHP);
         if (_currentHP <= 0)
         {
-            Debug.LogError("WTF ^ 9000");
             _currentHP = 0;
             return true;
         }

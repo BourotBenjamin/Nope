@@ -68,7 +68,6 @@
      <Compile Include="Assets\Scripts\ServerButtonCustomCacheScript.cs" />
      <Compile Include="Assets\Scripts\SimulateScript.cs" />
      <Compile Include="Assets\Scripts\UI\GUIButtonScript.cs" />
-     <Compile Include="Assets\Scripts\UI\UIManagerScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\ArrowScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\FireAmmoScript.cs" />
      <Compile Include="Assets\Scripts\Weapons\HiddenExplosiveTrapScript.cs" />

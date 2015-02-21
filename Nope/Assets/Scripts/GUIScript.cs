@@ -14,7 +14,6 @@ public class GUIScript : MonoBehaviour {
     [SerializeField]
     GameObject buttonPrefab;
 
-    public GameObject[] buttonList;
     private bool positionSet;
     private SimulateScript selectedPlayer;
     private bool ended;
@@ -196,41 +195,61 @@ public class GUIScript : MonoBehaviour {
         }
 	}
 
-    void deleteGUI()
+    void deleteGUI(bool resetPlayerColor)
     {
         for (int i = 0; i < parentCanvas.childCount; i++)
         {
             Destroy(parentCanvas.GetChild(i).gameObject);
+        }
+        if(resetPlayerColor)
+        {
+            selectedPlayer.renderer.material.color = Color.white;
+            clickState = selected.SelectPlayer;
         }
     }
 
     void displayGUI()
     {
-        for (int i = 0; i < parentCanvas.childCount; i++)
+        if (selectedPlayer != null && selectedPlayer.getNBActions() < 5)
         {
-            Destroy(parentCanvas.GetChild(i).gameObject);
+            for (int i = 0; i < parentCanvas.childCount; i++)
+            {
+                Destroy(parentCanvas.GetChild(i).gameObject);
+            }
+            int j = 0;
+            int length = selectedPlayer.enabledActions.ToArray().Length + 1;
+            foreach (string s in selectedPlayer.enabledActions)
+            {
+                GameObject g = (GameObject)Instantiate(buttonPrefab);
+                var cacheScript = g.GetComponent<GUIButtonScript>();
+                cacheScript.MainRectTransform.SetParent(parentCanvas);
+                cacheScript.MainRectTransform.localPosition = Vector3.zero;
+                cacheScript.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
+                cacheScript.MainRectTransform.anchorMax = new Vector3(1f, 1f - j / (float)length);
+                cacheScript.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+                cacheScript.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+                cacheScript.MainRectTransform.localScale = Vector3.one;
+                cacheScript.Text.text = s;
+                j++;
+                var str = s;
+                //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
+                cacheScript.ButtonScript.onClick.AddListener(() => clickButton(str, selectedPlayer.gameObject));
+            }
+            var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
+            btn.MainRectTransform.SetParent(parentCanvas);
+            btn.MainRectTransform.localPosition = Vector3.zero;
+            btn.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
+            btn.MainRectTransform.anchorMax = new Vector3(1f, 1f - j / (float)length);
+            btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+            btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+            btn.MainRectTransform.localScale = Vector3.one;
+            btn.Text.text = "Cancel";
+            btn.ButtonScript.onClick.AddListener(() => deleteGUI(true));
         }
-        int j = 0;
-        int length = selectedPlayer.enabledActions.ToArray().Length;
-        buttonList = new GameObject[length];
-        foreach (string s in selectedPlayer.enabledActions)
+        else
         {
-            GameObject g = (GameObject)Instantiate(buttonPrefab);
-            var cacheScript = g.GetComponent<GUIButtonScript>();
-            buttonList[j] = g;
-            cacheScript.MainRectTransform.SetParent(parentCanvas);
-            cacheScript.MainRectTransform.localPosition = Vector3.zero;
-            cacheScript.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
-            cacheScript.MainRectTransform.anchorMax = new Vector3(1f, 1f - j / (float)length);
-            cacheScript.MainRectTransform.offsetMin = new Vector3(0f, 0f);
-            cacheScript.MainRectTransform.offsetMax = new Vector3(0f, 0f);
-            cacheScript.MainRectTransform.localScale = Vector3.one;
-            cacheScript.Text.text = s;
-            j++;
-            var str = s;
-            //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
-            cacheScript.ButtonScript.onClick.AddListener(() => clickButton(str, selectedPlayer.gameObject));
-            
+            selectedPlayer.renderer.material.color = Color.white;
+            clickState = selected.SelectPlayer;
         }
     }
 
@@ -260,7 +279,7 @@ public class GUIScript : MonoBehaviour {
             positionSet = true;
             addActionToPlayer();
         }
-        deleteGUI();
+        deleteGUI(false);
     }
 
     void OnGUI()
@@ -271,67 +290,14 @@ public class GUIScript : MonoBehaviour {
             {
                 if (!networkScript.isSimulating)
                 {
-                    int i  = 20;
-                    if (selectedPlayer != null && selectedPlayer.getNBActions() >= 5)
-                    {
-                        positionSet = false;
-                        GUI.Label(new Rect(0, 20, 1000, 20), "You have too much actions.");
-                    }
-                    else if (clickState == selected.ClickOnGui)
-                    {
-                        action = null;
-                        
-                        foreach (string s in selectedPlayer.enabledActions)
-                        {
-                            if (GUI.Button(new Rect(0, i, 120, 20),s))
-                            {
-                                System.Type type = System.Type.GetType(s);
-                                object o = System.Activator.CreateInstance(type);
-                                action = (ActionScript)o;
-                                if (action.isDestinationNeeded())
-                                {
-                                    if (action.getName() == "WalkActionScript")
-                                    {
-                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                        rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
-                                        rangeView.addRange(rangeAttribute.mobilityRange, rangeAttribute.mobilityRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
-                                    }
-                                    if (action.getName() == "WeaponActionScript")
-                                    {
-                                        rangeAttribute = selectedPlayer.GetComponent<CharactersAttributes>();
-                                        rangeView = selectedPlayer.GetComponent<RangeScript>();
-                                        aimScript.setValues(rangeView, 1f, rangeAttribute.attackRange, new Vector3(selectedPlayer.transform.position.x, 0.15f, selectedPlayer.transform.position.z));
-                                    }
-                                    clickState = selected.SetDestination;
-                                    break;
-                                }
-                                else
-                                {
-                                    positionSet = true;
-                                    addActionToPlayer();
-                                    break;
-                                }
-                            }
-                            i += 20;
-                        }
-                        if (GUI.Button(new Rect(0, i, 120, 20), "Cancel"))
-                        {
-                            selectedPlayer.transform.renderer.material.color = Color.white;
-                            selectedPlayer = null;
-                            clickState = selected.SelectPlayer;
-                        }
-                    }
                     if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
                     {
-                        //Debug.Log("lol"+marker.Count);
                         foreach (GameObject g in marker)
                         { 
                             Destroy(g);
-                            //Debug.Log("buabua" + g.name);
                         }
                         networkScript.setReadyToSimulate();
                         clickState = selected.SelectPlayer;
-
                     }
                     
                 }
@@ -339,14 +305,13 @@ public class GUIScript : MonoBehaviour {
                 {
                     GUI.Label(new Rect(0, 0, 400, 20), "Simulation In Progress"); 
                 }
-
             }
             else
             {
                 if (win)
-                    GUI.Label(new Rect(0, 0, 100, 20), "You win ! :)");
+                    Application.LoadLevel("winScene");
                 else
-                    GUI.Label(new Rect(0, 0, 100, 20), "You lose ! :'(");
+                    Application.LoadLevel("loseScene");
             }
         }
     }

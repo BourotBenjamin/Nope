@@ -5,12 +5,10 @@ public class WeaponActionScript : ActionScript
 {
 
     private bool created;
-    private GameObject prefab;
 
-    public WeaponActionScript(Vector3 destination, int duration, GameObject prefab )
+    public WeaponActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
-        this.prefab = prefab;
         created = false;
         destinationNeeded = true;
     }

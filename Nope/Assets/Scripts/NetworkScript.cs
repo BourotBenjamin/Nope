@@ -76,9 +76,6 @@ public class NetworkScript : MonoBehaviour
             playerOneIsSimulating = false;
         if (player == playerTwo)
             playerTwoIsSimulating = false;
-        Debug.LogError("P1" + playerOneIsSimulating);
-        Debug.LogError("P2" + playerTwoIsSimulating);
-        Debug.LogError("GL" + isSimulating);
         if (!playerOneIsSimulating && !playerTwoIsSimulating)
             isSimulating = false;
     }

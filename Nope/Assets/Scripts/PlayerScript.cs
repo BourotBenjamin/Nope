@@ -163,7 +163,7 @@ public class PlayerScript : MonoBehaviour {
     public void SimulationEnded()
     {
         --simulationsLaunched;
-        if (simulationsLaunched == 0)
+        if (simulationsLaunched <= 0)
         {
             this.networkView.RPC("SimulationStarted", RPCMode.All, 0);
         }

@@ -13,7 +13,6 @@ public class SimulateScript : MonoBehaviour
     private int _id;
     private ActionScript currentAction = null;
     private PlayerScript player;
-    private float startTime;
     private int nbActions;
     [SerializeField]
     private List<string> _enabledActions;
@@ -154,7 +153,6 @@ public class SimulateScript : MonoBehaviour
         animating = true;
         currentActionsIndex = -1;
         simulateActionAtNextIndex();
-        startTime = Time.time;
         nbActions = 0;
     }
 
@@ -179,6 +177,10 @@ public class SimulateScript : MonoBehaviour
                 }
                 actions.Clear();
             }
+        }
+        else if (Network.isServer)
+        {
+            player.SimulationEnded();
         }
 	}
 
@@ -208,8 +210,10 @@ public class SimulateScript : MonoBehaviour
     {
         if (life.hurt(hp))
         {
-            Debug.LogError("Died");
-            player.EntityDied(this.gameObject);
+            if (Network.isServer)
+            {
+                player.EntityDied(this.gameObject);
+            }
             this.stopActions();
             Destroy(this.gameObject);
         }

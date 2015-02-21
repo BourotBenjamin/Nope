@@ -308,6 +308,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1084496911}
   - 114: {fileID: 1084496910}
+  - 148: {fileID: 1084496912}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -347,6 +348,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!148 &1084496912
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084496909}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 1084496911}
+  m_ViewID:
+    m_ID: 4
+    m_Type: 1
 --- !u!1 &1213991533
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +454,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 311.5, y: 195}
-  m_SizeDelta: {x: 623, y: 390}
+  m_AnchoredPosition: {x: 258.5, y: 195}
+  m_SizeDelta: {x: 517, y: 390}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -615,7 +628,6 @@ MonoBehaviour:
   camera: {fileID: 701266292}
   parentCanvas: {fileID: 1351251049}
   buttonPrefab: {fileID: 194832, guid: fee2b1772a9cefd4293e7fcbab95dad6, type: 2}
-  buttonList: []
 --- !u!148 &1458715602
 NetworkView:
   m_ObjectHideFlags: 0
@@ -778,6 +790,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1785479562}
   - 114: {fileID: 1785479561}
+  - 148: {fileID: 1785479563}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -817,6 +830,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!148 &1785479563
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785479560}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 1785479562}
+  m_ViewID:
+    m_ID: 5
+    m_Type: 1
 --- !u!1 &1963592836
 GameObject:
   m_ObjectHideFlags: 0
