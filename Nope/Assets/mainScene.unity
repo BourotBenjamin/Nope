@@ -454,8 +454,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 258.5, y: 195}
-  m_SizeDelta: {x: 517, y: 390}
+  m_AnchoredPosition: {x: 258.5, y: 196}
+  m_SizeDelta: {x: 517, y: 392}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -873,8 +873,7 @@ MonoBehaviour:
   characterPrefab:
   - {fileID: 100000, guid: 01cf44303c19f6d46bf12b12b222ca7e, type: 2}
   prefabByName:
-  - warrior
-  isServer: 0
+  - WaWa
   useMastserServer: 0
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}

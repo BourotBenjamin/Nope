@@ -9,9 +9,6 @@ public class NetworkManagerScript : MonoBehaviour {
     [SerializeField]
     List<string>     prefabByName;
 
-
-    [SerializeField]
-    bool isServer = true;
     [SerializeField]
     bool useMastserServer = true;
     [SerializeField]
@@ -46,23 +43,9 @@ public class NetworkManagerScript : MonoBehaviour {
         Application.runInBackground = true;
         _nV = this.GetComponent<NetworkView>();
 
-        if (isServer)
+        if (GameOptionsScript.isServer)
         {
             initServer();
-            string test ="warrior";
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
-            p1.addCharacterList(test);
-            p2.addCharacterList(test);
-
-            p1.addCharacterPos(1);
-            p2.addCharacterPos(2);
-            p1.InstantiateChar(characterPrefab, prefabByName,1);
-            p2.InstantiateChar(characterPrefab, prefabByName, 2);
-            p1.setSimulate();
-            p2.setSimulate();
         }
         else
         {
@@ -79,10 +62,27 @@ public class NetworkManagerScript : MonoBehaviour {
         }
 	}
 
-    void OnPlayerConnected(NetworkPlayer player)
+    void OnConnectedToServer()
+    {
+        object[] data = new object[4];
+        data[0] = Network.player;
+        data[1] = GameOptionsScript.warriors[0];
+        data[2] = GameOptionsScript.warriors[1];
+        data[3] = GameOptionsScript.warriors[2];
+        this.networkView.RPC("SendWarriors", RPCMode.Server, data);
+    }
+
+    [RPC]
+    void SendWarriors(NetworkPlayer player, string warrior1, string warrior2, string warrior3)
     {
         if (p1Vacant)
         {
+            p1.addCharacterList(warrior1);
+            p1.addCharacterList(warrior2);
+            p1.addCharacterList(warrior3);
+            p1.addCharacterPos(1);
+            p1.InstantiateChar(characterPrefab, prefabByName, 1);
+            p1.setSimulate();
             p1Vacant = false;
             setPlayer(player, p1, p2, 1);
             p1.owner = player;
@@ -93,6 +93,12 @@ public class NetworkManagerScript : MonoBehaviour {
         }
         else if (p2Vacant)
         {
+            p2.addCharacterList(warrior1);
+            p2.addCharacterList(warrior2);
+            p2.addCharacterList(warrior3);
+            p2.addCharacterPos(2);
+            p2.InstantiateChar(characterPrefab, prefabByName, 2);
+            p2.setSimulate();
             p2Vacant = false;
             setPlayer(player, p2, p1, 2);
             p2.owner = player;
@@ -159,7 +165,7 @@ public class NetworkManagerScript : MonoBehaviour {
 
     void Update()
     {
-        if (!clientConnected && !isServer)
+        if (!clientConnected && !GameOptionsScript.isServer)
         {
             if (Time.timeSinceLevelLoad - lastServerListLoad > 5f)
             {
@@ -226,6 +232,7 @@ public class NetworkManagerScript : MonoBehaviour {
                         clientConnected = true;
                         for (int k = 0; k < serverBtns.Length; k++)
                             Destroy(serverBtns[k]);
+
                     });
                     serverBtns[i] = btn.gameObject;
                 }

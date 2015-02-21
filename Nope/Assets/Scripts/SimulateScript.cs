@@ -76,7 +76,7 @@ public class SimulateScript : MonoBehaviour
     }
     public void setOwnerInSimulateScript(NetworkPlayer p)
     {
-        _nV.RPC("setOwnerInClient", p, p);
+        this.networkView.RPC("setOwnerInClient", p, p);
     }
 
     [RPC]
@@ -89,7 +89,7 @@ public class SimulateScript : MonoBehaviour
     {
         foreach(ActionScript action in this.actions)
         {
-            _nV.RPC("addAction", RPCMode.Others, action.getArrayOfParams());
+            this.networkView.RPC("addAction", RPCMode.Others, action.getArrayOfParams());
         }
     }
 
