@@ -439,10 +439,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1665569446}
   m_RootOrder: 0
-  m_AnchorMin: {x: .800000012, y: .200000003}
-  m_AnchorMax: {x: 1, y: .800000012}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 309.5, y: 176}
+  m_SizeDelta: {x: 619, y: 352}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -455,7 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -475,6 +474,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &1365666772
@@ -614,7 +614,8 @@ MonoBehaviour:
   networkScript: {fileID: 1458715600}
   camera: {fileID: 701266292}
   parentCanvas: {fileID: 1351251049}
-  buttonPrefab: {fileID: 100002, guid: b7fbfbfa15533714ba697bc27239df3e, type: 2}
+  buttonPrefab: {fileID: 194832, guid: fee2b1772a9cefd4293e7fcbab95dad6, type: 2}
+  buttonList: []
 --- !u!148 &1458715602
 NetworkView:
   m_ObjectHideFlags: 0
@@ -673,7 +674,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -693,6 +693,7 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &1749247050
@@ -755,6 +756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
+  m_DragThreshold: 5
 --- !u!4 &1749247054
 Transform:
   m_ObjectHideFlags: 0
@@ -847,11 +849,13 @@ MonoBehaviour:
   - {fileID: 100000, guid: 01cf44303c19f6d46bf12b12b222ca7e, type: 2}
   prefabByName:
   - warrior
-  isServer: 0
+  isServer: 1
   useMastserServer: 0
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
+  serverCanevas: {fileID: 0}
+  buttonPrefab: {fileID: 0}
 --- !u!148 &1963592838
 NetworkView:
   m_ObjectHideFlags: 0

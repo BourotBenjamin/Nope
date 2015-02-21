@@ -210,7 +210,7 @@ public class GUIScript : MonoBehaviour {
         foreach (string s in selectedPlayer.enabledActions)
         {
             GameObject g = (GameObject)Instantiate(buttonPrefab);
-            var cacheScript = g.GetComponent<ServerButtonCustomCacheScript>();
+            var cacheScript = g.GetComponent<GUIButtonScript>();
             buttonList[j] = g;
             cacheScript.MainRectTransform.SetParent(parentCanvas);
             cacheScript.MainRectTransform.localPosition = Vector3.zero;
@@ -254,7 +254,7 @@ public class GUIScript : MonoBehaviour {
             positionSet = true;
             addActionToPlayer();
         }
-        //deleteGUI();
+        deleteGUI();
     }
 
     void OnGUI()
