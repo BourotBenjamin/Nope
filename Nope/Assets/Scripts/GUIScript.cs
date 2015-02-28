@@ -16,8 +16,6 @@ public class GUIScript : MonoBehaviour {
 
     private bool positionSet;
     private SimulateScript selectedPlayer;
-    private bool ended;
-    private bool win;
     private enum selected {SelectPlayer, ClickOnGui, SetDestination};
     private Collider pointed;
     private RangeScript rangeView;
@@ -39,8 +37,6 @@ public class GUIScript : MonoBehaviour {
 
     void Awake()
     {
-        ended = false;
-        win = false;
         //buttonList = new List<GameObject>();
         marker = new List<GameObject>();
         clickState = selected.SelectPlayer;
@@ -168,21 +164,10 @@ public class GUIScript : MonoBehaviour {
         }
     }
 
-    public void setWin()
-    {
-        ended = true;
-        win = true;
-    }
-
-    public void setLose()
-    {
-        ended = true;
-    }
-
     // Update is called once per frame setReadyToSimulate
 	void Update () 
     {
-        if (Network.isClient && !ended && (!selectedPlayer || selectedPlayer.isInWaitingState()))
+        if (Network.isClient && (!selectedPlayer || selectedPlayer.isInWaitingState()))
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -282,40 +267,18 @@ public class GUIScript : MonoBehaviour {
         deleteGUI(false);
     }
 
-    void OnGUI()
+    public void fight()
     {
-        if (Network.isClient)
+        if (!networkScript.isSimulating && !networkScript.isWaiting)
         {
-            if (!ended)
+            foreach (GameObject g in marker)
             {
-                if (!networkScript.isSimulating)
-                {
-                    if (GUI.Button(new Rect(0, 0, 120, 20), "FIGHT !!"))
-                    {
-                        foreach (GameObject g in marker)
-                        { 
-                            Destroy(g);
-                        }
-                        networkScript.setReadyToSimulate();
-                        clickState = selected.SelectPlayer;
-                    }
-                    
-                }
-                else
-                {
-                    GUI.Label(new Rect(0, 0, 400, 20), "Simulation In Progress"); 
-                }
+                Destroy(g);
             }
-            else
-            {
-                if (win)
-                    Application.LoadLevel("winScene");
-                else
-                    Application.LoadLevel("loseScene");
-            }
+            networkScript.setReadyToSimulate();
+            clickState = selected.SelectPlayer;
         }
     }
-
 
 
 }

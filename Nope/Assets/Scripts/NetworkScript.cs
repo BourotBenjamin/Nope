@@ -12,15 +12,17 @@ public class NetworkScript : MonoBehaviour
     private PlayerScript playerOne;
     [SerializeField]
     private PlayerScript playerTwo;
-    private GUIScript gui;
+    [SerializeField]
+    private GUIButtonScript fightButton;
 
     public bool playerOneIsSimulating;
     public bool playerTwoIsSimulating;
     public bool isSimulating;
+    public bool isWaiting;
 
-    void Awake()
+    void OnConnectedToServer()
     {
-        gui = this.gameObject.GetComponent<GUIScript>();
+        fightButton.gameObject.SetActive(true);
     }
 
     [RPC]
@@ -31,17 +33,19 @@ public class NetworkScript : MonoBehaviour
         playerTwo.stopGame();
         if(owner == Network.player)
         {
-            gui.setLose();
+            Application.LoadLevel("winScene");
         }
         else
         {
-            gui.setWin();
+            Application.LoadLevel("looseScene");
         }
     }
 
     public void setReadyToSimulate()
     {
-        networkView.RPC("setPlayerReadyToSimulate", RPCMode.Server, Network.player);
+        isWaiting = true;
+        fightButton.Text.text = "Waiting for other player ...";
+        networkView.RPC("setPlayerReadyToSimulate", RPCMode.All, Network.player);
     }
 
     [RPC]
@@ -61,12 +65,20 @@ public class NetworkScript : MonoBehaviour
             playerOneIsSimulating = true;
             playerTwoIsSimulating = true;
             isSimulating = true;
-            playerOne.SendSimulation();
-            playerTwo.SendSimulation();
-            playerOne.Simulate();
-            playerTwo.Simulate();
             playerTwoIsReadyToSimulate = false;
             playerOneIsReadyToSimulate = false;
+            if(Network.isServer)
+            {
+                playerOne.SendSimulation();
+                playerTwo.SendSimulation();
+                playerOne.Simulate();
+                playerTwo.Simulate();
+            }
+            else
+            {
+                fightButton.Text.text = "Simulating ...";
+                isWaiting = false;
+            }
         }
     }
 
@@ -77,7 +89,11 @@ public class NetworkScript : MonoBehaviour
         if (player == playerTwo)
             playerTwoIsSimulating = false;
         if (!playerOneIsSimulating && !playerTwoIsSimulating)
+        {
             isSimulating = false;
+            isWaiting = false;
+            fightButton.Text.text = "Fight !";
+        }
     }
 
     public void SimulationStarted(PlayerScript player)
