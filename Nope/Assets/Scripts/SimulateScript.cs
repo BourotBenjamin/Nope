@@ -219,6 +219,15 @@ public class SimulateScript : MonoBehaviour
         }
     }
 
+    [RPC]
+    public void warriorHealed(NetworkPlayer healerPlayer)
+    {
+        if (healerPlayer == this.owner)
+        {
+            life.heal();
+        }
+    }
+
     void FixedUpdate()
     {
         if (currentAction != null)

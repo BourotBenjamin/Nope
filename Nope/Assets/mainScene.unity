@@ -1095,9 +1095,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefab:
-  - {fileID: 100000, guid: 01cf44303c19f6d46bf12b12b222ca7e, type: 2}
+  - {fileID: 164336, guid: 744e28b4cf03da343850e518c10ea477, type: 2}
+  - {fileID: 105176, guid: f0d3397f1ba4955459d57879e502abf5, type: 2}
+  - {fileID: 184814, guid: 4996ad64bc9414645b2d3e77378a8c65, type: 2}
   prefabByName:
-  - WaWa
+  - Magician
+  - Healer
+  - Warrior
   useMastserServer: 1
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}

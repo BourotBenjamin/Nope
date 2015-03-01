@@ -89,5 +89,9 @@ public class CharactersAttributes : MonoBehaviour {
         }
         return false;
     }
+    public void heal()
+    {
+        _currentHP = _hp;
+    }
 }
 

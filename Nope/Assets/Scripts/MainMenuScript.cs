@@ -3,10 +3,7 @@ using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
 
-
-
-    [SerializeField]
-    string[] classes = {"WaWa"};
+    string[] classes = {"Warrior", "Healer", "Magician"};
     [SerializeField]
     GameObject buttonPrefab;
     [SerializeField]
