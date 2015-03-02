@@ -202,7 +202,7 @@ public class GUIScript : MonoBehaviour {
                 Destroy(parentCanvas.GetChild(i).gameObject);
             }
             int j = 0;
-            int length = selectedPlayer.enabledActions.ToArray().Length + 1;
+            int length = selectedPlayer.enabledActions.Count + 1;
             foreach (string s in selectedPlayer.enabledActions)
             {
                 GameObject g = (GameObject)Instantiate(buttonPrefab);

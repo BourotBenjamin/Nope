@@ -52,7 +52,6 @@ public class SimulateScript : MonoBehaviour
     // Initialise the script
     public void Awake()
     {
-        Debug.LogError("Level loaded");
         life = this.GetComponent<CharactersAttributes>();
         actions = new List<ActionScript>();
         nbActions = 0;

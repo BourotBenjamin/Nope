@@ -23,7 +23,7 @@ public class ArrowScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime * 10);
+        rigidbody.MovePosition(rigidbody.position + direction.normalized * Time.deltaTime * 50);
     }
 
     void OnCollisionEnter(Collision collision)
