@@ -29,6 +29,8 @@ public class MapGeneratorScript : MonoBehaviour {
     int nbTrapMin = 7;
     [SerializeField]
     int nbTrapMax = 10;
+    [SerializeField]
+    GameObject trapPrefab;
 
     [SerializeField]
     GameObject [] prefabList ;
@@ -75,7 +77,6 @@ public class MapGeneratorScript : MonoBehaviour {
     private Vector3[] posChest;
     private Vector3[] posTrap;
     private GameObject[] chests;
-    private GameObject[] traps;
     private bool[] chestStatus;
     private bool[] trapStatus;
 
@@ -142,7 +143,6 @@ public class MapGeneratorScript : MonoBehaviour {
         trapStatus = new bool[nbTrap];
 
         chests = new GameObject[nbChest];
-        traps = new GameObject[nbTrap];
     }
 
     void SetPositions()
@@ -263,10 +263,7 @@ public class MapGeneratorScript : MonoBehaviour {
         {
             if(trapStatus[i])
             {
-                traps[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                traps[i].transform.position = posTrap[i];
-                traps[i].isStatic = true;
-                traps[i].tag = "Trap";
+                Instantiate(trapPrefab, posTrap[i], Quaternion.identity);
             }
             
         }

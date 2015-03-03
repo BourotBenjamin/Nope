@@ -1,0 +1,259 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     2094 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 67)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.074 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\System.dll (this message is harmless)
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     2094 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 67)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.069 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_no_master_serv_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 3.382728 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.798854 ms (FindLiveObjects: 0.018389 ms CreateObjectMapping: 0.014112 ms MarkObjects: 0.222379 ms  DeleteObjects: 0.006842 ms)
+
+ArgumentException: The prefab you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.createMap () [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.SetHcode (Int32 code, System.Boolean[] chestStats, System.Boolean[] trapStats) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+UnloadTime: 3.778306 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.830928 ms (FindLiveObjects: 0.016250 ms CreateObjectMapping: 0.011974 ms MarkObjects: 0.214253 ms  DeleteObjects: 0.007270 ms)
+
+ArgumentException: The prefab you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.createMap () [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.SetHcode (Int32 code, System.Boolean[] chestStats, System.Boolean[] trapStats) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The prefab you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.createMap () [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.SetHcode (Int32 code, System.Boolean[] chestStats, System.Boolean[] trapStats) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentException: The prefab you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.createMap () [0x00000] in <filename unknown>:0 
+  at MapGeneratorScript.SetHcode (Int32 code, System.Boolean[] chestStats, System.Boolean[] trapStats) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 0' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Couldn't perform remote Network.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+View ID AllocatedID: 0 not found during lookup. Strange behaviourVmay occur
+ i
+eFile Iame:  Line: 1681)
+
+ot foudndt perform remote Netwoek.Destroy because the net
+wo
+rk view 'Allocated1681)
+
+coCouldnt be located.ote
+ Nitwork.Destroy because the network view 'AllocatedID: 0' could not be located.
+ 
+(Filename:  Line: 2463)
+
+lename:  Line: 2463)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
+

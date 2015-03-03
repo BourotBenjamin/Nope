@@ -159,6 +159,7 @@ MonoBehaviour:
   nbChestMax: 10
   nbTrapMin: 7
   nbTrapMax: 10
+  trapPrefab: {fileID: 100000, guid: 3f0593a16bbe27c4fbfee7445bee4e35, type: 2}
   prefabList:
   - {fileID: 100000, guid: d560d58eb8a7c16499edd927e482734f, type: 2}
   - {fileID: 100000, guid: d602465008245e64b8a63a51c5193783, type: 2}
@@ -586,8 +587,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 512.5, y: 135.5}
+  m_SizeDelta: {x: 1025, y: 271}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
