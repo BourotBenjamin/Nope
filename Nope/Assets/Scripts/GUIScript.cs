@@ -221,7 +221,19 @@ public class GUIScript : MonoBehaviour {
                 Destroy(parentCanvas.GetChild(i).gameObject);
             }
             int j = 0;
-            int length = selectedPlayer.enabledActions.Count + 1;
+            int length = selectedPlayer.enabledActions.Count + 2;
+            var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
+            btn.MainRectTransform.SetParent(parentCanvas);
+            btn.MainRectTransform.localPosition = Vector3.zero;
+            btn.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
+            btn.MainRectTransform.anchorMax = new Vector3(1f, 1f - j / (float)length);
+            btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+            btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+            btn.MainRectTransform.localScale = Vector3.one;
+            btn.Image.sprite = buttonSprites[spritesIndex["ChooseYourActions"]];
+            btn.Image.type = UnityEngine.UI.Image.Type.Filled;
+            btn.Image.preserveAspect = true;
+            j++;
             foreach (string s in selectedPlayer.enabledActions)
             {
                 GameObject g = (GameObject)Instantiate(buttonPrefab);
@@ -239,12 +251,10 @@ public class GUIScript : MonoBehaviour {
                 cacheScript.Image.preserveAspect = true;
                 j++;
                 var str = s;
-                Debug.LogError(cacheScript.ButtonScript);
-                Debug.LogError(cacheScript.ButtonScript.onClick);
                 //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
                 cacheScript.ButtonScript.onClick.AddListener(() => clickButton(str, selectedPlayer.gameObject));
             }
-            var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
+            btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
             btn.MainRectTransform.SetParent(parentCanvas);
             btn.MainRectTransform.localPosition = Vector3.zero;
             btn.MainRectTransform.anchorMin = new Vector3(0f, 1f - (j + 1) / (float)length);
@@ -255,7 +265,6 @@ public class GUIScript : MonoBehaviour {
             btn.Image.sprite = buttonSprites[spritesIndex["CancelButton"]];
             btn.Image.type = UnityEngine.UI.Image.Type.Filled;
             btn.Image.preserveAspect = true;
-            Debug.LogError(btn.ButtonScript);
             btn.ButtonScript.onClick.AddListener(() => deleteGUI(true));
         }
         else

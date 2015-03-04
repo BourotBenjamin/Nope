@@ -9,6 +9,8 @@ public class MainMenuScript : MonoBehaviour {
     [SerializeField]
     Sprite[] sprites;
     [SerializeField]
+    Sprite headerSprite;
+    [SerializeField]
     RectTransform serverCanevas;
     private GUIButtonScript[,] guiBtns;
 
@@ -52,6 +54,18 @@ public class MainMenuScript : MonoBehaviour {
 
     void CreateClassButtons()
     {
+
+        var header = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
+        header.MainRectTransform.SetParent(serverCanevas);
+        header.MainRectTransform.localPosition = Vector3.zero;
+        header.MainRectTransform.anchorMin = new Vector3(0f, 0.75f);
+        header.MainRectTransform.anchorMax = new Vector3(1f, 1f);
+        header.MainRectTransform.offsetMin = new Vector3(0f, 0f);
+        header.MainRectTransform.offsetMax = new Vector3(0f, 0f);
+        header.MainRectTransform.localScale = Vector3.one;
+        header.Image.sprite = headerSprite;
+        header.Image.type = UnityEngine.UI.Image.Type.Filled;
+        header.Image.preserveAspect = true;
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < classes.Length; j++)
@@ -59,8 +73,8 @@ public class MainMenuScript : MonoBehaviour {
                 var btn = ((GameObject)Instantiate(buttonPrefab)).GetComponent<GUIButtonScript>();
                 btn.MainRectTransform.SetParent(serverCanevas);
                 btn.MainRectTransform.localPosition = Vector3.zero;
-                btn.MainRectTransform.anchorMin = new Vector3((1f / classes.Length) * (j), 0.33f * (i));
-                btn.MainRectTransform.anchorMax = new Vector3((1f / classes.Length)*(j+1), 0.33f*(i+1));
+                btn.MainRectTransform.anchorMin = new Vector3((1f / classes.Length) * (j), 0.25f * (i));
+                btn.MainRectTransform.anchorMax = new Vector3((1f / classes.Length)*(j+1), 0.25f * (i+1));
                 btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
                 btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
                 btn.MainRectTransform.localScale = Vector3.one;
