@@ -239,6 +239,8 @@ public class GUIScript : MonoBehaviour {
                 cacheScript.Image.preserveAspect = true;
                 j++;
                 var str = s;
+                Debug.LogError(cacheScript.ButtonScript);
+                Debug.LogError(cacheScript.ButtonScript.onClick);
                 //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
                 cacheScript.ButtonScript.onClick.AddListener(() => clickButton(str, selectedPlayer.gameObject));
             }
@@ -253,6 +255,7 @@ public class GUIScript : MonoBehaviour {
             btn.Image.sprite = buttonSprites[spritesIndex["CancelButton"]];
             btn.Image.type = UnityEngine.UI.Image.Type.Filled;
             btn.Image.preserveAspect = true;
+            Debug.LogError(btn.ButtonScript);
             btn.ButtonScript.onClick.AddListener(() => deleteGUI(true));
         }
         else

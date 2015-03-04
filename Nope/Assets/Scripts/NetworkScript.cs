@@ -44,7 +44,6 @@ public class NetworkScript : MonoBehaviour
     public void setReadyToSimulate()
     {
         isWaiting = true;
-        fightButton.Text.text = "Waiting for other player ...";
         networkView.RPC("setPlayerReadyToSimulate", RPCMode.All, Network.player);
     }
 
@@ -76,7 +75,6 @@ public class NetworkScript : MonoBehaviour
             }
             else
             {
-                fightButton.Text.text = "Simulating ...";
                 isWaiting = false;
             }
         }
@@ -92,7 +90,6 @@ public class NetworkScript : MonoBehaviour
         {
             isSimulating = false;
             isWaiting = false;
-            fightButton.Text.text = "Fight !";
         }
     }
 
