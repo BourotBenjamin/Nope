@@ -33,7 +33,7 @@ public class MineDetectorActionScript : ActionScript
                 {
                     if (hitColliders[i].tag == "Trap")
                     {
-                        hitColliders[i].gameObject.renderer.enabled = true;
+                        hitColliders[i].gameObject.GetComponent<HiddenExplosiveTrapScript>().showMine();
                     }
                     i++;
                 }

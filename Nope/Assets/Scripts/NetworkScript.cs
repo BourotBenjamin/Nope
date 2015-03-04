@@ -14,6 +14,12 @@ public class NetworkScript : MonoBehaviour
     private PlayerScript playerTwo;
     [SerializeField]
     private GUIButtonScript fightButton;
+    [SerializeField]
+    private Sprite fightSprite;
+    [SerializeField]
+    private Sprite waitSprite;
+    [SerializeField]
+    private Sprite simulatingSprite;
 
     public bool playerOneIsSimulating;
     public bool playerTwoIsSimulating;
@@ -33,16 +39,17 @@ public class NetworkScript : MonoBehaviour
         playerTwo.stopGame();
         if(owner == Network.player)
         {
-            Application.LoadLevel("winScene");
+            Application.LoadLevel("loseScene");
         }
         else
         {
-            Application.LoadLevel("loseScene");
+            Application.LoadLevel("winScene");
         }
     }
 
     public void setReadyToSimulate()
     {
+        fightButton.Image.sprite = waitSprite;
         isWaiting = true;
         networkView.RPC("setPlayerReadyToSimulate", RPCMode.All, Network.player);
     }
@@ -66,6 +73,7 @@ public class NetworkScript : MonoBehaviour
             isSimulating = true;
             playerTwoIsReadyToSimulate = false;
             playerOneIsReadyToSimulate = false;
+            fightButton.Image.sprite = simulatingSprite;
             if(Network.isServer)
             {
                 playerOne.SendSimulation();
@@ -88,6 +96,7 @@ public class NetworkScript : MonoBehaviour
             playerTwoIsSimulating = false;
         if (!playerOneIsSimulating && !playerTwoIsSimulating)
         {
+            fightButton.Image.sprite = fightSprite;
             isSimulating = false;
             isWaiting = false;
         }

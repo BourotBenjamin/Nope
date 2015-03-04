@@ -5,6 +5,13 @@ using System.Collections.Generic;
 public class HiddenExplosiveTrapScript : MonoBehaviour {
 
     private List<Collider> collidersInArea;
+    [SerializeField]
+    private GameObject mine;
+
+    public void showMine()
+    {
+        this.mine.SetActive(true);
+    }
 
     [RPC]
     void Show()

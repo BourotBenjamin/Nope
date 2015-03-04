@@ -216,11 +216,10 @@ MonoBehaviour:
   nbRoomMax: 7
   sizeRoomMin: 1
   sizeRoomMax: 3
-  nbChestMin: 4
-  nbChestMax: 10
   nbTrapMin: 7
   nbTrapMax: 10
   trapPrefab: {fileID: 100000, guid: 3f0593a16bbe27c4fbfee7445bee4e35, type: 2}
+  groundMaterial: {fileID: 2100000, guid: 03a2d679f1e10a047b01ca901ae6e37f, type: 2}
   prefabList:
   - {fileID: 100000, guid: d560d58eb8a7c16499edd927e482734f, type: 2}
   - {fileID: 100000, guid: d602465008245e64b8a63a51c5193783, type: 2}
@@ -440,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1104594281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -550,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 0}
-  _image: {fileID: 0}
+  _image: {fileID: 1104594283}
   _mainRectTransform: {fileID: 1104594281}
   _textRectTransform: {fileID: 0}
   _buttonScript: {fileID: 1104594282}
@@ -648,8 +647,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 294, y: 245.5}
-  m_SizeDelta: {x: 588, y: 491}
+  m_AnchoredPosition: {x: 320, y: 240}
+  m_SizeDelta: {x: 640, y: 480}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -728,6 +727,9 @@ MonoBehaviour:
   playerOne: {fileID: 1084496910}
   playerTwo: {fileID: 1785479561}
   fightButton: {fileID: 1104594285}
+  fightSprite: {fileID: 21300000, guid: 389973bd17a171942b8f313839281a0f, type: 3}
+  waitSprite: {fileID: 21300000, guid: 9ea2424303a1b3c4eb83e9c7c51d760b, type: 3}
+  simulatingSprite: {fileID: 21300000, guid: 1408ff926e82dbb4ebb3e7a1734d80ee, type: 3}
   playerOneIsSimulating: 0
   playerTwoIsSimulating: 0
   isSimulating: 0
@@ -1100,7 +1102,7 @@ MonoBehaviour:
   - Wizard
   - Healer
   - Warrior
-  useMastserServer: 1
+  useMastserServer: 0
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}

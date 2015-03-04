@@ -79,43 +79,43 @@ public class NetworkManagerScript : MonoBehaviour {
     {
         if (p1Vacant)
         {
-            p1.addCharacterList(warrior1);
-            p1.addCharacterList(warrior2);
-            p1.addCharacterList(warrior3);
-            p1.addCharacterPos(1);
-            p1.InstantiateChar(characterPrefab, prefabByName, 1);
+            if (!p1WarriorsExists)
+            {
+                p1WarriorsExists = true;
+                p1.addCharacterList(warrior1);
+                p1.addCharacterList(warrior2);
+                p1.addCharacterList(warrior3);
+                p1.addCharacterPos(1);
+                p1.InstantiateChar(characterPrefab, prefabByName, 1);
+            }
             p1.setSimulate();
             p1Vacant = false;
             setPlayer(player, p1, p2, 1);
             p1.owner = player;
-            if (!p1WarriorsExists)
-            {
-                p1WarriorsExists = true;
                 foreach (var i in p1.simulateSrcipts)
                 {
                     i.setOwnerInSimulateScript(player);
                 }
-            }
         }
         else if (p2Vacant)
         {
-            p2.addCharacterList(warrior1);
-            p2.addCharacterList(warrior2);
-            p2.addCharacterList(warrior3);
-            p2.addCharacterPos(2);
-            p2.InstantiateChar(characterPrefab, prefabByName, 2);
+            if (!p2WarriorsExists)
+            {
+                p2WarriorsExists = true;
+                p2.addCharacterList(warrior1);
+                p2.addCharacterList(warrior2);
+                p2.addCharacterList(warrior3);
+                p2.addCharacterPos(2);
+                p2.InstantiateChar(characterPrefab, prefabByName, 2);
+            }
             p2.setSimulate();
             p2Vacant = false;
             setPlayer(player, p2, p1, 2);
             p2.owner = player;
-            if (!p2WarriorsExists)
-            {
-                p2WarriorsExists = true;
                 foreach (var i in p2.simulateSrcipts)
                 {
                     i.setOwnerInSimulateScript(player);
                 }
-            }
         }
     }
 
