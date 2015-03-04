@@ -38,23 +38,23 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_D
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.038 seconds
+- Completed reload, in  0.051 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 3.301847 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 400.
-Total: 0.529852 ms (FindLiveObjects: 0.013684 ms CreateObjectMapping: 0.008125 ms MarkObjects: 0.172340 ms  DeleteObjects: 0.015395 ms)
-
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 2.712980 ms
+UnloadTime: 4.385499 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 402.
-Total: 0.515739 ms (FindLiveObjects: 0.013256 ms CreateObjectMapping: 0.008552 ms MarkObjects: 0.160366 ms  DeleteObjects: 0.014539 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 434.
+Total: 0.622223 ms (FindLiveObjects: 0.017533 ms CreateObjectMapping: 0.008980 ms MarkObjects: 0.191157 ms  DeleteObjects: 0.017533 ms)
+
+UnloadTime: 2.078782 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 436.
+Total: 0.513174 ms (FindLiveObjects: 0.012401 ms CreateObjectMapping: 0.008125 ms MarkObjects: 0.164643 ms  DeleteObjects: 0.014539 ms)
 

@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 9e9a97a7559e3a34cba191c0a042cf3a
+guid: e232a10e2df09b842aa3ba31b67eafd4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Wizard_0
-    21300002: Wizard_1
-    21300004: Wizard_2
-    21300006: Wizard_3
-    21300008: Wizard_4
-    21300010: Wizard_5
-    21300012: Wizard_6
-    21300014: Wizard_7
-    21300016: Wizard_8
-    21300018: Wizard_9
-    21300020: Wizard_10
-    21300022: Wizard_11
-    21300024: Wizard_12
-    21300026: Wizard_13
-    21300028: Wizard_14
-    21300030: Wizard_15
-    21300032: Wizard_16
-    21300034: Wizard_17
-    21300036: Wizard_18
-    21300038: Wizard_19
-    21300040: Wizard_20
-    21300042: Wizard_21
-    21300044: Wizard_22
-    21300046: Wizard_23
-    21300048: Wizard_24
-    21300050: Wizard_25
-    21300052: Wizard_26
+    21300000: Sprite mage_0
+    21300002: Sprite mage_1
+    21300004: Sprite mage_2
+    21300006: Sprite mage_3
+    21300008: Sprite mage_4
+    21300010: Sprite mage_5
+    21300012: Sprite mage_6
+    21300014: Sprite mage_7
+    21300016: Sprite mage_8
+    21300018: Sprite mage_9
+    21300020: Sprite mage_10
+    21300022: Sprite mage_11
+    21300024: Sprite mage_12
+    21300026: Sprite mage_13
+    21300028: Sprite mage_14
+    21300030: Sprite mage_15
+    21300032: Sprite mage_16
+    21300034: Sprite mage_17
+    21300036: Sprite mage_18
+    21300038: Sprite mage_19
+    21300040: Sprite mage_20
+    21300042: Sprite mage_21
+    21300044: Sprite mage_22
+    21300046: Sprite mage_23
+    21300048: Sprite mage_24
+    21300050: Sprite mage_25
+    21300052: Sprite mage_26
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -70,273 +70,273 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Wizard_0
+    - name: Sprite mage_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 604
-        width: 146
-        height: 146
+        x: 36
+        y: 628
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_1
+    - name: Sprite mage_1
       rect:
         serializedVersion: 2
-        x: 146
-        y: 604
-        width: 146
-        height: 146
+        x: 186
+        y: 628
+        width: 65
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_2
+    - name: Sprite mage_2
       rect:
         serializedVersion: 2
-        x: 292
-        y: 604
-        width: 146
-        height: 146
+        x: 336
+        y: 628
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_3
+    - name: Sprite mage_3
       rect:
         serializedVersion: 2
-        x: 438
-        y: 604
-        width: 146
-        height: 146
+        x: 486
+        y: 628
+        width: 63
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_4
+    - name: Sprite mage_4
       rect:
         serializedVersion: 2
-        x: 584
-        y: 604
-        width: 146
-        height: 146
+        x: 635
+        y: 628
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_5
+    - name: Sprite mage_5
       rect:
         serializedVersion: 2
-        x: 730
-        y: 604
-        width: 146
-        height: 146
+        x: 785
+        y: 627
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_6
+    - name: Sprite mage_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 458
-        width: 146
-        height: 146
+        x: 50
+        y: 478
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_7
+    - name: Sprite mage_7
       rect:
         serializedVersion: 2
-        x: 146
-        y: 458
-        width: 146
-        height: 146
+        x: 200
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_8
+    - name: Sprite mage_8
       rect:
         serializedVersion: 2
-        x: 292
-        y: 458
-        width: 146
-        height: 146
+        x: 349
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_9
+    - name: Sprite mage_9
       rect:
         serializedVersion: 2
-        x: 438
-        y: 458
-        width: 146
-        height: 146
+        x: 499
+        y: 478
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_10
+    - name: Sprite mage_10
       rect:
         serializedVersion: 2
-        x: 584
-        y: 458
-        width: 146
-        height: 146
+        x: 649
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_11
+    - name: Sprite mage_11
       rect:
         serializedVersion: 2
-        x: 730
-        y: 458
-        width: 146
-        height: 146
+        x: 799
+        y: 477
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_12
+    - name: Sprite mage_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 312
-        width: 146
-        height: 146
+        x: 44
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_13
+    - name: Sprite mage_13
       rect:
         serializedVersion: 2
-        x: 146
-        y: 312
-        width: 146
-        height: 146
+        x: 195
+        y: 327
+        width: 53
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_14
+    - name: Sprite mage_14
       rect:
         serializedVersion: 2
-        x: 292
-        y: 312
-        width: 146
-        height: 146
+        x: 345
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_15
+    - name: Sprite mage_15
       rect:
         serializedVersion: 2
-        x: 438
-        y: 312
-        width: 146
-        height: 146
+        x: 495
+        y: 328
+        width: 53
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_16
+    - name: Sprite mage_16
       rect:
         serializedVersion: 2
-        x: 584
-        y: 312
-        width: 146
-        height: 146
+        x: 644
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_17
+    - name: Sprite mage_17
       rect:
         serializedVersion: 2
-        x: 730
-        y: 312
-        width: 146
-        height: 146
+        x: 793
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_18
+    - name: Sprite mage_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 166
-        width: 146
-        height: 146
+        x: 35
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_19
+    - name: Sprite mage_19
       rect:
         serializedVersion: 2
-        x: 146
-        y: 166
-        width: 146
-        height: 146
+        x: 185
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_20
+    - name: Sprite mage_20
       rect:
         serializedVersion: 2
-        x: 292
-        y: 166
-        width: 146
-        height: 146
+        x: 339
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_21
+    - name: Sprite mage_21
       rect:
         serializedVersion: 2
-        x: 438
-        y: 166
-        width: 146
-        height: 146
+        x: 487
+        y: 177
+        width: 63
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_22
+    - name: Sprite mage_22
       rect:
         serializedVersion: 2
-        x: 584
-        y: 166
-        width: 146
-        height: 146
+        x: 635
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_23
+    - name: Sprite mage_23
       rect:
         serializedVersion: 2
-        x: 730
-        y: 166
-        width: 146
-        height: 146
+        x: 784
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_24
+    - name: Sprite mage_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 20
-        width: 146
-        height: 146
+        x: 38
+        y: 28
+        width: 67
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_25
+    - name: Sprite mage_25
       rect:
         serializedVersion: 2
-        x: 146
-        y: 20
-        width: 146
-        height: 146
+        x: 187
+        y: 28
+        width: 63
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Wizard_26
+    - name: Sprite mage_26
       rect:
         serializedVersion: 2
-        x: 292
-        y: 20
-        width: 146
-        height: 146
+        x: 337
+        y: 28
+        width: 74
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

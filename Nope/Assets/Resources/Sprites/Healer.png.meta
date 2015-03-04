@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 74f46f5cb128ab848b8a71fa89bd17c1
+guid: 281e0e9a10d222e40bebcd8d6e890858
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Healer_0
-    21300002: Healer_1
-    21300004: Healer_2
-    21300006: Healer_3
-    21300008: Healer_4
-    21300010: Healer_5
-    21300012: Healer_6
-    21300014: Healer_7
-    21300016: Healer_8
-    21300018: Healer_9
-    21300020: Healer_10
-    21300022: Healer_11
-    21300024: Healer_12
-    21300026: Healer_13
-    21300028: Healer_14
-    21300030: Healer_15
-    21300032: Healer_16
-    21300034: Healer_17
-    21300036: Healer_18
-    21300038: Healer_19
-    21300040: Healer_20
-    21300042: Healer_21
-    21300044: Healer_22
-    21300046: Healer_23
-    21300048: Healer_24
-    21300050: Healer_25
-    21300052: Healer_26
+    21300000: Sprite healer_0
+    21300002: Sprite healer_1
+    21300004: Sprite healer_2
+    21300006: Sprite healer_3
+    21300008: Sprite healer_4
+    21300010: Sprite healer_5
+    21300012: Sprite healer_6
+    21300014: Sprite healer_7
+    21300016: Sprite healer_8
+    21300018: Sprite healer_9
+    21300020: Sprite healer_10
+    21300022: Sprite healer_11
+    21300024: Sprite healer_12
+    21300026: Sprite healer_13
+    21300028: Sprite healer_14
+    21300030: Sprite healer_15
+    21300032: Sprite healer_16
+    21300034: Sprite healer_17
+    21300036: Sprite healer_18
+    21300038: Sprite healer_19
+    21300040: Sprite healer_20
+    21300042: Sprite healer_21
+    21300044: Sprite healer_22
+    21300046: Sprite healer_23
+    21300048: Sprite healer_24
+    21300050: Sprite healer_25
+    21300052: Sprite healer_26
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -70,273 +70,273 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Healer_0
+    - name: Sprite healer_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 604
-        width: 146
-        height: 146
+        x: 36
+        y: 628
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_1
+    - name: Sprite healer_1
       rect:
         serializedVersion: 2
-        x: 146
-        y: 604
-        width: 146
-        height: 146
+        x: 186
+        y: 628
+        width: 65
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_2
+    - name: Sprite healer_2
       rect:
         serializedVersion: 2
-        x: 292
-        y: 604
-        width: 146
-        height: 146
+        x: 336
+        y: 628
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_3
+    - name: Sprite healer_3
       rect:
         serializedVersion: 2
-        x: 438
-        y: 604
-        width: 146
-        height: 146
+        x: 486
+        y: 628
+        width: 63
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_4
+    - name: Sprite healer_4
       rect:
         serializedVersion: 2
-        x: 584
-        y: 604
-        width: 146
-        height: 146
+        x: 635
+        y: 628
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_5
+    - name: Sprite healer_5
       rect:
         serializedVersion: 2
-        x: 730
-        y: 604
-        width: 146
-        height: 146
+        x: 785
+        y: 627
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_6
+    - name: Sprite healer_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 458
-        width: 146
-        height: 146
+        x: 50
+        y: 478
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_7
+    - name: Sprite healer_7
       rect:
         serializedVersion: 2
-        x: 146
-        y: 458
-        width: 146
-        height: 146
+        x: 200
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_8
+    - name: Sprite healer_8
       rect:
         serializedVersion: 2
-        x: 292
-        y: 458
-        width: 146
-        height: 146
+        x: 349
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_9
+    - name: Sprite healer_9
       rect:
         serializedVersion: 2
-        x: 438
-        y: 458
-        width: 146
-        height: 146
+        x: 499
+        y: 478
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_10
+    - name: Sprite healer_10
       rect:
         serializedVersion: 2
-        x: 584
-        y: 458
-        width: 146
-        height: 146
+        x: 649
+        y: 478
+        width: 64
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_11
+    - name: Sprite healer_11
       rect:
         serializedVersion: 2
-        x: 730
-        y: 458
-        width: 146
-        height: 146
+        x: 799
+        y: 477
+        width: 64
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_12
+    - name: Sprite healer_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 312
-        width: 146
-        height: 146
+        x: 44
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_13
+    - name: Sprite healer_13
       rect:
         serializedVersion: 2
-        x: 146
-        y: 312
-        width: 146
-        height: 146
+        x: 195
+        y: 327
+        width: 53
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_14
+    - name: Sprite healer_14
       rect:
         serializedVersion: 2
-        x: 292
-        y: 312
-        width: 146
-        height: 146
+        x: 345
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_15
+    - name: Sprite healer_15
       rect:
         serializedVersion: 2
-        x: 438
-        y: 312
-        width: 146
-        height: 146
+        x: 495
+        y: 328
+        width: 53
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_16
+    - name: Sprite healer_16
       rect:
         serializedVersion: 2
-        x: 584
-        y: 312
-        width: 146
-        height: 146
+        x: 644
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_17
+    - name: Sprite healer_17
       rect:
         serializedVersion: 2
-        x: 730
-        y: 312
-        width: 146
-        height: 146
+        x: 793
+        y: 328
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_18
+    - name: Sprite healer_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 166
-        width: 146
-        height: 146
+        x: 35
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_19
+    - name: Sprite healer_19
       rect:
         serializedVersion: 2
-        x: 146
-        y: 166
-        width: 146
-        height: 146
+        x: 185
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_20
+    - name: Sprite healer_20
       rect:
         serializedVersion: 2
-        x: 292
-        y: 166
-        width: 146
-        height: 146
+        x: 339
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_21
+    - name: Sprite healer_21
       rect:
         serializedVersion: 2
-        x: 438
-        y: 166
-        width: 146
-        height: 146
+        x: 487
+        y: 177
+        width: 63
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_22
+    - name: Sprite healer_22
       rect:
         serializedVersion: 2
-        x: 584
-        y: 166
-        width: 146
-        height: 146
+        x: 635
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_23
+    - name: Sprite healer_23
       rect:
         serializedVersion: 2
-        x: 730
-        y: 166
-        width: 146
-        height: 146
+        x: 784
+        y: 177
+        width: 63
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_24
+    - name: Sprite healer_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 20
-        width: 146
-        height: 146
+        x: 38
+        y: 28
+        width: 67
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_25
+    - name: Sprite healer_25
       rect:
         serializedVersion: 2
-        x: 146
-        y: 20
-        width: 146
-        height: 146
+        x: 187
+        y: 28
+        width: 63
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Healer_26
+    - name: Sprite healer_26
       rect:
         serializedVersion: 2
-        x: 292
-        y: 20
-        width: 146
-        height: 146
+        x: 337
+        y: 28
+        width: 74
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

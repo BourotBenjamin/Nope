@@ -647,8 +647,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1, y: 1}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 320, y: 240}
+  m_SizeDelta: {x: 640, y: 480}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1351251050
 MonoBehaviour:
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   - Wizard
   - Healer
   - Warrior
-  useMastserServer: 0
+  useMastserServer: 1
   localServerIp: 127.0.0.1
   p1: {fileID: 1084496910}
   p2: {fileID: 1785479561}
