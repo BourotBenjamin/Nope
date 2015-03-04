@@ -33,7 +33,7 @@ public class ArrowScript : MonoBehaviour
             GameObject collisionGameObject = collision.gameObject;
             if (collisionGameObject.tag == "Player")
             {
-                collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 1);
+                collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 20);
             }
             Network.Destroy(this.gameObject);
         }

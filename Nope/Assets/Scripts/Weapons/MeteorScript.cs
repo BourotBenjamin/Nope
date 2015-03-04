@@ -13,7 +13,7 @@ public class MeteorScript : MonoBehaviour {
             {
                 if (hitColliders[i].tag == "Player")
                 {
-                    hitColliders[i].networkView.RPC("warriorHurt", RPCMode.All, 10);
+                    hitColliders[i].networkView.RPC("warriorHurt", RPCMode.All, 15);
                 }
                 i++;
             }

@@ -33,7 +33,7 @@ public class CameraScript : MonoBehaviour
         if (!target)
         {
             GameObject go = new GameObject("Cam Target");
-            go.transform.position = transform.position + (transform.forward * distance);
+            go.transform.position = Vector3.zero;
             target = go.transform;
         }
         distance = Vector3.Distance(transform.position, target.position);

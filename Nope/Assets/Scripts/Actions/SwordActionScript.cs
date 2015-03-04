@@ -45,7 +45,7 @@ public class SwordActionScript : ActionScript
                 }
                 if(nearest != null)
                 {
-                    nearest.networkView.RPC("warriorHurt", RPCMode.All, 3);
+                    nearest.networkView.RPC("warriorHurt", RPCMode.All, 30);
                 }
             }
             else if (Time.time - this.startTime > 1.0f)

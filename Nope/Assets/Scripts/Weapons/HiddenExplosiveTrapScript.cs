@@ -55,7 +55,7 @@ public class HiddenExplosiveTrapScript : MonoBehaviour {
             {
                 if (hitColliders[i].tag == "Player")
                 {
-                    hitColliders[i].networkView.RPC("warriorHurt", RPCMode.All, 5);
+                    hitColliders[i].networkView.RPC("warriorHurt", RPCMode.All, 25);
                 }
                 i++;
             }

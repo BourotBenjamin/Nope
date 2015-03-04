@@ -34,14 +34,14 @@ public class FireAmmoScript : MonoBehaviour
             {
                 if (collisionGameObject.tag == "Player")
                 {
-                    collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 2);
+                    collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 15);
                 }
                 foreach (Collider collider in playersInRadius)
                 {
                     GameObject colliderGameObject = collider.gameObject;
                     if (collisionGameObject != colliderGameObject)
                     {
-                        collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 2);
+                        collisionGameObject.networkView.RPC("warriorHurt", RPCMode.All, 15);
                     }
                 }
                 transform.position = new Vector3(90, 90, 90);
