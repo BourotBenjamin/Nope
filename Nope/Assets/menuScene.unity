@@ -279,9 +279,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 965d671247ab12b4499d836c1e0149d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  classes:
-  - WaWa
   buttonPrefab: {fileID: 194832, guid: fee2b1772a9cefd4293e7fcbab95dad6, type: 2}
+  sprites:
+  - {fileID: 21300000, guid: e2399b84de100bb4fb1229ec4cbe451d, type: 3}
+  - {fileID: 21300000, guid: 6f339aef8638a674984e24cbf60d3ca2, type: 3}
+  - {fileID: 21300000, guid: 8cfd9f895b34c9f47ae789d2ef698202, type: 3}
   serverCanevas: {fileID: 146309349}
 --- !u!81 &1695065169
 AudioListener:
@@ -313,7 +315,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .968627453, g: .972549021, b: .97647059, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

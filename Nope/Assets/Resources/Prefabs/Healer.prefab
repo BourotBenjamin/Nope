@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enabledActions:
-  - HealScript
+  - HealActionScript
   - MineDetectorActionScript
   - WalkActionScript
   life: {fileID: 0}
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1cca539c84ee7245843a18223fcdfbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74f46f5cb128ab848b8a71fa89bd17c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

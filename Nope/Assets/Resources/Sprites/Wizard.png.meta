@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 9e9a97a7559e3a34cba191c0a042cf3a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wizard_0
+    21300002: Wizard_1
+    21300004: Wizard_2
+    21300006: Wizard_3
+    21300008: Wizard_4
+    21300010: Wizard_5
+    21300012: Wizard_6
+    21300014: Wizard_7
+    21300016: Wizard_8
+    21300018: Wizard_9
+    21300020: Wizard_10
+    21300022: Wizard_11
+    21300024: Wizard_12
+    21300026: Wizard_13
+    21300028: Wizard_14
+    21300030: Wizard_15
+    21300032: Wizard_16
+    21300034: Wizard_17
+    21300036: Wizard_18
+    21300038: Wizard_19
+    21300040: Wizard_20
+    21300042: Wizard_21
+    21300044: Wizard_22
+    21300046: Wizard_23
+    21300048: Wizard_24
+    21300050: Wizard_25
+    21300052: Wizard_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Wizard_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_4
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_5
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 604
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_7
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_11
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 458
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_14
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_16
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_17
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 312
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_20
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_21
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_22
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_23
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 166
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_25
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Wizard_26
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 20
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

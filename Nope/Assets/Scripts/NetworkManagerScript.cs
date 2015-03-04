@@ -31,6 +31,8 @@ public class NetworkManagerScript : MonoBehaviour {
 
     bool p1Vacant = true;
     bool p2Vacant = true;
+    bool p1WarriorsExists = false;
+    bool p2WarriorsExists = false;
 
     private bool clientConnected;
 
@@ -86,9 +88,13 @@ public class NetworkManagerScript : MonoBehaviour {
             p1Vacant = false;
             setPlayer(player, p1, p2, 1);
             p1.owner = player;
-            foreach (var i in p1.simulateSrcipts)
+            if (!p1WarriorsExists)
             {
-                i.setOwnerInSimulateScript(player);
+                p1WarriorsExists = true;
+                foreach (var i in p1.simulateSrcipts)
+                {
+                    i.setOwnerInSimulateScript(player);
+                }
             }
         }
         else if (p2Vacant)
@@ -102,9 +108,13 @@ public class NetworkManagerScript : MonoBehaviour {
             p2Vacant = false;
             setPlayer(player, p2, p1, 2);
             p2.owner = player;
-            foreach (var i in p2.simulateSrcipts)
+            if (!p2WarriorsExists)
             {
-                i.setOwnerInSimulateScript(player);
+                p2WarriorsExists = true;
+                foreach (var i in p2.simulateSrcipts)
+                {
+                    i.setOwnerInSimulateScript(player);
+                }
             }
         }
     }

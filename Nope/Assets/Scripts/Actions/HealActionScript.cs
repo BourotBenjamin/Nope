@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HealScript : ActionScript
+public class HealActionScript : ActionScript
 {
 
     private bool created;
     private Object prefab;
 
-    public HealScript(Vector3 destination, int duration)
+    public HealActionScript(Vector3 destination, int duration)
         : base(destination, duration)
     {
         destinationNeeded = false;
         created = false;
     }
-    public HealScript()
+    public HealActionScript()
         : base()
     {
         destinationNeeded = false;

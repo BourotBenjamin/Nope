@@ -14,6 +14,14 @@ public class GUIScript : MonoBehaviour {
     [SerializeField]
     GameObject buttonPrefab;
 
+    private Dictionary<string, int> spritesIndex;
+
+    [SerializeField]
+    Sprite[] buttonSprites;
+
+    [SerializeField]
+    GameObject guiPanel;
+
     private bool positionSet;
     private SimulateScript selectedPlayer;
     private enum selected {SelectPlayer, ClickOnGui, SetDestination};
@@ -29,6 +37,7 @@ public class GUIScript : MonoBehaviour {
     private ActionScript _action;
     private Vector3 positionOnGame;
     private List<GameObject> marker;
+
     public ActionScript action
     {
         get { return _action; }
@@ -40,6 +49,11 @@ public class GUIScript : MonoBehaviour {
         //buttonList = new List<GameObject>();
         marker = new List<GameObject>();
         clickState = selected.SelectPlayer;
+        spritesIndex = new Dictionary<string, int>();
+        for(int i=0; i<buttonSprites.Length; i++)
+        {
+            spritesIndex.Add(buttonSprites[i].name, i);
+        }
         
     }
 
@@ -180,11 +194,15 @@ public class GUIScript : MonoBehaviour {
         }
 	}
 
-    void deleteGUI(bool resetPlayerColor)
+    public void deleteGUI(bool resetPlayerColor)
     {
+        Debug.LogError("1");
+        guiPanel.SetActive(false);
+        Debug.LogError("2");
         for (int i = 0; i < parentCanvas.childCount; i++)
         {
-            Destroy(parentCanvas.GetChild(i).gameObject);
+            Debug.LogError("3");
+                Destroy(parentCanvas.GetChild(i).gameObject);
         }
         if(resetPlayerColor)
         {
@@ -197,6 +215,7 @@ public class GUIScript : MonoBehaviour {
     {
         if (selectedPlayer != null && selectedPlayer.getNBActions() < 5)
         {
+            guiPanel.SetActive(true);
             for (int i = 0; i < parentCanvas.childCount; i++)
             {
                 Destroy(parentCanvas.GetChild(i).gameObject);
@@ -214,7 +233,10 @@ public class GUIScript : MonoBehaviour {
                 cacheScript.MainRectTransform.offsetMin = new Vector3(0f, 0f);
                 cacheScript.MainRectTransform.offsetMax = new Vector3(0f, 0f);
                 cacheScript.MainRectTransform.localScale = Vector3.one;
-                cacheScript.Text.text = s;
+                Debug.LogError(s);
+                cacheScript.Image.sprite = buttonSprites[spritesIndex[s]];
+                cacheScript.Image.type = UnityEngine.UI.Image.Type.Filled;
+                cacheScript.Image.preserveAspect = true;
                 j++;
                 var str = s;
                 //var num = i; // this is done in order to prevent variable scoping bug in lambdas defined in a loop in Mono version < 4
@@ -228,7 +250,9 @@ public class GUIScript : MonoBehaviour {
             btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
             btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
             btn.MainRectTransform.localScale = Vector3.one;
-            btn.Text.text = "Cancel";
+            btn.Image.sprite = buttonSprites[spritesIndex["CancelButton"]];
+            btn.Image.type = UnityEngine.UI.Image.Type.Filled;
+            btn.Image.preserveAspect = true;
             btn.ButtonScript.onClick.AddListener(() => deleteGUI(true));
         }
         else
@@ -238,7 +262,7 @@ public class GUIScript : MonoBehaviour {
         }
     }
 
-    void clickButton(string s, GameObject selectedPlayer)
+    public void clickButton(string s, GameObject selectedPlayer)
     {
         System.Type type = System.Type.GetType(s);
         object o = System.Activator.CreateInstance(type);

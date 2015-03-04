@@ -7,6 +7,8 @@ public class GUIButtonScript : MonoBehaviour
 
     [SerializeField]
     Text _text;
+    [SerializeField]
+    Image _image;
 
     public Text Text
     {
@@ -17,6 +19,17 @@ public class GUIButtonScript : MonoBehaviour
         set
         {
             _text = value;
+        }
+    }
+    public Image Image
+    {
+        get
+        {
+            return _image;
+        }
+        set
+        {
+            _image = value;
         }
     }
 

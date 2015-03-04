@@ -37,7 +37,7 @@ public class NetworkScript : MonoBehaviour
         }
         else
         {
-            Application.LoadLevel("looseScene");
+            Application.LoadLevel("loseScene");
         }
     }
 

@@ -3,14 +3,18 @@ using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
 
-    string[] classes = {"Warrior", "Healer", "Magician"};
+    string[] classes = { "Warrior", "Healer", "Wizard" };
     [SerializeField]
     GameObject buttonPrefab;
     [SerializeField]
+    Sprite[] sprites;
+    [SerializeField]
     RectTransform serverCanevas;
+    private GUIButtonScript[,] guiBtns;
 
     void Awake()
     {
+        guiBtns = new GUIButtonScript[3, classes.Length];
         GameOptionsScript.warriors[0] = null;
         GameOptionsScript.warriors[1] = null;
         GameOptionsScript.warriors[2] = null;
@@ -60,10 +64,18 @@ public class MainMenuScript : MonoBehaviour {
                 btn.MainRectTransform.offsetMin = new Vector3(0f, 0f);
                 btn.MainRectTransform.offsetMax = new Vector3(0f, 0f);
                 btn.MainRectTransform.localScale = Vector3.one;
-                btn.Text.text = classes[j];
+                btn.Image.sprite = sprites[j];
+                btn.Image.type = UnityEngine.UI.Image.Type.Filled;
+                btn.Image.preserveAspect = true;
                 int a = i, b = j;
+                guiBtns[i, j] = btn;
                 btn.ButtonScript.onClick.AddListener(() =>
                 {
+                   for (int k = 0; k < classes.Length; k++)
+                   {
+                       guiBtns[a, k].Image.color = new Color(1.0f, 1.0f, 1.0f);
+                   }
+                   btn.Image.color = new Color(0.9f,0.9f,0.9f);
                    GameOptionsScript.warriors[a] = classes[b];
                    if(GameOptionsScript.warriors[0] != null && GameOptionsScript.warriors[1] != null && GameOptionsScript.warriors[2] !=null)
                     {
