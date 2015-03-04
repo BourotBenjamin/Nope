@@ -16,7 +16,7 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_D
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.082 seconds
+- Completed reload, in  0.060 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -38,141 +38,23 @@ Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_D
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.038 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 3.696135 ms
+UnloadTime: 3.301847 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 408.
-Total: 0.605545 ms (FindLiveObjects: 0.013256 ms CreateObjectMapping: 0.008552 ms MarkObjects: 0.168919 ms  DeleteObjects: 0.015395 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 400.
+Total: 0.529852 ms (FindLiveObjects: 0.013684 ms CreateObjectMapping: 0.008125 ms MarkObjects: 0.172340 ms  DeleteObjects: 0.015395 ms)
 
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 4.372242 ms
+UnloadTime: 2.712980 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 410.
-Total: 1.213228 ms (FindLiveObjects: 0.043192 ms CreateObjectMapping: 0.041053 ms MarkObjects: 0.341260 ms  DeleteObjects: 0.029079 ms)
-
-HealActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-MineDetectorActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-WalkActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-1
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Initialize engine version: 4.6.2f1 (bd99309c2ad7)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     2094 MB
-Default GameObject Tag: Player already registered
- 
-(Filename:  Line: 67)
-
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
-desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Philoupe\workspace\Unity\Nope\Nope\BuildFinal\nope_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 2.437576 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 410.
-Total: 0.540970 ms (FindLiveObjects: 0.013256 ms CreateObjectMapping: 0.008552 ms MarkObjects: 0.175762 ms  DeleteObjects: 0.014967 ms)
-
-View ID AllocatedID: 0 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Couldn't destroy object because the associate network view was not found
- 
-(Filename:  Line: 1389)
-
-HealActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-MineDetectorActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-WalkActionScript
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-1
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-3
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 402.
+Total: 0.515739 ms (FindLiveObjects: 0.013256 ms CreateObjectMapping: 0.008552 ms MarkObjects: 0.160366 ms  DeleteObjects: 0.014539 ms)
 
